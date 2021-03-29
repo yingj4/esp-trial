@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-ACCESS
++r
+-WORK
+BEHAV_DMA64
+-NOTIMINGCHECKS
+
+sc_main

@@ -1,0 +1,12 @@
+6044
+6047
+mojave.cs.illinois.edu
+bdw_work/trace/hls.mac.BASIC_DMA64.s.trace
+2
+0
+0
+0
+1616966598
+1616966763
+/software/cadence-Mar2020/STRATUS192/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib --clock_period=12.500 --default_input_delay=0.100 --default_protocol=off --fpga_part=xc7v2000tflg1925-2 --fpga_tool=vivado --fpga_use_dsp=off --inline_partial_constants=on --lsb_trimming=on --message_detail=2 --output_style_reset_all=on --sched_asap=on --sharing_effort_parts=low --sharing_effort_regs=low -DBASIC_DMA64=1 -DBDW_RTL_mac_BASIC_DMA64=1 -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64 -DHLS_DIRECTIVES_BASIC --clock_period=12.500 --prints=on -I./memlib/c_parts -d bdw_work/modules/mac/BASIC_DMA64 -o mac_rtl.cpp --hls_module=mac --hls_config=BASIC_DMA64 --project=project.tcl -P ./memlib/c_parts -p memlib ../src/mac.cpp
+

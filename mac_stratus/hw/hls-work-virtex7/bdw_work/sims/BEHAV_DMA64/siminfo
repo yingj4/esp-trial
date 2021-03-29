@@ -1,0 +1,5 @@
+/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/*v
+/scratch/opt/Vivado/2019.2/data/verilog/src/glbl.v
+/scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB*.v
+/scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB*.v
+-y bdw_work/libs/memlib/v_rtl

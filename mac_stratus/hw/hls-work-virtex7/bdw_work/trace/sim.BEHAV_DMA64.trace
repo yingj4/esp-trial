@@ -1,0 +1,122 @@
+make[3]: Nothing to be done for `bdw_work/wrappers/mac_wrap.h'.
+Generating dependencies for system config TESTBENCH_DMA64 of ../tb/sc_main.cpp
+Generating dependencies for system config TESTBENCH_DMA64 of ../tb/system.cpp
+Generating dependencies for HLS config IOCFG_DMA64 of ../src/mac.cpp
+/software/cadence-Mar2020/STRATUS192/bin/bdw_shell /software/cadence-Mar2020/STRATUS192/share/stratus/tcl/bdw_siminfo.tcl project.tcl BEHAV_DMA64
+make[4]: Nothing to be done for `bdw_work/wrappers/mac_wrap.h'.
+make[4]: `bdw_work/libesc/incisive/libesc.a' is up to date.
+/software/cadence-Mar2020/XCELIUM1909/tools/bin/ncsc   -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual -CFlags " -Ibdw_work/modules/tb/TESTBENCH_DMA64 -I./ -I./ -Ibdw_work/wrappers -I./memlib/c_parts  -DTESTBENCH_DMA64=1 -DBDW_RTL_tb_TESTBENCH_DMA64=1 -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/system.o " ../tb/system.cpp
+/software/cadence-Mar2020/XCELIUM1909/tools/bin/ncsc   -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual -CFlags " -Ibdw_work/modules/mac/IOCFG_DMA64 -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/mac/IOCFG_DMA64/c_parts  -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64  -I./memlib/c_parts  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/mac/IOCFG_DMA64/incisive/mac.o " bdw_work/wrappers/mac_wrap.cpp
+/software/cadence-Mar2020/XCELIUM1909/tools/bin/ncsc   -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual -CFlags " -Ibdw_work/modules/tb/TESTBENCH_DMA64 -I./ -I./ -Ibdw_work/wrappers -I./memlib/c_parts  -DTESTBENCH_DMA64=1 -DBDW_RTL_tb_TESTBENCH_DMA64=1 -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/sc_main.o " ../tb/sc_main.cpp
+xmsc(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xmsc: /software/cadence-Mar2020/XCELIUM1909/tools/cdsgcc/gcc/6.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=0 -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include_pch/64bit  -Ibdw_work/modules/mac/IOCFG_DMA64 -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/mac/IOCFG_DMA64/c_parts  -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64  -I./memlib/c_parts  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/mac/IOCFG_DMA64/incisive/mac.o   bdw_work/wrappers/mac_wrap.cpp
+xmsc(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xmsc: /software/cadence-Mar2020/XCELIUM1909/tools/cdsgcc/gcc/6.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=0 -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include_pch/64bit  -Ibdw_work/modules/tb/TESTBENCH_DMA64 -I./ -I./ -Ibdw_work/wrappers -I./memlib/c_parts  -DTESTBENCH_DMA64=1 -DBDW_RTL_tb_TESTBENCH_DMA64=1 -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/system.o   ../tb/system.cpp
+xmsc(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xmsc: /software/cadence-Mar2020/XCELIUM1909/tools/cdsgcc/gcc/6.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=0 -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include_pch/64bit  -Ibdw_work/modules/tb/TESTBENCH_DMA64 -I./ -I./ -Ibdw_work/wrappers -I./memlib/c_parts  -DTESTBENCH_DMA64=1 -DBDW_RTL_tb_TESTBENCH_DMA64=1 -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/sc_main.o   ../tb/sc_main.cpp
+make objs/libmemlib.a
+make[6]: `objs/libmemlib.a' is up to date.
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:55:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:243:81: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+xmsc: Running scFrontEnd on ../tb/system.cpp using library bdw_worklib...
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:55:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:243:81: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+xmsc: Running scFrontEnd on ../tb/sc_main.cpp using library bdw_worklib...
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:55:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:243:81: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+xmsc: Running scFrontEnd on bdw_work/wrappers/mac_wrap.cpp using library bdw_worklib...
+xmsc: *N,DLWTLK: Pausing until a shared lock can be established on library 'bdw_worklib'.  Another process may be accessing the library.  Process will resume when the lock is established.
+xmsc: *N,DLWTLK: Pausing until a shared lock can be established on library 'bdw_worklib'.  Another process may be accessing the library.  Process will resume when the lock is established.
+make --no-print-directory -f Makefile ncsc
+
+BDW_SIM_CONFIG_DIR=bdw_work/sims/BEHAV_DMA64 \
+bdw_exec -jobproject project.tcl -job sim.BEHAV_DMA64.s \
+hub_ncsim \
+-work BEHAV_DMA64 -reflib worklib -reflib bdw_work/INCA_libs/bdw_worklib \
+-messages -64bit \
+ \
+-NOTIMINGCHECKS -UNBUFFERED  \
+-CFLAGS "-Wl,-rpath,/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit" \
+bdw_work/modules/mac/IOCFG_DMA64/incisive/mac.o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/system.o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/sc_main.o  \
+ \
+ \
+bdw_work/libesc/incisive/libesc.a \
+bdw_work/libs/memlib/incisive/objs/libmemlib.a \
+ \
+ \
+ \
+ \
+ \
+-top sc_main   \
+2>&1 | tee bdw_work/sims/BEHAV_DMA64/bdw_sim.log
+simulator_composite = ncverilog19.09
+TOOL:	xrun(64)	19.09-s009: Started on Mar 28, 2021 at 16:40:47 CDT
+xrun(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+xrun: *W,REFLIB: -reflib directory bdw_work/sims/BEHAV_DMA64/xcelium.d/worklib does not exist. It will be created.
+$CDSROOT = /software/cadence-Mar2020/XCELIUM1909
+$TESTDIR = /scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7
+
+TOOL:	xmsc(64)	19.09-s009
+building library run.so
+
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.22-s100
+	Elaborating the design hierarchy:
+	Top level design units:
+		sc_main
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Simulation timescale:  1ps
+
+	SystemC Design Summary:
+		                   Instances
+		sc_modules:               27
+		sc_ports:                130
+		sc_signals:               88
+		sc_methods:               14
+		sc_threads:                1
+		sc_cthreads:               6
+		sc_events:                 2
+	Writing initial simulation snapshot: BEHAV_DMA64.sc_main:sc_module
+Loading snapshot BEHAV_DMA64.sc_main:sc_module .................... Done
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.22-s100
+xcelium> run
+Info: dma-controller: reset done
+
+Info: testbench: reset done
+
+Info: testbench: load memory completed
+
+Info: testbench: config done
+
+Info: testbench: @310 ns BEGIN - mac
+
+Info: testbench: @32920 ns END - mac
+
+Info: testbench: dump memory completed
+
+Error: testbench: validation failed!
+
+SystemC: simulation stopped by user.
+
+
+SC simulation stopped by user.
+
+SystemC : SystemC stopped at time 32930
+xcelium> exit
+TOOL:	xrun(64)	19.09-s009: Exiting on Mar 28, 2021 at 16:40:49 CDT  (total: 00:00:02)
+BDW_SIM_CONFIG_DIR=bdw_work/sims/BEHAV_DMA64 make saySimPassed 2>&1 | tee -a bdw_work/sims/BEHAV_DMA64/bdw_sim.log

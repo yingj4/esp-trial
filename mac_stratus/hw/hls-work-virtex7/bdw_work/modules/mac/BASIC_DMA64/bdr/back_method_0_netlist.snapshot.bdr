@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>back_method_0</module_name>
+	<signal>
+		<name>MUX_N264</name>
+		<source_loc>12712</source_loc>
+		<datatype W="1">bool</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N264</name>
+		<async/>
+		<lhs>
+			<name>MUX_N264</name>
+		</lhs>
+		<rhs>
+			<name>back_method_0_dma_read_chnl_sync_rcv_reset_ready_curr_next</name>
+			<name>CynTemp_34</name>
+		</rhs>
+		<cond>
+			<name>amtmp009</name>
+		</cond>
+		<mux_area>1.0000</mux_area>
+		<mux_delay>1.1170</mux_delay>
+		<control_delay>1.1170</control_delay>
+	</thread>
+	<signal>
+		<name>MUX_N271</name>
+		<source_loc>12713</source_loc>
+		<datatype W="64">sc_uint</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N271</name>
+		<async/>
+		<lhs>
+			<name>MUX_N271</name>
+		</lhs>
+		<rhs>
+			<name>back_method_0_dma_read_chnl_data_buf_next</name>
+			<name>ioread021</name>
+		</rhs>
+		<cond>
+			<name>amtmp009</name>
+		</cond>
+		<mux_area>64.0000</mux_area>
+		<mux_delay>1.1170</mux_delay>
+		<control_delay>1.1170</control_delay>
+	</thread>
+</netlist>

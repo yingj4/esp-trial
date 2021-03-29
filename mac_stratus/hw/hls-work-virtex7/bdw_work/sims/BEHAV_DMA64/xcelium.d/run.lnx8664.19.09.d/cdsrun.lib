@@ -1,0 +1,4 @@
+SOFTINCLUDE /software/cadence-Mar2020/XCELIUM1909/tools/inca/files/cds.lib
+define worklib ../worklib
+define bdw_worklib ../../../../INCA_libs/bdw_worklib
+define BEHAV_DMA64 ../BEHAV_DMA64

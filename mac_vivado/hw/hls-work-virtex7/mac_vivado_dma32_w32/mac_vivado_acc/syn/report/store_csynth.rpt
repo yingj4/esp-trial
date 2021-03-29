@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vivado HLS Report for 'store'
+================================================================
+* Date:           Sun Mar 28 21:17:46 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        mac_vivado_dma32_w32
+* Solution:       mac_vivado_acc
+* Product family: virtex7
+* Target device:  xc7v2000t-flg1925-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.871 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        ?|        ?|         2|          -|          -|     ?|    no    |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++---------------------+---------+-------+---------+---------+-----+
+|DSP                  |        -|      -|        -|        -|    -|
+|Expression           |        -|      6|        0|      140|    -|
+|FIFO                 |        -|      -|        -|        -|    -|
+|Instance             |        -|      -|        -|        -|    -|
+|Memory               |        -|      -|        -|        -|    -|
+|Multiplexer          |        -|      -|        -|      105|    -|
+|Register             |        -|      -|      166|        -|    -|
++---------------------+---------+-------+---------+---------+-----+
+|Total                |        0|      6|      166|      245|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available SLR        |      646|    540|   610800|   305400|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization SLR (%)  |        0|      1|    ~0   |    ~0   |  100|
++---------------------+---------+-------+---------+---------+-----+
+|Available            |     2584|   2160|  2443200|  1221600|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization (%)      |        0|   ~0  |    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+-------+---+----+------------+------------+
+    |index_fu_119_p2         |     *    |      3|  0|  21|          32|          32|
+    |store_offset_fu_109_p2  |     *    |      3|  0|  21|          32|          32|
+    |i_fu_139_p2             |     +    |      0|  0|  39|          32|           1|
+    |tmp_i_i_fu_115_p2       |     +    |      0|  0|  39|          32|          32|
+    |icmp_ln56_fu_134_p2     |   icmp   |      0|  0|  18|          32|          32|
+    |ap_block_state1         |    or    |      0|  0|   2|           1|           1|
+    +------------------------+----------+-------+---+----+------------+------------+
+    |Total                   |          |      6|  0| 140|         161|         130|
+    +------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------+----+-----------+-----+-----------+
+    |       Name       | LUT| Input Size| Bits| Total Bits|
+    +------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm         |  33|          6|    1|          6|
+    |ap_done           |   9|          2|    1|          2|
+    |chunk_blk_n       |   9|          2|    1|          2|
+    |i_0_i_i_reg_98    |   9|          2|   32|         64|
+    |mac_len_blk_n     |   9|          2|    1|          2|
+    |mac_n_blk_n       |   9|          2|    1|          2|
+    |mac_vec_blk_n     |   9|          2|    1|          2|
+    |out_word_V_blk_n  |   9|          2|    1|          2|
+    |store_ctrl_blk_n  |   9|          2|    1|          2|
+    +------------------+----+-----------+-----+-----------+
+    |Total             | 105|         22|   40|         84|
+    +------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------+----+----+-----+-----------+
+    |         Name         | FF | LUT| Bits| Const Bits|
+    +----------------------+----+----+-----+-----------+
+    |ap_CS_fsm             |   5|   0|    5|          0|
+    |ap_done_reg           |   1|   0|    1|          0|
+    |chunk_read_reg_157    |  32|   0|   32|          0|
+    |dma_length_reg_150    |  32|   0|   32|          0|
+    |i_0_i_i_reg_98        |  32|   0|   32|          0|
+    |i_reg_175             |  32|   0|   32|          0|
+    |store_offset_reg_162  |  32|   0|   32|          0|
+    +----------------------+----+----+-----+-----------+
+    |Total                 | 166|   0|  166|          0|
+    +----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+--------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
++----------------------+-----+-----+------------+--------------+--------------+
+|ap_clk                |  in |    1| ap_ctrl_hs |     store    | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs |     store    | return value |
+|ap_start              |  in |    1| ap_ctrl_hs |     store    | return value |
+|ap_done               | out |    1| ap_ctrl_hs |     store    | return value |
+|ap_continue           |  in |    1| ap_ctrl_hs |     store    | return value |
+|ap_idle               | out |    1| ap_ctrl_hs |     store    | return value |
+|ap_ready              | out |    1| ap_ctrl_hs |     store    | return value |
+|p_outbuff_V_address0  | out |    7|  ap_memory |  p_outbuff_V |     array    |
+|p_outbuff_V_ce0       | out |    1|  ap_memory |  p_outbuff_V |     array    |
+|p_outbuff_V_q0        |  in |   32|  ap_memory |  p_outbuff_V |     array    |
+|out_word_V_din        | out |   32|   ap_fifo  |  out_word_V  |    pointer   |
+|out_word_V_full_n     |  in |    1|   ap_fifo  |  out_word_V  |    pointer   |
+|out_word_V_write      | out |    1|   ap_fifo  |  out_word_V  |    pointer   |
+|mac_n_dout            |  in |   32|   ap_fifo  |     mac_n    |    pointer   |
+|mac_n_empty_n         |  in |    1|   ap_fifo  |     mac_n    |    pointer   |
+|mac_n_read            | out |    1|   ap_fifo  |     mac_n    |    pointer   |
+|mac_vec_dout          |  in |   32|   ap_fifo  |    mac_vec   |    pointer   |
+|mac_vec_empty_n       |  in |    1|   ap_fifo  |    mac_vec   |    pointer   |
+|mac_vec_read          | out |    1|   ap_fifo  |    mac_vec   |    pointer   |
+|mac_len_dout          |  in |   32|   ap_fifo  |    mac_len   |    pointer   |
+|mac_len_empty_n       |  in |    1|   ap_fifo  |    mac_len   |    pointer   |
+|mac_len_read          | out |    1|   ap_fifo  |    mac_len   |    pointer   |
+|store_ctrl            | out |   96|    ap_hs   |  store_ctrl  |    pointer   |
+|store_ctrl_ap_vld     | out |    1|    ap_hs   |  store_ctrl  |    pointer   |
+|store_ctrl_ap_ack     |  in |    1|    ap_hs   |  store_ctrl  |    pointer   |
+|chunk_dout            |  in |   32|   ap_fifo  |     chunk    |    pointer   |
+|chunk_empty_n         |  in |    1|   ap_fifo  |     chunk    |    pointer   |
+|chunk_read            | out |    1|   ap_fifo  |     chunk    |    pointer   |
++----------------------+-----+-----+------------+--------------+--------------+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="top" xd:componentRef="mac_vivado_dma64_w32_top" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="out-&gt;word[0]" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_word_V" xd:busTypeRef="acc_fifo" xd:firstOut="5" xd:dataPack="true" xd:bitMapping="31:0" xd:dataWidth="32"/>
+  <xd:arg xd:name="out-&gt;word[1]" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_word_V" xd:busTypeRef="acc_fifo" xd:firstOut="5" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="in1-&gt;word[0]" xd:originalName="in1" xd:direction="in" xd:interfaceRef="in1_word_V" xd:busTypeRef="acc_fifo" xd:firstOut="5" xd:dataPack="true" xd:bitMapping="31:0" xd:dataWidth="32"/>
+  <xd:arg xd:name="in1-&gt;word[1]" xd:originalName="in1" xd:direction="in" xd:interfaceRef="in1_word_V" xd:busTypeRef="acc_fifo" xd:firstOut="5" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="conf_info_mac_n" xd:originalName="conf_info_mac_n" xd:direction="in" xd:interfaceRef="conf_info_mac_n" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="5"/>
+  <xd:arg xd:name="conf_info_mac_vec" xd:originalName="conf_info_mac_vec" xd:direction="in" xd:interfaceRef="conf_info_mac_vec" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="5"/>
+  <xd:arg xd:name="conf_info_mac_len" xd:originalName="conf_info_mac_len" xd:direction="in" xd:interfaceRef="conf_info_mac_len" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="5"/>
+  <xd:arg xd:name="load_ctrl.index" xd:originalName="load_ctrl" xd:direction="out" xd:interfaceRef="load_ctrl" xd:busTypeRef="register" xd:handshakeRef="ap_hs" xd:dataWidth="32" xd:firstOut="1" xd:dataPack="true" xd:bitMapping="31:0"/>
+  <xd:arg xd:name="load_ctrl.length" xd:originalName="load_ctrl" xd:direction="out" xd:interfaceRef="load_ctrl" xd:busTypeRef="register" xd:handshakeRef="ap_hs" xd:dataWidth="32" xd:firstOut="1" xd:dataPack="true" xd:bitMapping="63:32"/>
+  <xd:arg xd:name="load_ctrl.size" xd:originalName="load_ctrl" xd:direction="out" xd:interfaceRef="load_ctrl" xd:busTypeRef="register" xd:handshakeRef="ap_hs" xd:dataWidth="32" xd:firstOut="1" xd:dataPack="true" xd:bitMapping="95:64"/>
+  <xd:arg xd:name="store_ctrl.index" xd:originalName="store_ctrl" xd:direction="out" xd:interfaceRef="store_ctrl" xd:busTypeRef="register" xd:handshakeRef="ap_hs" xd:dataWidth="32" xd:firstOut="2" xd:dataPack="true" xd:bitMapping="31:0"/>
+  <xd:arg xd:name="store_ctrl.length" xd:originalName="store_ctrl" xd:direction="out" xd:interfaceRef="store_ctrl" xd:busTypeRef="register" xd:handshakeRef="ap_hs" xd:dataWidth="32" xd:firstOut="2" xd:dataPack="true" xd:bitMapping="63:32"/>
+  <xd:arg xd:name="store_ctrl.size" xd:originalName="store_ctrl" xd:direction="out" xd:interfaceRef="store_ctrl" xd:busTypeRef="register" xd:handshakeRef="ap_hs" xd:dataWidth="32" xd:firstOut="2" xd:dataPack="true" xd:bitMapping="95:64"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="1998" xd:FF="886" xd:BRAM="18" xd:DSP="21"/>
+</xd:acceleratorMap>

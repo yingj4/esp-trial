@@ -1,0 +1,5 @@
+$CDSROOT = /software/cadence-Mar2020/XCELIUM1909
+$TESTDIR = /scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7
+
+TOOL:	xmsc(64)	19.09-s009
+building library run.so

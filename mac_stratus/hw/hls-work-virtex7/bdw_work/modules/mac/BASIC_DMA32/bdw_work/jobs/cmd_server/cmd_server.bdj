@@ -1,0 +1,12 @@
+27595
+27599
+mojave.cs.illinois.edu
+-
+3
+0
+0
+1
+1616966373
+1616966578
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/bin/bdw_cmd_shell -dpopt --locallogfile /dev/null -x bdw_server_start
+

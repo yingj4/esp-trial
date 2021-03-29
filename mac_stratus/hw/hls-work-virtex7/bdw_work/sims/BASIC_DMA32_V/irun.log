@@ -1,0 +1,325 @@
+xrun(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.09-s009: Started on Mar 28, 2021 at 16:40:13 CDT
+irun
+	-l bdw_work/sims/BASIC_DMA32_V/irun.log
+	-nclibdirpath bdw_work/sims/BASIC_DMA32_V
+	-sysc
+	-incdir /software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib
+	-incdir bdw_work/wrappers
+	+libext+.v
+	+access+r
+	+define+BDW_NCSC
+	-work BASIC_DMA32_V
+	-reflib worklib
+	-reflib bdw_work/INCA_libs/bdw_worklib
+	-messages
+	-64bit
+	-CFLAGS -Wl,-rpath,/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit
+	bdw_work/modules/mac/BASIC_DMA32/incisive/mac.o
+	bdw_work/modules/tb/TESTBENCH_DMA32/incisive/system.o
+	bdw_work/modules/tb/TESTBENCH_DMA32/incisive/sc_main.o
+	bdw_work/libesc/incisive/libesc.a
+	bdw_work/libs/memlib/incisive/objs/libmemlib.a
+	+loadpli1=/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	-file bdw_work/sims/BASIC_DMA32_V/siminfo
+		bdw_work/sims/top_BASIC_DMA32_V.v
+		bdw_work/wrappers/mac_cosim.v
+		bdw_work/modules/mac/BASIC_DMA32/mac_rtl.v
+		/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_in_dma32.v
+		/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_out_dma32.v
+		/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/*v
+		/scratch/opt/Vivado/2019.2/data/verilog/src/glbl.v
+		/scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB*.v
+		/scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB*.v
+		/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v
+		-y bdw_work/libs/memlib/v_rtl
+	-NOTIMINGCHECKS
+	-UNBUFFERED
+	+hubSetOption+libdef=bdw_work/sims/BASIC_DMA32_V/incisive/sim_BASIC_DMA32_V.so
+	+hubSetOption+bdr=bdw_work/sims/BASIC_DMA32_V/sim.bdr
+	+define+ioConfig_IOCFG_DMA32
+	+define+BDW_RTL_mac_BASIC_DMA32
+	-top sc_main
+	-top glbl
+	/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhubexec.so
+	/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhub.so
+	/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+
+   User defined plus("+") options:
+	+hubSetOption+libdef=bdw_work/sims/BASIC_DMA32_V/incisive/sim_BASIC_DMA32_V.so
+	+hubSetOption+bdr=bdw_work/sims/BASIC_DMA32_V/sim.bdr
+
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+xrun: *W,REFLIB: -reflib directory bdw_work/sims/BASIC_DMA32_V/xcelium.d/worklib does not exist. It will be created.
+file: bdw_work/sims/top_BASIC_DMA32_V.v
+	module BASIC_DMA32_V.top:v
+		errors: 0, warnings: 0
+	module BASIC_DMA32_V.mac_nc_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/wrappers/mac_cosim.v
+	module BASIC_DMA32_V.mac_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/mac/BASIC_DMA32/mac_rtl.v
+	module BASIC_DMA32_V.mac:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_in_dma32.v
+	module BASIC_DMA32_V.mac_plm_block_in_dma32:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_out_dma32.v
+	module BASIC_DMA32_V.mac_plm_block_out_dma32:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_1024x16.v
+	module BASIC_DMA32_V.BRAM_1024x16:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_16384x1.v
+	module BASIC_DMA32_V.BRAM_16384x1:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_2048x8.v
+	module BASIC_DMA32_V.BRAM_2048x8:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_4096x4.v
+	module BASIC_DMA32_V.BRAM_4096x4:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v
+	module BASIC_DMA32_V.BRAM_512x32:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_8192x2.v
+	module BASIC_DMA32_V.BRAM_8192x2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/glbl.v
+	module BASIC_DMA32_V.glbl:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16.v
+	module BASIC_DMA32_V.RAMB16:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE.v
+	module BASIC_DMA32_V.RAMB16BWE:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWER.v
+	module BASIC_DMA32_V.RAMB16BWER:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S18.v
+	module BASIC_DMA32_V.RAMB16BWE_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S18_S18.v
+	module BASIC_DMA32_V.RAMB16BWE_S18_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S18_S9.v
+	module BASIC_DMA32_V.RAMB16BWE_S18_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36.v
+	module BASIC_DMA32_V.RAMB16BWE_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36_S18.v
+	module BASIC_DMA32_V.RAMB16BWE_S36_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36_S36.v
+	module BASIC_DMA32_V.RAMB16BWE_S36_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36_S9.v
+	module BASIC_DMA32_V.RAMB16BWE_S36_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1.v
+	module BASIC_DMA32_V.RAMB16_S1:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S18.v
+	module BASIC_DMA32_V.RAMB16_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S18_S18.v
+	module BASIC_DMA32_V.RAMB16_S18_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S18_S36.v
+	module BASIC_DMA32_V.RAMB16_S18_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S1.v
+	module BASIC_DMA32_V.RAMB16_S1_S1:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S18.v
+	module BASIC_DMA32_V.RAMB16_S1_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S2.v
+	module BASIC_DMA32_V.RAMB16_S1_S2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S36.v
+	module BASIC_DMA32_V.RAMB16_S1_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S4.v
+	module BASIC_DMA32_V.RAMB16_S1_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S9.v
+	module BASIC_DMA32_V.RAMB16_S1_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2.v
+	module BASIC_DMA32_V.RAMB16_S2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S18.v
+	module BASIC_DMA32_V.RAMB16_S2_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S2.v
+	module BASIC_DMA32_V.RAMB16_S2_S2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S36.v
+	module BASIC_DMA32_V.RAMB16_S2_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S4.v
+	module BASIC_DMA32_V.RAMB16_S2_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S9.v
+	module BASIC_DMA32_V.RAMB16_S2_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S36.v
+	module BASIC_DMA32_V.RAMB16_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S36_S36.v
+	module BASIC_DMA32_V.RAMB16_S36_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4.v
+	module BASIC_DMA32_V.RAMB16_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S18.v
+	module BASIC_DMA32_V.RAMB16_S4_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S36.v
+	module BASIC_DMA32_V.RAMB16_S4_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S4.v
+	module BASIC_DMA32_V.RAMB16_S4_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S9.v
+	module BASIC_DMA32_V.RAMB16_S4_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9.v
+	module BASIC_DMA32_V.RAMB16_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9_S18.v
+	module BASIC_DMA32_V.RAMB16_S9_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9_S36.v
+	module BASIC_DMA32_V.RAMB16_S9_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9_S9.v
+	module BASIC_DMA32_V.RAMB16_S9_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB18.v
+	module BASIC_DMA32_V.RAMB18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB18SDP.v
+	module BASIC_DMA32_V.RAMB18SDP:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB36.v
+	module BASIC_DMA32_V.RAMB36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB36SDP.v
+	module BASIC_DMA32_V.RAMB36SDP:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB8BWER.v
+	module BASIC_DMA32_V.RAMB8BWER:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E1.v
+	module BASIC_DMA32_V.RAMB18E1:v
+		errors: 0, warnings: 0
+	module BASIC_DMA32_V.RB18_INTERNAL_VLOG:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E2.v
+	module BASIC_DMA32_V.RAMB18E2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E5.v
+	module BASIC_DMA32_V.RAMB18E5:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E5_INT.v
+	module BASIC_DMA32_V.RAMB18E5_INT:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E1.v
+	module BASIC_DMA32_V.RAMB36E1:v
+		errors: 0, warnings: 0
+	module BASIC_DMA32_V.RB36_INTERNAL_VLOG:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E2.v
+	module BASIC_DMA32_V.RAMB36E2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E5.v
+	module BASIC_DMA32_V.RAMB36E5:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E5_INT.v
+	module BASIC_DMA32_V.RAMB36E5_INT:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v
+module BRAM_512x32( CLK, A0, D0, Q0, WE0, WEM0, CE0, A1, D1, Q1, WE1, WEM1, CE1 );
+                 |
+xmvlog: *W,RECOME (/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v,3|17): recompiling design unit BASIC_DMA32_V.BRAM_512x32:v.
+	First compiled from line 3 of /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v.
+xmvlog: *W,LIBNOU: Library "bdw_work/libs/memlib/v_rtl" given but not used.
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+$CDSROOT = /software/cadence-Mar2020/XCELIUM1909
+$TESTDIR = /scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7
+
+TOOL:	xmsc(64)	19.09-s009
+building library run.so
+
+*** Registering Hub PLI1.0 Interface***
+	Elaborating the design hierarchy:
+		Caching library 'BASIC_DMA32_V' ....... Done
+	Top level design units:
+		sc_main
+		glbl
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		BASIC_DMA32_V.RB36_INTERNAL_VLOG:v <0x101d4f21>
+			streams: 100, words: 381708
+		BASIC_DMA32_V.RAMB36E1:v <0x532534b8>
+			streams:  32, words:  5749
+		BASIC_DMA32_V.RAMB16_S36_S36:v <0x7deb4669>
+			streams:   2, words:   296
+		BASIC_DMA32_V.BRAM_512x32:v <0x79822b33>
+			streams:   2, words:  1349
+		BASIC_DMA32_V.mac_nc_cosim:v <0x2561139d>
+			streams:  64, words: 47222
+		BASIC_DMA32_V.mac:v <0x64696d60>
+			streams: 278, words: 118650
+		BASIC_DMA32_V.mac_plm_block_out_dma32:v <0x5750f9ec>
+			streams:  17, words: 16740
+		BASIC_DMA32_V.mac_plm_block_in_dma32:v <0x3f1aacc6>
+			streams:  19, words: 20373
+		BASIC_DMA32_V.glbl:v <0x3bd2bb1f>
+			streams:  11, words:  4154
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                119       9
+		Timing outputs:        2604      70
+		Registers:             8015     533
+		Scalar wires:          3969       -
+		Expanded wires:        4508     224
+		Vectored wires:         915       -
+		Always blocks:          841     193
+		Initial blocks:        1495      64
+		Cont. assignments:      728     177
+		Pseudo assignments:     476      27
+		Simulation timescale:   1ps
+
+	SystemC Design Summary:
+		                   Instances
+		sc_modules:               18
+		sc_ports:                 96
+		sc_signals:               57
+		sc_methods:               16
+		sc_threads:                1
+		sc_cthreads:               2
+		sc_events:                 2
+	Writing initial simulation snapshot: BASIC_DMA32_V.sc_main:sc_module
+Loading snapshot BASIC_DMA32_V.sc_main:sc_module .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /software/cadence-Mar2020/XCELIUM1909/tools/xcelium/files/xmsimrc
+xcelium> run
+SystemC: simulation stopped by user.
+
+
+SC simulation stopped by user.
+
+SystemC : SystemC stopped at time 193430
+xcelium> exit
+TOOL:	xrun(64)	19.09-s009: Exiting on Mar 28, 2021 at 16:40:16 CDT  (total: 00:00:03)

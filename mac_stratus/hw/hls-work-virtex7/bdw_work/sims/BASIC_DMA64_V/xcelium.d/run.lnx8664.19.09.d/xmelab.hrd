@@ -1,0 +1,15 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-ACCESS
++r
+-WORK
+BASIC_DMA64_V
+-LOADPLI1
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+-NOTIMINGCHECKS
+
+sc_main
+
+glbl

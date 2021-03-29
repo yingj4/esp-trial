@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_top_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top//AESL_inst_mac_vivado_dma64_w32_top_activity">
+         <obj_property name="label">AESL_inst_mac_vivado_dma64_w32_top_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_mac_vivado_dma64_w32_top_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_mac_vivado_dma64_w32_top_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top//AESL_inst_mac_vivado_dma64_w32_top_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top//AESL_inst_mac_vivado_dma64_w32_top_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top//AESL_inst_mac_vivado_dma64_w32_top_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/dataflow_in_loop_bat_U0_activity">
+            <obj_property name="label">dataflow_in_loop_bat_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dataflow_in_loop_bat_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dataflow_in_loop_bat_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/dataflow_in_loop_bat_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/dataflow_in_loop_bat_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/dataflow_in_loop_bat_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/load32_U0_activity">
+               <obj_property name="label">load32_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">load32_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">load32_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/load32_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/load32_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/load32_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/compute_U0_activity">
+               <obj_property name="label">compute_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">compute_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">compute_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/compute_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/compute_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/compute_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/store_U0_activity">
+               <obj_property name="label">store_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">store_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">store_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/store_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/store_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/store_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top//AESL_inst_mac_vivado_dma64_w32_top_activity">
+      <obj_property name="ElementShortName">AESL_inst_mac_vivado_dma64_w32_top_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_mac_vivado_dma64_w32_top_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_mac_vivado_dma64_w32_top_group">
+      <obj_property name="label">AESL_inst_mac_vivado_dma64_w32_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/loop_dataflow_input_count">
+         <obj_property name="ElementShortName">loop_dataflow_input_count</obj_property>
+         <obj_property name="ObjectShortName">loop_dataflow_input_count</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/loop_dataflow_output_count">
+         <obj_property name="ElementShortName">loop_dataflow_output_count</obj_property>
+         <obj_property name="ObjectShortName">loop_dataflow_output_count</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/dataflow_in_loop_bat_U0_activity">
+         <obj_property name="ElementShortName">dataflow_in_loop_bat_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dataflow_in_loop_bat_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_mac_vivado_dma64_w32_top_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dataflow_in_loop_bat_U0_group">
+         <obj_property name="label">dataflow_in_loop_bat_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/load32_U0_activity">
+            <obj_property name="ElementShortName">load32_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load32_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/compute_U0_activity">
+            <obj_property name="ElementShortName">compute_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">compute_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/store_U0_activity">
+            <obj_property name="ElementShortName">store_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">store_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="dataflow_in_loop_bat_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in1_word_V_group">
+               <obj_property name="label">in1_word_V(FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/in1_word_V_dout">
+                  <obj_property name="ElementShortName">in1_word_V_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">in1_word_V_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/in1_word_V_empty_n">
+                  <obj_property name="ElementShortName">in1_word_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in1_word_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/in1_word_V_read">
+                  <obj_property name="ElementShortName">in1_word_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in1_word_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dataflow_in_loop_bat_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dataflow_in_loop_bat_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_word_V_group">
+               <obj_property name="label">out_word_V(FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/out_word_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/out_word_V_full_n">
+                  <obj_property name="ElementShortName">out_word_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_word_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/out_word_V_write">
+                  <obj_property name="ElementShortName">out_word_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_word_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load32_U0_group">
+            <obj_property name="label">load32_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="load32_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="in1_word_V_group">
+                  <obj_property name="label">in1_word_V(FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/in1_word_V_blk_n">
+                     <obj_property name="ElementShortName">in1_word_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">in1_word_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/in1_word_V_dout">
+                     <obj_property name="ElementShortName">in1_word_V_dout[63:0]</obj_property>
+                     <obj_property name="ObjectShortName">in1_word_V_dout[63:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/in1_word_V_empty_n">
+                     <obj_property name="ElementShortName">in1_word_V_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">in1_word_V_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/in1_word_V_read">
+                     <obj_property name="ElementShortName">in1_word_V_read</obj_property>
+                     <obj_property name="ObjectShortName">in1_word_V_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load32_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="load32_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="p_inbuff_0_V_group">
+                  <obj_property name="label">p_inbuff_0_V(p_inbuff_0_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_0_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_0_V_d0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_0_V_ce0">
+                     <obj_property name="ElementShortName">p_inbuff_0_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_inbuff_0_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_0_V_we0">
+                     <obj_property name="ElementShortName">p_inbuff_0_V_we0</obj_property>
+                     <obj_property name="ObjectShortName">p_inbuff_0_V_we0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                     <obj_property name="label">ap_done(i_write)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                     <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="p_inbuff_1_V_group">
+                  <obj_property name="label">p_inbuff_1_V(p_inbuff_1_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_1_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_1_V_d0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_1_V_ce0">
+                     <obj_property name="ElementShortName">p_inbuff_1_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_inbuff_1_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/p_inbuff_1_V_we0">
+                     <obj_property name="ElementShortName">p_inbuff_1_V_we0</obj_property>
+                     <obj_property name="ObjectShortName">p_inbuff_1_V_we0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                     <obj_property name="label">ap_done(i_write)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                     <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_vec_out_group">
+                  <obj_property name="label">mac_vec_out(conf_info_mac_vec_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_vec_out_blk_n">
+                     <obj_property name="ElementShortName">mac_vec_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_vec_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_vec_out_full_n">
+                     <obj_property name="ElementShortName">mac_vec_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_vec_out_write">
+                     <obj_property name="ElementShortName">mac_vec_out_write</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_len_out_group">
+                  <obj_property name="label">mac_len_out(conf_info_mac_len_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_len_out_blk_n">
+                     <obj_property name="ElementShortName">mac_len_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_len_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_len_out_full_n">
+                     <obj_property name="ElementShortName">mac_len_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/mac_len_out_write">
+                     <obj_property name="ElementShortName">mac_len_out_write</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="chunk_out_group">
+                  <obj_property name="label">chunk_out(b_0_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/chunk_out_blk_n">
+                     <obj_property name="ElementShortName">chunk_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">chunk_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/chunk_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/chunk_out_full_n">
+                     <obj_property name="ElementShortName">chunk_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">chunk_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/chunk_out_write">
+                     <obj_property name="ElementShortName">chunk_out_write</obj_property>
+                     <obj_property name="ObjectShortName">chunk_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="conf_info_mac_n_out_group">
+                  <obj_property name="label">conf_info_mac_n_out(conf_info_mac_n_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/conf_info_mac_n_out_blk_n">
+                     <obj_property name="ElementShortName">conf_info_mac_n_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">conf_info_mac_n_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/conf_info_mac_n_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/conf_info_mac_n_out_full_n">
+                     <obj_property name="ElementShortName">conf_info_mac_n_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">conf_info_mac_n_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/load32_U0/conf_info_mac_n_out_write">
+                     <obj_property name="ElementShortName">conf_info_mac_n_out_write</obj_property>
+                     <obj_property name="ObjectShortName">conf_info_mac_n_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="compute_U0_group">
+            <obj_property name="label">compute_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="compute_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="p_inbuff_0_V_group">
+                  <obj_property name="label">p_inbuff_0_V(p_inbuff_0_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_inbuff_0_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_inbuff_0_V_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_inbuff_0_V_ce0">
+                     <obj_property name="ElementShortName">p_inbuff_0_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_inbuff_0_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="p_inbuff_1_V_group">
+                  <obj_property name="label">p_inbuff_1_V(p_inbuff_1_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_inbuff_1_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_inbuff_1_V_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_inbuff_1_V_ce0">
+                     <obj_property name="ElementShortName">p_inbuff_1_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_inbuff_1_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_vec_group">
+                  <obj_property name="label">mac_vec(conf_info_mac_vec_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_blk_n">
+                     <obj_property name="ElementShortName">mac_vec_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_dout">
+                     <obj_property name="ElementShortName">mac_vec_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_empty_n">
+                     <obj_property name="ElementShortName">mac_vec_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_read">
+                     <obj_property name="ElementShortName">mac_vec_read</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_len_group">
+                  <obj_property name="label">mac_len(conf_info_mac_len_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_blk_n">
+                     <obj_property name="ElementShortName">mac_len_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_dout">
+                     <obj_property name="ElementShortName">mac_len_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_empty_n">
+                     <obj_property name="ElementShortName">mac_len_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_read">
+                     <obj_property name="ElementShortName">mac_len_read</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="compute_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="compute_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="p_outbuff_0_V_group">
+                  <obj_property name="label">p_outbuff_0_V(p_outbuff_0_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_0_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_0_V_d0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_0_V_ce0">
+                     <obj_property name="ElementShortName">p_outbuff_0_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_outbuff_0_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_0_V_we0">
+                     <obj_property name="ElementShortName">p_outbuff_0_V_we0</obj_property>
+                     <obj_property name="ObjectShortName">p_outbuff_0_V_we0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                     <obj_property name="label">ap_done(i_write)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                     <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="p_outbuff_1_V_group">
+                  <obj_property name="label">p_outbuff_1_V(p_outbuff_1_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_1_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_1_V_d0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_1_V_ce0">
+                     <obj_property name="ElementShortName">p_outbuff_1_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_outbuff_1_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/p_outbuff_1_V_we0">
+                     <obj_property name="ElementShortName">p_outbuff_1_V_we0</obj_property>
+                     <obj_property name="ObjectShortName">p_outbuff_1_V_we0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                     <obj_property name="label">ap_done(i_write)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                     <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_vec_out_group">
+                  <obj_property name="label">mac_vec_out(conf_info_mac_vec_c1_1_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_out_blk_n">
+                     <obj_property name="ElementShortName">mac_vec_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_out_full_n">
+                     <obj_property name="ElementShortName">mac_vec_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_vec_out_write">
+                     <obj_property name="ElementShortName">mac_vec_out_write</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_len_out_group">
+                  <obj_property name="label">mac_len_out(conf_info_mac_len_c2_1_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_out_blk_n">
+                     <obj_property name="ElementShortName">mac_len_out_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_out_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_out_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_out_full_n">
+                     <obj_property name="ElementShortName">mac_len_out_full_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_out_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/compute_U0/mac_len_out_write">
+                     <obj_property name="ElementShortName">mac_len_out_write</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_out_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="store_U0_group">
+            <obj_property name="label">store_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="store_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="p_outbuff_0_V_group">
+                  <obj_property name="label">p_outbuff_0_V(p_outbuff_0_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/p_outbuff_0_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/p_outbuff_0_V_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/p_outbuff_0_V_ce0">
+                     <obj_property name="ElementShortName">p_outbuff_0_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_outbuff_0_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="p_outbuff_1_V_group">
+                  <obj_property name="label">p_outbuff_1_V(p_outbuff_1_V_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/p_outbuff_1_V_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/p_outbuff_1_V_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/p_outbuff_1_V_ce0">
+                     <obj_property name="ElementShortName">p_outbuff_1_V_ce0</obj_property>
+                     <obj_property name="ObjectShortName">p_outbuff_1_V_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_n_group">
+                  <obj_property name="label">mac_n(conf_info_mac_n_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_n_blk_n">
+                     <obj_property name="ElementShortName">mac_n_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_n_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_n_dout">
+                     <obj_property name="ElementShortName">mac_n_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">mac_n_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_n_empty_n">
+                     <obj_property name="ElementShortName">mac_n_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_n_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_n_read">
+                     <obj_property name="ElementShortName">mac_n_read</obj_property>
+                     <obj_property name="ObjectShortName">mac_n_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_vec_group">
+                  <obj_property name="label">mac_vec(conf_info_mac_vec_c1_1_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_vec_blk_n">
+                     <obj_property name="ElementShortName">mac_vec_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_vec_dout">
+                     <obj_property name="ElementShortName">mac_vec_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_vec_empty_n">
+                     <obj_property name="ElementShortName">mac_vec_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_vec_read">
+                     <obj_property name="ElementShortName">mac_vec_read</obj_property>
+                     <obj_property name="ObjectShortName">mac_vec_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="mac_len_group">
+                  <obj_property name="label">mac_len(conf_info_mac_len_c2_1_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_len_blk_n">
+                     <obj_property name="ElementShortName">mac_len_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_len_dout">
+                     <obj_property name="ElementShortName">mac_len_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_len_empty_n">
+                     <obj_property name="ElementShortName">mac_len_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/mac_len_read">
+                     <obj_property name="ElementShortName">mac_len_read</obj_property>
+                     <obj_property name="ObjectShortName">mac_len_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="chunk_group">
+                  <obj_property name="label">chunk(b_0_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/chunk_blk_n">
+                     <obj_property name="ElementShortName">chunk_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">chunk_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/chunk_dout">
+                     <obj_property name="ElementShortName">chunk_dout[31:0]</obj_property>
+                     <obj_property name="ObjectShortName">chunk_dout[31:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/chunk_empty_n">
+                     <obj_property name="ElementShortName">chunk_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">chunk_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/chunk_read">
+                     <obj_property name="ElementShortName">chunk_read</obj_property>
+                     <obj_property name="ObjectShortName">chunk_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="store_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="store_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="out_word_V_group">
+                  <obj_property name="label">out_word_V(FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/out_word_V_blk_n">
+                     <obj_property name="ElementShortName">out_word_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">out_word_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/out_word_V_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/out_word_V_full_n">
+                     <obj_property name="ElementShortName">out_word_V_full_n</obj_property>
+                     <obj_property name="ObjectShortName">out_word_V_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_top_top/AESL_inst_mac_vivado_dma64_w32_top/dataflow_in_loop_bat_U0/store_U0/out_word_V_write">
+                     <obj_property name="ElementShortName">out_word_V_write</obj_property>
+                     <obj_property name="ObjectShortName">out_word_V_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

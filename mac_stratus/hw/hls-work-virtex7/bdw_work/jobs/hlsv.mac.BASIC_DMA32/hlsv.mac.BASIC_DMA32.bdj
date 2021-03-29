@@ -1,0 +1,12 @@
+31881
+31888
+mojave.cs.illinois.edu
+bdw_work/trace/hlsv.mac.BASIC_DMA32.trace
+2
+0
+0
+0
+1616967481
+1616967484
+make --no-print-directory -f Makefile CWBExec=1 hls_mac_BASIC_DMA32
+

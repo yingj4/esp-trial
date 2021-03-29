@@ -1,0 +1,32 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++hubSetOption+libdef=bdw_work/sims/BASIC_DMA64_V/incisive/sim_BASIC_DMA64_V.so
++hubSetOption+bdr=bdw_work/sims/BASIC_DMA64_V/sim.bdr
++libext+.v
++access+r
++define+BDW_NCSC
++loadpli1=/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
++define+ioConfig_IOCFG_DMA64
++define+BDW_RTL_mac_BASIC_DMA64
+-amsdlibdir
+bdw_work/sims/BASIC_DMA64_V/xcelium.d/AMSD
+-UNBUFFERED
+-MESSAGES
++EMGRLOG
+bdw_work/sims/BASIC_DMA64_V/irun.log
+-XLSTIME
+1616967672
+-XLKEEP
+-XLMODE
+bdw_work/sims/BASIC_DMA64_V/xcelium.d/run.lnx8664.19.09.d
+-RUNMODE
+-CDSLIB
+bdw_work/sims/BASIC_DMA64_V/xcelium.d/run.lnx8664.19.09.d/cds.lib
+-HDLVAR
+bdw_work/sims/BASIC_DMA64_V/xcelium.d/run.lnx8664.19.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	19.09-s009"

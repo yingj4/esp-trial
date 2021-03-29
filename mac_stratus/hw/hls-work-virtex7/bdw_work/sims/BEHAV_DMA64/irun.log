@@ -1,0 +1,65 @@
+xrun(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.09-s009: Started on Mar 28, 2021 at 16:40:47 CDT
+irun
+	-l bdw_work/sims/BEHAV_DMA64/irun.log
+	-nclibdirpath bdw_work/sims/BEHAV_DMA64
+	-sysc
+	-incdir /software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib
+	-incdir bdw_work/wrappers
+	+libext+.v
+	+access+r
+	+define+BDW_NCSC
+	-work BEHAV_DMA64
+	-reflib worklib
+	-reflib bdw_work/INCA_libs/bdw_worklib
+	-messages
+	-64bit
+	-NOTIMINGCHECKS
+	-UNBUFFERED
+	-CFLAGS -Wl,-rpath,/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit
+	bdw_work/modules/mac/IOCFG_DMA64/incisive/mac.o
+	bdw_work/modules/tb/TESTBENCH_DMA64/incisive/system.o
+	bdw_work/modules/tb/TESTBENCH_DMA64/incisive/sc_main.o
+	bdw_work/libesc/incisive/libesc.a
+	bdw_work/libs/memlib/incisive/objs/libmemlib.a
+	-top sc_main
+	/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhubexec.so
+	/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhub.so
+	/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libbdw_st.so
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+xrun: *W,REFLIB: -reflib directory bdw_work/sims/BEHAV_DMA64/xcelium.d/worklib does not exist. It will be created.
+$CDSROOT = /software/cadence-Mar2020/XCELIUM1909
+$TESTDIR = /scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7
+
+TOOL:	xmsc(64)	19.09-s009
+building library run.so
+
+	Elaborating the design hierarchy:
+	Top level design units:
+		sc_main
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Simulation timescale:  1ps
+
+	SystemC Design Summary:
+		                   Instances
+		sc_modules:               27
+		sc_ports:                130
+		sc_signals:               88
+		sc_methods:               14
+		sc_threads:                1
+		sc_cthreads:               6
+		sc_events:                 2
+	Writing initial simulation snapshot: BEHAV_DMA64.sc_main:sc_module
+Loading snapshot BEHAV_DMA64.sc_main:sc_module .................... Done
+xcelium> run
+SystemC: simulation stopped by user.
+
+
+SC simulation stopped by user.
+
+SystemC : SystemC stopped at time 32930
+xcelium> exit
+TOOL:	xrun(64)	19.09-s009: Exiting on Mar 28, 2021 at 16:40:49 CDT  (total: 00:00:02)

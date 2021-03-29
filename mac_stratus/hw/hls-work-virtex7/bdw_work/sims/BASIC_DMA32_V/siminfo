@@ -1,0 +1,11 @@
+bdw_work/sims/top_BASIC_DMA32_V.v
+bdw_work/wrappers/mac_cosim.v
+bdw_work/modules/mac/BASIC_DMA32/mac_rtl.v
+/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_in_dma32.v
+/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_out_dma32.v
+/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/*v
+/scratch/opt/Vivado/2019.2/data/verilog/src/glbl.v
+/scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB*.v
+/scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB*.v
+/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v
+-y bdw_work/libs/memlib/v_rtl

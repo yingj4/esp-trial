@@ -1,0 +1,12 @@
+21317
+21335
+mojave.cs.illinois.edu
+bdw_work/trace/sim.BASIC_DMA32_V.s.trace
+2
+0
+0
+0
+1616967612
+1616967616
+hub_ncsim -work BASIC_DMA32_V -reflib worklib -reflib bdw_work/INCA_libs/bdw_worklib -messages -64bit -CFLAGS -Wl,-rpath,/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit bdw_work/modules/mac/BASIC_DMA32/incisive/mac.o bdw_work/modules/tb/TESTBENCH_DMA32/incisive/system.o bdw_work/modules/tb/TESTBENCH_DMA32/incisive/sc_main.o bdw_work/libesc/incisive/libesc.a bdw_work/libs/memlib/incisive/objs/libmemlib.a +loadpli1=/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap -file bdw_work/sims/BASIC_DMA32_V/siminfo -NOTIMINGCHECKS -UNBUFFERED +hubSetOption+libdef=bdw_work/sims/BASIC_DMA32_V/incisive/sim_BASIC_DMA32_V.so +hubSetOption+bdr=bdw_work/sims/BASIC_DMA32_V/sim.bdr +define+ioConfig_IOCFG_DMA32 +define+BDW_RTL_mac_BASIC_DMA32 -top sc_main -top glbl
+

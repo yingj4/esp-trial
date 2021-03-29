@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP."/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO mac_vivado_dma32_w32_dataflow_in_loop_bkb_memcore using a separate memory for each block"/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO mac_vivado_dma32_w32_dataflow_in_loop_cud_memcore using a single memory for all blocks"/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO mac_vivado_dma32_w32_dataflow_in_loop_bkb_memcore using a separate memory for each block"/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO mac_vivado_dma32_w32_dataflow_in_loop_cud_memcore using a single memory for all blocks"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1352" tag="" content="Creating and opening project &apos;/scratch/projects/yingj4/esp/accelerators/vivado_hls/mac_vivado/hw/hls-work-virtex7/mac_vivado_dma64_w32&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding design file &apos;../src/espacc.cc&apos; to the project"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1358" tag="" content="Adding test bench file &apos;../tb/tb.cc&apos; to the project"/>
+</Messages>

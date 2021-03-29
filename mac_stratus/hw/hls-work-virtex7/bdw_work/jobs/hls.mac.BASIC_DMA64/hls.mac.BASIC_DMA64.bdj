@@ -1,0 +1,12 @@
+32575
+32578
+mojave.cs.illinois.edu
+bdw_work/trace/hls.mac.BASIC_DMA64.trace
+2
+0
+0
+0
+1616967485
+1616967486
+make --no-print-directory -f Makefile bdw_work/modules/mac/BASIC_DMA64/mac_rtl.cpp BDW_DEP_CYNTH_CONFIG=BASIC_DMA64 BDW_MODULE=mac BDW_HLS_CONFIG=BASIC_DMA64
+

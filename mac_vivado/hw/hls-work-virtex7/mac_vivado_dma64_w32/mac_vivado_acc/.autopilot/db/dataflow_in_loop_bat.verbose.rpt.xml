@@ -1,0 +1,168 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'dataflow_in_loop_bat'" level="0">
+<item name = "Date">Sun Mar 28 21:18:48 2021
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">mac_vivado_dma64_w32</item>
+<item name = "Solution">mac_vivado_acc</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7v2000t-flg1925-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.508 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="compute_U0">compute, ?, ?, ?, ?, ?, ?, none</column>
+<column name="store_U0">store, ?, ?, ?, ?, ?, ?, none</column>
+<column name="load32_U0">load32, ?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 30, -</column>
+<column name="FIFO">0, -, 30, 264, -</column>
+<column name="Instance">-, 21, 788, 1533, -</column>
+<column name="Memory">18, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 36, -</column>
+<column name="Register">-, -, 4, -, -</column>
+<specialColumn name="Available SLR">646, 540, 610800, 305400, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">2, 3, ~0, ~0, 100</specialColumn>
+<specialColumn name="Available">2584, 2160, 2443200, 1221600, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="compute_U0">compute, 0, 6, 399, 732, 0</column>
+<column name="load32_U0">load32, 0, 6, 99, 311, 0</column>
+<column name="store_U0">store, 0, 9, 290, 490, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="p_inbuff_0_V_U">dataflow_in_loop_bkb, 8, 0, 0, 0, 3200, 32, 2, 204800</column>
+<column name="p_inbuff_1_V_U">dataflow_in_loop_bkb, 8, 0, 0, 0, 3200, 32, 2, 204800</column>
+<column name="p_outbuff_0_V_U">dataflow_in_loop_dEe, 1, 0, 0, 0, 50, 32, 2, 3200</column>
+<column name="p_outbuff_1_V_U">dataflow_in_loop_dEe, 1, 0, 0, 0, 50, 32, 2, 3200</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="b_0_c_U">0, 5, 0, -, 3, 32, 96</column>
+<column name="conf_info_mac_len_c2_1_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="conf_info_mac_len_c_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="conf_info_mac_n_c_U">0, 5, 0, -, 3, 32, 96</column>
+<column name="conf_info_mac_vec_c1_1_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="conf_info_mac_vec_c_U">0, 5, 0, -, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_channel_done_p_inbuff_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_p_inbuff_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_p_outbuff_0_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_p_outbuff_1_V">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_done">and, 0, 0, 2, 1, 1</column>
+<column name="compute_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="compute_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="load32_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="store_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_p_inbuff_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_p_inbuff_1_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_p_outbuff_0_V">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_p_outbuff_1_V">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_channel_write_p_inbuff_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_p_inbuff_1_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_p_outbuff_0_V">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_p_outbuff_1_V">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_channel_write_p_inbuff_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_p_inbuff_1_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_p_outbuff_0_V">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_p_outbuff_1_V">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dataflow_in_loop_bat, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dataflow_in_loop_bat, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dataflow_in_loop_bat, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dataflow_in_loop_bat, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dataflow_in_loop_bat, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dataflow_in_loop_bat, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, dataflow_in_loop_bat, return value</column>
+<column name="in1_word_V_dout">in, 64, ap_fifo, in1_word_V, pointer</column>
+<column name="in1_word_V_empty_n">in, 1, ap_fifo, in1_word_V, pointer</column>
+<column name="in1_word_V_read">out, 1, ap_fifo, in1_word_V, pointer</column>
+<column name="conf_info_mac_vec">in, 32, ap_none, conf_info_mac_vec, scalar</column>
+<column name="conf_info_mac_vec_ap_vld">in, 1, ap_none, conf_info_mac_vec, scalar</column>
+<column name="conf_info_mac_len">in, 32, ap_none, conf_info_mac_len, scalar</column>
+<column name="conf_info_mac_len_ap_vld">in, 1, ap_none, conf_info_mac_len, scalar</column>
+<column name="load_ctrl">out, 96, ap_hs, load_ctrl, pointer</column>
+<column name="load_ctrl_ap_vld">out, 1, ap_hs, load_ctrl, pointer</column>
+<column name="load_ctrl_ap_ack">in, 1, ap_hs, load_ctrl, pointer</column>
+<column name="b_0">in, 32, ap_none, b_0, scalar</column>
+<column name="b_0_ap_vld">in, 1, ap_none, b_0, scalar</column>
+<column name="out_word_V_din">out, 64, ap_fifo, out_word_V, pointer</column>
+<column name="out_word_V_full_n">in, 1, ap_fifo, out_word_V, pointer</column>
+<column name="out_word_V_write">out, 1, ap_fifo, out_word_V, pointer</column>
+<column name="conf_info_mac_n">in, 32, ap_none, conf_info_mac_n, scalar</column>
+<column name="conf_info_mac_n_ap_vld">in, 1, ap_none, conf_info_mac_n, scalar</column>
+<column name="store_ctrl">out, 96, ap_hs, store_ctrl, pointer</column>
+<column name="store_ctrl_ap_vld">out, 1, ap_hs, store_ctrl, pointer</column>
+<column name="store_ctrl_ap_ack">in, 1, ap_hs, store_ctrl, pointer</column>
+</table>
+</item>
+</section>
+</profile>

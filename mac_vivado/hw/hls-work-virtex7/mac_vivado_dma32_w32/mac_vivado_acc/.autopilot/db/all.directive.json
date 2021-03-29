@@ -1,0 +1,321 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_hs",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "depth",
+                "value": "10"
+              },
+              {
+                "name": "port",
+                "value": "load_ctrl",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_hs",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "depth",
+                "value": "10"
+              },
+              {
+                "name": "port",
+                "value": "store_ctrl",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "depth",
+                "value": "100000"
+              },
+              {
+                "name": "port",
+                "value": "in1",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "depth",
+                "value": "100000"
+              },
+              {
+                "name": "port",
+                "value": "out",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DATA_PACK",
+            "option": [{
+                "name": "variable",
+                "value": "load_ctrl",
+                "positionalBoolean": "4"
+              }]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DATA_PACK",
+            "option": [{
+                "name": "variable",
+                "value": "store_ctrl",
+                "positionalBoolean": "4"
+              }]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DATA_PACK",
+            "option": [{
+                "name": "variable",
+                "value": "in1",
+                "positionalBoolean": "4"
+              }]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "DATA_PACK",
+            "option": [{
+                "name": "variable",
+                "value": "out",
+                "positionalBoolean": "4"
+              }]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "go",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "256"
+              },
+              {
+                "name": "max",
+                "value": "256"
+              },
+              {
+                "name": "avg",
+                "value": "256"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "go",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "store",
+          "label": "store_label1",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "1"
+              }]
+          }
+        },
+        {
+          "functionName": "load",
+          "label": "load_label0",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "1"
+              }]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "_inbuff",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "cyclic",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "factor",
+                "value": "1"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "_outbuff",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "cyclic",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "factor",
+                "value": "1"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "conf_info_mac_n",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "conf_info_mac_vec",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "top",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_none",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "conf_info_mac_len",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

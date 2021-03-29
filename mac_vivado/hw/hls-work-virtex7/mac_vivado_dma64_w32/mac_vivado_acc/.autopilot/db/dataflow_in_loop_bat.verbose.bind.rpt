@@ -1,0 +1,1035 @@
+
+
+================================================================
+== Vivado HLS Report for 'dataflow_in_loop_bat'
+================================================================
+* Date:           Sun Mar 28 21:18:48 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        mac_vivado_dma64_w32
+* Solution:       mac_vivado_acc
+* Product family: virtex7
+* Target device:  xc7v2000t-flg1925-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.508 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------+---------+---------+---------+----------+----------+-----+-----+---------+
+        |                    |         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |      Instance      |  Module |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +--------------------+---------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_compute_fu_130  |compute  |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+        |grp_store_fu_142    |store    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+        |grp_load32_fu_156   |load32   |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+        +--------------------+---------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.74>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%conf_info_mac_n_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %conf_info_mac_n)" [../src/espacc.cc:142]   --->   Operation 7 'read' 'conf_info_mac_n_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%b_0_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %b_0)" [../src/espacc.cc:142]   --->   Operation 8 'read' 'b_0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%conf_info_mac_len_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %conf_info_mac_len)" [../src/espacc.cc:142]   --->   Operation 9 'read' 'conf_info_mac_len_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%conf_info_mac_vec_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %conf_info_mac_vec)" [../src/espacc.cc:142]   --->   Operation 10 'read' 'conf_info_mac_vec_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%conf_info_mac_len_c2_1 = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 11 'alloca' 'conf_info_mac_len_c2_1' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%conf_info_mac_vec_c1_1 = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 12 'alloca' 'conf_info_mac_vec_c1_1' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%conf_info_mac_n_c = alloca i32, align 4"   --->   Operation 13 'alloca' 'conf_info_mac_n_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%b_0_c = alloca i32, align 4"   --->   Operation 14 'alloca' 'b_0_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%conf_info_mac_len_c = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 15 'alloca' 'conf_info_mac_len_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%conf_info_mac_vec_c = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 16 'alloca' 'conf_info_mac_vec_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (2.26ns)   --->   "%p_inbuff_0_V = alloca [3200 x i32], align 4" [../src/espacc.cc:133]   --->   Operation 17 'alloca' 'p_inbuff_0_V' <Predicate = true> <Delay = 2.26>
+ST_1 : Operation 18 [1/1] (2.26ns)   --->   "%p_inbuff_1_V = alloca [3200 x i32], align 4" [../src/espacc.cc:133]   --->   Operation 18 'alloca' 'p_inbuff_1_V' <Predicate = true> <Delay = 2.26>
+ST_1 : Operation 19 [1/1] (2.26ns)   --->   "%p_outbuff_0_V = alloca [50 x i32], align 4" [../src/espacc.cc:134]   --->   Operation 19 'alloca' 'p_outbuff_0_V' <Predicate = true> <Delay = 2.26>
+ST_1 : Operation 20 [1/1] (2.26ns)   --->   "%p_outbuff_1_V = alloca [50 x i32], align 4" [../src/espacc.cc:134]   --->   Operation 20 'alloca' 'p_outbuff_1_V' <Predicate = true> <Delay = 2.26>
+ST_1 : Operation 21 [2/2] (5.48ns)   --->   "call fastcc void @load32([3200 x i32]* %p_inbuff_0_V, [3200 x i32]* %p_inbuff_1_V, i64* %in1_word_V, i32 %conf_info_mac_vec_re, i32 %conf_info_mac_len_re, i96* %load_ctrl, i32 %b_0_read, i32 %conf_info_mac_n_read, i32* %conf_info_mac_vec_c, i32* %conf_info_mac_len_c, i32* %b_0_c, i32* %conf_info_mac_n_c)" [../src/espacc.cc:142]   --->   Operation 21 'call' <Predicate = true> <Delay = 5.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @load32([3200 x i32]* %p_inbuff_0_V, [3200 x i32]* %p_inbuff_1_V, i64* %in1_word_V, i32 %conf_info_mac_vec_re, i32 %conf_info_mac_len_re, i96* %load_ctrl, i32 %b_0_read, i32 %conf_info_mac_n_read, i32* %conf_info_mac_vec_c, i32* %conf_info_mac_len_c, i32* %b_0_c, i32* %conf_info_mac_n_c)" [../src/espacc.cc:142]   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @compute([3200 x i32]* nocapture %p_inbuff_0_V, [3200 x i32]* nocapture %p_inbuff_1_V, i32* nocapture %conf_info_mac_vec_c, i32* nocapture %conf_info_mac_len_c, [50 x i32]* nocapture %p_outbuff_0_V, [50 x i32]* nocapture %p_outbuff_1_V, i32* %conf_info_mac_vec_c1_1, i32* %conf_info_mac_len_c2_1)" [../src/espacc.cc:142]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @compute([3200 x i32]* nocapture %p_inbuff_0_V, [3200 x i32]* nocapture %p_inbuff_1_V, i32* nocapture %conf_info_mac_vec_c, i32* nocapture %conf_info_mac_len_c, [50 x i32]* nocapture %p_outbuff_0_V, [50 x i32]* nocapture %p_outbuff_1_V, i32* %conf_info_mac_vec_c1_1, i32* %conf_info_mac_len_c2_1)" [../src/espacc.cc:142]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @store([50 x i32]* %p_outbuff_0_V, [50 x i32]* %p_outbuff_1_V, i64* %out_word_V, i32* nocapture %conf_info_mac_n_c, i32* nocapture %conf_info_mac_vec_c1_1, i32* nocapture %conf_info_mac_len_c2_1, i96* %store_ctrl, i32* nocapture %b_0_c)" [../src/espacc.cc:142]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %out_word_V, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 100000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %in1_word_V, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 100000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [../src/espacc.cc:133]   --->   Operation 28 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @conf_info_mac_vec_c_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_vec_c, i32* %conf_info_mac_vec_c)" [../src/espacc.cc:142]   --->   Operation 29 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_vec_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @conf_info_mac_len_c_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_len_c, i32* %conf_info_mac_len_c)" [../src/espacc.cc:142]   --->   Operation 31 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_len_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([6 x i8]* @b_OC_0_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %b_0_c, i32* %b_0_c)"   --->   Operation 33 'specchannel' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %b_0_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @conf_info_mac_n_c_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %conf_info_mac_n_c, i32* %conf_info_mac_n_c)"   --->   Operation 35 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_n_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecChannel([21 x i8]* @conf_info_mac_vec_c1, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_vec_c1_1, i32* %conf_info_mac_vec_c1_1)" [../src/espacc.cc:142]   --->   Operation 37 'specchannel' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_vec_c1_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecChannel([21 x i8]* @conf_info_mac_len_c2, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_len_c2_1, i32* %conf_info_mac_len_c2_1)" [../src/espacc.cc:142]   --->   Operation 39 'specchannel' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_len_c2_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 40 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/2] (0.00ns)   --->   "call fastcc void @store([50 x i32]* %p_outbuff_0_V, [50 x i32]* %p_outbuff_1_V, i64* %out_word_V, i32* nocapture %conf_info_mac_n_c, i32* nocapture %conf_info_mac_vec_c1_1, i32* nocapture %conf_info_mac_len_c2_1, i96* %store_ctrl, i32* nocapture %b_0_c)" [../src/espacc.cc:142]   --->   Operation 41 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 42 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ in1_word_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ conf_info_mac_vec]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ conf_info_mac_len]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ load_ctrl]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_hs:ce=0
+Port [ b_0]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ out_word_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ conf_info_mac_n]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ store_ctrl]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_hs:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+conf_info_mac_n_read       (read                ) [ 0010000]
+b_0_read                   (read                ) [ 0010000]
+conf_info_mac_len_re       (read                ) [ 0010000]
+conf_info_mac_vec_re       (read                ) [ 0010000]
+conf_info_mac_len_c2_1     (alloca              ) [ 0011111]
+conf_info_mac_vec_c1_1     (alloca              ) [ 0011111]
+conf_info_mac_n_c          (alloca              ) [ 0111111]
+b_0_c                      (alloca              ) [ 0111111]
+conf_info_mac_len_c        (alloca              ) [ 0111111]
+conf_info_mac_vec_c        (alloca              ) [ 0111111]
+p_inbuff_0_V               (alloca              ) [ 0011100]
+p_inbuff_1_V               (alloca              ) [ 0011100]
+p_outbuff_0_V              (alloca              ) [ 0011111]
+p_outbuff_1_V              (alloca              ) [ 0011111]
+call_ln142                 (call                ) [ 0000000]
+call_ln142                 (call                ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+specdataflowpipeline_ln133 (specdataflowpipeline) [ 0000000]
+empty                      (specchannel         ) [ 0000000]
+specinterface_ln142        (specinterface       ) [ 0000000]
+empty_11                   (specchannel         ) [ 0000000]
+specinterface_ln142        (specinterface       ) [ 0000000]
+empty_12                   (specchannel         ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+empty_13                   (specchannel         ) [ 0000000]
+specinterface_ln0          (specinterface       ) [ 0000000]
+empty_14                   (specchannel         ) [ 0000000]
+specinterface_ln142        (specinterface       ) [ 0000000]
+empty_15                   (specchannel         ) [ 0000000]
+specinterface_ln142        (specinterface       ) [ 0000000]
+call_ln142                 (call                ) [ 0000000]
+ret_ln0                    (ret                 ) [ 0000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="in1_word_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in1_word_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="conf_info_mac_vec">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_vec"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="conf_info_mac_len">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_len"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="load_ctrl">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="load_ctrl"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="b_0">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="b_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="out_word_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_word_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="conf_info_mac_n">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_n"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="store_ctrl">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="store_ctrl"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="load32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="compute"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="store"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_vec_c_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_len_c_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="b_OC_0_c_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_n_c_st"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_vec_c1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conf_info_mac_len_c2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1004" name="conf_info_mac_len_c2_1_fu_66">
+<pin_list>
+<pin id="67" dir="0" index="0" bw="1" slack="0"/>
+<pin id="68" dir="1" index="1" bw="32" slack="2"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="conf_info_mac_len_c2_1/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="conf_info_mac_vec_c1_1_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="1" slack="0"/>
+<pin id="72" dir="1" index="1" bw="32" slack="2"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="conf_info_mac_vec_c1_1/1 "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="conf_info_mac_n_c_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="1" slack="0"/>
+<pin id="76" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="conf_info_mac_n_c/1 "/>
+</bind>
+</comp>
+
+<comp id="78" class="1004" name="b_0_c_fu_78">
+<pin_list>
+<pin id="79" dir="0" index="0" bw="1" slack="0"/>
+<pin id="80" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="b_0_c/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="conf_info_mac_len_c_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="1" slack="0"/>
+<pin id="84" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="conf_info_mac_len_c/1 "/>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="conf_info_mac_vec_c_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="1" slack="0"/>
+<pin id="88" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="conf_info_mac_vec_c/1 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="p_inbuff_0_V_alloca_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="1" slack="0"/>
+<pin id="92" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_inbuff_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="p_inbuff_1_V_alloca_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="1" slack="0"/>
+<pin id="96" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_inbuff_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="p_outbuff_0_V_alloca_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="1" slack="0"/>
+<pin id="100" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_outbuff_0_V/1 "/>
+</bind>
+</comp>
+
+<comp id="102" class="1004" name="p_outbuff_1_V_alloca_fu_102">
+<pin_list>
+<pin id="103" dir="0" index="0" bw="1" slack="0"/>
+<pin id="104" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_outbuff_1_V/1 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="conf_info_mac_n_read_read_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="32" slack="0"/>
+<pin id="108" dir="0" index="1" bw="32" slack="0"/>
+<pin id="109" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="conf_info_mac_n_read/1 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="b_0_read_read_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="32" slack="0"/>
+<pin id="114" dir="0" index="1" bw="32" slack="0"/>
+<pin id="115" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="b_0_read/1 "/>
+</bind>
+</comp>
+
+<comp id="118" class="1004" name="conf_info_mac_len_re_read_fu_118">
+<pin_list>
+<pin id="119" dir="0" index="0" bw="32" slack="0"/>
+<pin id="120" dir="0" index="1" bw="32" slack="0"/>
+<pin id="121" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="conf_info_mac_len_re/1 "/>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="conf_info_mac_vec_re_read_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="32" slack="0"/>
+<pin id="126" dir="0" index="1" bw="32" slack="0"/>
+<pin id="127" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="conf_info_mac_vec_re/1 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1004" name="grp_compute_fu_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="0" slack="0"/>
+<pin id="132" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="133" dir="0" index="2" bw="32" slack="2147483647"/>
+<pin id="134" dir="0" index="3" bw="32" slack="2"/>
+<pin id="135" dir="0" index="4" bw="32" slack="2"/>
+<pin id="136" dir="0" index="5" bw="32" slack="2147483647"/>
+<pin id="137" dir="0" index="6" bw="32" slack="2147483647"/>
+<pin id="138" dir="0" index="7" bw="32" slack="2"/>
+<pin id="139" dir="0" index="8" bw="32" slack="2"/>
+<pin id="140" dir="1" index="9" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln142/3 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="grp_store_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="0" slack="0"/>
+<pin id="144" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="145" dir="0" index="2" bw="32" slack="2147483647"/>
+<pin id="146" dir="0" index="3" bw="64" slack="0"/>
+<pin id="147" dir="0" index="4" bw="32" slack="4"/>
+<pin id="148" dir="0" index="5" bw="32" slack="4"/>
+<pin id="149" dir="0" index="6" bw="32" slack="4"/>
+<pin id="150" dir="0" index="7" bw="96" slack="0"/>
+<pin id="151" dir="0" index="8" bw="32" slack="4"/>
+<pin id="152" dir="1" index="9" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln142/5 "/>
+</bind>
+</comp>
+
+<comp id="156" class="1004" name="grp_load32_fu_156">
+<pin_list>
+<pin id="157" dir="0" index="0" bw="0" slack="0"/>
+<pin id="158" dir="0" index="1" bw="32" slack="0"/>
+<pin id="159" dir="0" index="2" bw="32" slack="0"/>
+<pin id="160" dir="0" index="3" bw="64" slack="0"/>
+<pin id="161" dir="0" index="4" bw="32" slack="0"/>
+<pin id="162" dir="0" index="5" bw="32" slack="0"/>
+<pin id="163" dir="0" index="6" bw="96" slack="0"/>
+<pin id="164" dir="0" index="7" bw="32" slack="0"/>
+<pin id="165" dir="0" index="8" bw="32" slack="0"/>
+<pin id="166" dir="0" index="9" bw="32" slack="0"/>
+<pin id="167" dir="0" index="10" bw="32" slack="0"/>
+<pin id="168" dir="0" index="11" bw="32" slack="0"/>
+<pin id="169" dir="0" index="12" bw="32" slack="0"/>
+<pin id="170" dir="1" index="13" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln142/1 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1005" name="conf_info_mac_n_read_reg_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="32" slack="1"/>
+<pin id="182" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_n_read "/>
+</bind>
+</comp>
+
+<comp id="185" class="1005" name="b_0_read_reg_185">
+<pin_list>
+<pin id="186" dir="0" index="0" bw="32" slack="1"/>
+<pin id="187" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="b_0_read "/>
+</bind>
+</comp>
+
+<comp id="190" class="1005" name="conf_info_mac_len_re_reg_190">
+<pin_list>
+<pin id="191" dir="0" index="0" bw="32" slack="1"/>
+<pin id="192" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_len_re "/>
+</bind>
+</comp>
+
+<comp id="195" class="1005" name="conf_info_mac_vec_re_reg_195">
+<pin_list>
+<pin id="196" dir="0" index="0" bw="32" slack="1"/>
+<pin id="197" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_vec_re "/>
+</bind>
+</comp>
+
+<comp id="200" class="1005" name="conf_info_mac_len_c2_1_reg_200">
+<pin_list>
+<pin id="201" dir="0" index="0" bw="32" slack="2"/>
+<pin id="202" dir="1" index="1" bw="32" slack="2"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_len_c2_1 "/>
+</bind>
+</comp>
+
+<comp id="206" class="1005" name="conf_info_mac_vec_c1_1_reg_206">
+<pin_list>
+<pin id="207" dir="0" index="0" bw="32" slack="2"/>
+<pin id="208" dir="1" index="1" bw="32" slack="2"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_vec_c1_1 "/>
+</bind>
+</comp>
+
+<comp id="212" class="1005" name="conf_info_mac_n_c_reg_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="32" slack="0"/>
+<pin id="214" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_n_c "/>
+</bind>
+</comp>
+
+<comp id="218" class="1005" name="b_0_c_reg_218">
+<pin_list>
+<pin id="219" dir="0" index="0" bw="32" slack="0"/>
+<pin id="220" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="b_0_c "/>
+</bind>
+</comp>
+
+<comp id="224" class="1005" name="conf_info_mac_len_c_reg_224">
+<pin_list>
+<pin id="225" dir="0" index="0" bw="32" slack="0"/>
+<pin id="226" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_len_c "/>
+</bind>
+</comp>
+
+<comp id="230" class="1005" name="conf_info_mac_vec_c_reg_230">
+<pin_list>
+<pin id="231" dir="0" index="0" bw="32" slack="0"/>
+<pin id="232" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="conf_info_mac_vec_c "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="69"><net_src comp="18" pin="0"/><net_sink comp="66" pin=0"/></net>
+
+<net id="73"><net_src comp="18" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="77"><net_src comp="18" pin="0"/><net_sink comp="74" pin=0"/></net>
+
+<net id="81"><net_src comp="18" pin="0"/><net_sink comp="78" pin=0"/></net>
+
+<net id="85"><net_src comp="18" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="89"><net_src comp="18" pin="0"/><net_sink comp="86" pin=0"/></net>
+
+<net id="93"><net_src comp="18" pin="0"/><net_sink comp="90" pin=0"/></net>
+
+<net id="97"><net_src comp="18" pin="0"/><net_sink comp="94" pin=0"/></net>
+
+<net id="101"><net_src comp="18" pin="0"/><net_sink comp="98" pin=0"/></net>
+
+<net id="105"><net_src comp="18" pin="0"/><net_sink comp="102" pin=0"/></net>
+
+<net id="110"><net_src comp="16" pin="0"/><net_sink comp="106" pin=0"/></net>
+
+<net id="111"><net_src comp="12" pin="0"/><net_sink comp="106" pin=1"/></net>
+
+<net id="116"><net_src comp="16" pin="0"/><net_sink comp="112" pin=0"/></net>
+
+<net id="117"><net_src comp="8" pin="0"/><net_sink comp="112" pin=1"/></net>
+
+<net id="122"><net_src comp="16" pin="0"/><net_sink comp="118" pin=0"/></net>
+
+<net id="123"><net_src comp="4" pin="0"/><net_sink comp="118" pin=1"/></net>
+
+<net id="128"><net_src comp="16" pin="0"/><net_sink comp="124" pin=0"/></net>
+
+<net id="129"><net_src comp="2" pin="0"/><net_sink comp="124" pin=1"/></net>
+
+<net id="141"><net_src comp="22" pin="0"/><net_sink comp="130" pin=0"/></net>
+
+<net id="153"><net_src comp="24" pin="0"/><net_sink comp="142" pin=0"/></net>
+
+<net id="154"><net_src comp="10" pin="0"/><net_sink comp="142" pin=3"/></net>
+
+<net id="155"><net_src comp="14" pin="0"/><net_sink comp="142" pin=7"/></net>
+
+<net id="171"><net_src comp="20" pin="0"/><net_sink comp="156" pin=0"/></net>
+
+<net id="172"><net_src comp="90" pin="1"/><net_sink comp="156" pin=1"/></net>
+
+<net id="173"><net_src comp="94" pin="1"/><net_sink comp="156" pin=2"/></net>
+
+<net id="174"><net_src comp="0" pin="0"/><net_sink comp="156" pin=3"/></net>
+
+<net id="175"><net_src comp="124" pin="2"/><net_sink comp="156" pin=4"/></net>
+
+<net id="176"><net_src comp="118" pin="2"/><net_sink comp="156" pin=5"/></net>
+
+<net id="177"><net_src comp="6" pin="0"/><net_sink comp="156" pin=6"/></net>
+
+<net id="178"><net_src comp="112" pin="2"/><net_sink comp="156" pin=7"/></net>
+
+<net id="179"><net_src comp="106" pin="2"/><net_sink comp="156" pin=8"/></net>
+
+<net id="183"><net_src comp="106" pin="2"/><net_sink comp="180" pin=0"/></net>
+
+<net id="184"><net_src comp="180" pin="1"/><net_sink comp="156" pin=8"/></net>
+
+<net id="188"><net_src comp="112" pin="2"/><net_sink comp="185" pin=0"/></net>
+
+<net id="189"><net_src comp="185" pin="1"/><net_sink comp="156" pin=7"/></net>
+
+<net id="193"><net_src comp="118" pin="2"/><net_sink comp="190" pin=0"/></net>
+
+<net id="194"><net_src comp="190" pin="1"/><net_sink comp="156" pin=5"/></net>
+
+<net id="198"><net_src comp="124" pin="2"/><net_sink comp="195" pin=0"/></net>
+
+<net id="199"><net_src comp="195" pin="1"/><net_sink comp="156" pin=4"/></net>
+
+<net id="203"><net_src comp="66" pin="1"/><net_sink comp="200" pin=0"/></net>
+
+<net id="204"><net_src comp="200" pin="1"/><net_sink comp="130" pin=8"/></net>
+
+<net id="205"><net_src comp="200" pin="1"/><net_sink comp="142" pin=6"/></net>
+
+<net id="209"><net_src comp="70" pin="1"/><net_sink comp="206" pin=0"/></net>
+
+<net id="210"><net_src comp="206" pin="1"/><net_sink comp="130" pin=7"/></net>
+
+<net id="211"><net_src comp="206" pin="1"/><net_sink comp="142" pin=5"/></net>
+
+<net id="215"><net_src comp="74" pin="1"/><net_sink comp="212" pin=0"/></net>
+
+<net id="216"><net_src comp="212" pin="1"/><net_sink comp="156" pin=12"/></net>
+
+<net id="217"><net_src comp="212" pin="1"/><net_sink comp="142" pin=4"/></net>
+
+<net id="221"><net_src comp="78" pin="1"/><net_sink comp="218" pin=0"/></net>
+
+<net id="222"><net_src comp="218" pin="1"/><net_sink comp="156" pin=11"/></net>
+
+<net id="223"><net_src comp="218" pin="1"/><net_sink comp="142" pin=8"/></net>
+
+<net id="227"><net_src comp="82" pin="1"/><net_sink comp="224" pin=0"/></net>
+
+<net id="228"><net_src comp="224" pin="1"/><net_sink comp="156" pin=10"/></net>
+
+<net id="229"><net_src comp="224" pin="1"/><net_sink comp="130" pin=4"/></net>
+
+<net id="233"><net_src comp="86" pin="1"/><net_sink comp="230" pin=0"/></net>
+
+<net id="234"><net_src comp="230" pin="1"/><net_sink comp="156" pin=9"/></net>
+
+<net id="235"><net_src comp="230" pin="1"/><net_sink comp="130" pin=3"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: load_ctrl | {1 2 }
+	Port: out_word_V | {5 6 }
+	Port: store_ctrl | {5 6 }
+ - Input state : 
+	Port: dataflow_in_loop_bat : in1_word_V | {1 2 }
+	Port: dataflow_in_loop_bat : conf_info_mac_vec | {1 }
+	Port: dataflow_in_loop_bat : conf_info_mac_len | {1 }
+	Port: dataflow_in_loop_bat : b_0 | {1 }
+	Port: dataflow_in_loop_bat : conf_info_mac_n | {1 }
+  - Chain level:
+	State 1
+		call_ln142 : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------|---------|---------|---------|---------|
+| Operation|          Functional Unit         |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|----------------------------------|---------|---------|---------|---------|
+|          |        grp_compute_fu_130        |    6    |  6.256  |   484   |   552   |
+|   call   |         grp_store_fu_142         |    9    |   2.55  |   393   |   341   |
+|          |         grp_load32_fu_156        |    6    |   0.85  |   253   |   185   |
+|----------|----------------------------------|---------|---------|---------|---------|
+|          | conf_info_mac_n_read_read_fu_106 |    0    |    0    |    0    |    0    |
+|   read   |       b_0_read_read_fu_112       |    0    |    0    |    0    |    0    |
+|          | conf_info_mac_len_re_read_fu_118 |    0    |    0    |    0    |    0    |
+|          | conf_info_mac_vec_re_read_fu_124 |    0    |    0    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|---------|
+|   Total  |                                  |    21   |  9.656  |   1130  |   1078  |
+|----------|----------------------------------|---------|---------|---------|---------|
+
+Memories:
++-------------+--------+--------+--------+--------+
+|             |  BRAM  |   FF   |   LUT  |  URAM  |
++-------------+--------+--------+--------+--------+
+| p_inbuff_0_V|    8   |    0   |    0   |    0   |
+| p_inbuff_1_V|    8   |    0   |    0   |    0   |
+|p_outbuff_0_V|    1   |    0   |    0   |    0   |
+|p_outbuff_1_V|    1   |    0   |    0   |    0   |
++-------------+--------+--------+--------+--------+
+|    Total    |   18   |    0   |    0   |    0   |
++-------------+--------+--------+--------+--------+
+
+* Register list:
++------------------------------+--------+
+|                              |   FF   |
++------------------------------+--------+
+|         b_0_c_reg_218        |   32   |
+|       b_0_read_reg_185       |   32   |
+|conf_info_mac_len_c2_1_reg_200|   32   |
+|  conf_info_mac_len_c_reg_224 |   32   |
+| conf_info_mac_len_re_reg_190 |   32   |
+|   conf_info_mac_n_c_reg_212  |   32   |
+| conf_info_mac_n_read_reg_180 |   32   |
+|conf_info_mac_vec_c1_1_reg_206|   32   |
+|  conf_info_mac_vec_c_reg_230 |   32   |
+| conf_info_mac_vec_re_reg_195 |   32   |
++------------------------------+--------+
+|             Total            |   320  |
++------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-------------------|------|------|------|--------||---------||---------|
+|        Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-------------------|------|------|------|--------||---------||---------|
+| grp_load32_fu_156 |  p4  |   2  |  32  |   64   ||    9    |
+| grp_load32_fu_156 |  p5  |   2  |  32  |   64   ||    9    |
+| grp_load32_fu_156 |  p7  |   2  |  32  |   64   ||    9    |
+| grp_load32_fu_156 |  p8  |   2  |  32  |   64   ||    9    |
+|-------------------|------|------|------|--------||---------||---------|
+|       Total       |      |      |      |   256  ||   3.4   ||    36   |
+|-------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    -   |   21   |    9   |  1130  |  1078  |    -   |
+|   Memory  |   18   |    -   |    -   |    0   |    0   |    0   |
+|Multiplexer|    -   |    -   |    3   |    -   |   36   |    -   |
+|  Register |    -   |    -   |    -   |   320  |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |   18   |   21   |   13   |  1450  |  1114  |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

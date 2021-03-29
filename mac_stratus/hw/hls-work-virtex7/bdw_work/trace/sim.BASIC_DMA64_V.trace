@@ -1,0 +1,345 @@
+make[3]: Nothing to be done for `bdw_work/wrappers/mac_wrap.h'.
+make --no-print-directory -f Makefile -j1 hls_mac_BASIC_DMA64
+make[4]: `bdw_work/modules/mac/BASIC_DMA64/mac_rtl.cpp' is up to date.
+make[4]: `bdw_work/modules/mac/BASIC_DMA64/mac_rtl.v' is up to date.
+/software/cadence-Mar2020/STRATUS192/bin/bdw_shell /software/cadence-Mar2020/STRATUS192/share/stratus/tcl/bdw_siminfo.tcl project.tcl BASIC_DMA64_V
+make[4]: Nothing to be done for `bdw_work/wrappers/mac_wrap.h'.
+make[4]: `bdw_work/modules/mac/BASIC_DMA64/mac_rtl.v' is up to date.
+make[4]: `bdw_work/modules/tb/TESTBENCH_DMA64/incisive/system.o' is up to date.
+make[4]: `bdw_work/modules/tb/TESTBENCH_DMA64/incisive/sc_main.o' is up to date.
+make[4]: `bdw_work/libesc/incisive/libesc.a' is up to date.
+/software/cadence-Mar2020/XCELIUM1909/tools/bin/ncsc   -64bit -cdslib bdw_work/cds.lib -hdlvar bdw_work/hdl.var -nolog -manual -CFlags " -Ibdw_work/modules/mac/BASIC_DMA64 -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/mac/BASIC_DMA64/c_parts -DBASIC_DMA64=1 -DBDW_RTL_mac_BASIC_DMA64=1 -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64 -DHLS_DIRECTIVES_BASIC -I./memlib/c_parts  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/mac/BASIC_DMA64/incisive/mac.o " bdw_work/wrappers/mac_wrap.cpp
+xmsc(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xmsc: /software/cadence-Mar2020/XCELIUM1909/tools/cdsgcc/gcc/6.3/bin/g++ -DNCSC -DCADENCE  -DLNX86 -D_GLIBCXX_USE_CXX11_ABI=0 -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include_pch/64bit  -Ibdw_work/modules/mac/BASIC_DMA64 -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/mac/BASIC_DMA64/c_parts -DBASIC_DMA64=1 -DBDW_RTL_mac_BASIC_DMA64=1 -DioConfig_IOCFG_DMA64 -D_p_ioConfig_IOCFG_DMA64 -DioConfig=IOCFG_DMA64 -D_wrap_ioConfig=IOCFG_DMA64 -DDMA_WIDTH=64 -D_wrap_DMA_WIDTH=64 -DHLS_DIRECTIVES_BASIC -I./memlib/c_parts  -c -I/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc -I../src -I./memlib -DCLOCK_PERIOD=10000.0    -fPIC  -I/software/cadence-Mar2020/STRATUS192/share/stratus/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include -I/software/cadence-Mar2020/XCELIUM1909/tools/systemc/include/tlm2 -I/software/cadence-Mar2020/XCELIUM1909/tools/tbsc/include -g -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/mac/BASIC_DMA64/incisive/mac.o   bdw_work/wrappers/mac_wrap.cpp
+/software/cadence-Mar2020/STRATUS192/bin/bdw_wrapgen -project project.tcl -simconfig BASIC_DMA64_V -top top
+make objs/libmemlib.a
+make[6]: `objs/libmemlib.a' is up to date.
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:55:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace.h:243:81: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+/software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_tlm/cynw_tlm_fifo_reg_1t/../cynw_tlm_utils/cynw_tlm_fifo_trace_apis.inc:30:83: warning: 'ncsc_value_mode_t' is deprecated [-Wdeprecated-declarations]
+xmsc: Running scFrontEnd on bdw_work/wrappers/mac_wrap.cpp using library bdw_worklib...
+make --no-print-directory -f Makefile ncsc
+
+BDW_SIM_CONFIG_DIR=bdw_work/sims/BASIC_DMA64_V \
+bdw_exec -jobproject project.tcl -job sim.BASIC_DMA64_V.s \
+hub_ncsim \
+-work BASIC_DMA64_V -reflib worklib -reflib bdw_work/INCA_libs/bdw_worklib \
+-messages -64bit  \
+ \
+-CFLAGS "-Wl,-rpath,/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit" \
+bdw_work/modules/mac/BASIC_DMA64/incisive/mac.o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/system.o bdw_work/modules/tb/TESTBENCH_DMA64/incisive/sc_main.o  \
+ \
+ \
+bdw_work/libesc/incisive/libesc.a \
+bdw_work/libs/memlib/incisive/objs/libmemlib.a \
+ \
+ \
+ \
+ \
++loadpli1=/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap \
+-file bdw_work/sims/BASIC_DMA64_V/siminfo \
+-NOTIMINGCHECKS -UNBUFFERED \
++hubSetOption+libdef=bdw_work/sims/BASIC_DMA64_V/incisive/sim_BASIC_DMA64_V.so +hubSetOption+bdr=bdw_work/sims/BASIC_DMA64_V/sim.bdr \
++define+ioConfig_IOCFG_DMA64 +define+BDW_RTL_mac_BASIC_DMA64 \
+ \
+-top sc_main -top glbl  \
+2>&1 | tee bdw_work/sims/BASIC_DMA64_V/bdw_sim.log
+simulator_composite = ncverilog19.09
+TOOL:	xrun(64)	19.09-s009: Started on Mar 28, 2021 at 16:41:12 CDT
+xrun(64): 19.09-s009: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+xrun: *W,OPDEPRREN: Command Line Option (-nclibdirpath) is deprecated. Use (-xmlibdirpath) instead.
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+xrun: *W,REFLIB: -reflib directory bdw_work/sims/BASIC_DMA64_V/xcelium.d/worklib does not exist. It will be created.
+file: bdw_work/sims/top_BASIC_DMA64_V.v
+	module BASIC_DMA64_V.top:v
+		errors: 0, warnings: 0
+	module BASIC_DMA64_V.mac_nc_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/wrappers/mac_cosim.v
+	module BASIC_DMA64_V.mac_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/mac/BASIC_DMA64/mac_rtl.v
+	module BASIC_DMA64_V.mac:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_in_dma64.v
+	module BASIC_DMA64_V.mac_plm_block_in_dma64:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_out_dma64.v
+	module BASIC_DMA64_V.mac_plm_block_out_dma64:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_1024x16.v
+	module BASIC_DMA64_V.BRAM_1024x16:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_16384x1.v
+	module BASIC_DMA64_V.BRAM_16384x1:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_2048x8.v
+	module BASIC_DMA64_V.BRAM_2048x8:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_4096x4.v
+	module BASIC_DMA64_V.BRAM_4096x4:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v
+	module BASIC_DMA64_V.BRAM_512x32:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_8192x2.v
+	module BASIC_DMA64_V.BRAM_8192x2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/glbl.v
+	module BASIC_DMA64_V.glbl:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16.v
+	module BASIC_DMA64_V.RAMB16:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE.v
+	module BASIC_DMA64_V.RAMB16BWE:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWER.v
+	module BASIC_DMA64_V.RAMB16BWER:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S18.v
+	module BASIC_DMA64_V.RAMB16BWE_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S18_S18.v
+	module BASIC_DMA64_V.RAMB16BWE_S18_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S18_S9.v
+	module BASIC_DMA64_V.RAMB16BWE_S18_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36.v
+	module BASIC_DMA64_V.RAMB16BWE_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36_S18.v
+	module BASIC_DMA64_V.RAMB16BWE_S36_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36_S36.v
+	module BASIC_DMA64_V.RAMB16BWE_S36_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16BWE_S36_S9.v
+	module BASIC_DMA64_V.RAMB16BWE_S36_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1.v
+	module BASIC_DMA64_V.RAMB16_S1:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S18.v
+	module BASIC_DMA64_V.RAMB16_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S18_S18.v
+	module BASIC_DMA64_V.RAMB16_S18_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S18_S36.v
+	module BASIC_DMA64_V.RAMB16_S18_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S1.v
+	module BASIC_DMA64_V.RAMB16_S1_S1:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S18.v
+	module BASIC_DMA64_V.RAMB16_S1_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S2.v
+	module BASIC_DMA64_V.RAMB16_S1_S2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S36.v
+	module BASIC_DMA64_V.RAMB16_S1_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S4.v
+	module BASIC_DMA64_V.RAMB16_S1_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S1_S9.v
+	module BASIC_DMA64_V.RAMB16_S1_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2.v
+	module BASIC_DMA64_V.RAMB16_S2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S18.v
+	module BASIC_DMA64_V.RAMB16_S2_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S2.v
+	module BASIC_DMA64_V.RAMB16_S2_S2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S36.v
+	module BASIC_DMA64_V.RAMB16_S2_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S4.v
+	module BASIC_DMA64_V.RAMB16_S2_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S2_S9.v
+	module BASIC_DMA64_V.RAMB16_S2_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S36.v
+	module BASIC_DMA64_V.RAMB16_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S36_S36.v
+	module BASIC_DMA64_V.RAMB16_S36_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4.v
+	module BASIC_DMA64_V.RAMB16_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S18.v
+	module BASIC_DMA64_V.RAMB16_S4_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S36.v
+	module BASIC_DMA64_V.RAMB16_S4_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S4.v
+	module BASIC_DMA64_V.RAMB16_S4_S4:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S4_S9.v
+	module BASIC_DMA64_V.RAMB16_S4_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9.v
+	module BASIC_DMA64_V.RAMB16_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9_S18.v
+	module BASIC_DMA64_V.RAMB16_S9_S18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9_S36.v
+	module BASIC_DMA64_V.RAMB16_S9_S36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB16_S9_S9.v
+	module BASIC_DMA64_V.RAMB16_S9_S9:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB18.v
+	module BASIC_DMA64_V.RAMB18:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB18SDP.v
+	module BASIC_DMA64_V.RAMB18SDP:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB36.v
+	module BASIC_DMA64_V.RAMB36:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB36SDP.v
+	module BASIC_DMA64_V.RAMB36SDP:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/retarget/RAMB8BWER.v
+	module BASIC_DMA64_V.RAMB8BWER:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E1.v
+	module BASIC_DMA64_V.RAMB18E1:v
+		errors: 0, warnings: 0
+	module BASIC_DMA64_V.RB18_INTERNAL_VLOG:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E2.v
+	module BASIC_DMA64_V.RAMB18E2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E5.v
+	module BASIC_DMA64_V.RAMB18E5:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB18E5_INT.v
+	module BASIC_DMA64_V.RAMB18E5_INT:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E1.v
+	module BASIC_DMA64_V.RAMB36E1:v
+		errors: 0, warnings: 0
+	module BASIC_DMA64_V.RB36_INTERNAL_VLOG:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E2.v
+	module BASIC_DMA64_V.RAMB36E2:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E5.v
+	module BASIC_DMA64_V.RAMB36E5:v
+		errors: 0, warnings: 0
+file: /scratch/opt/Vivado/2019.2/data/verilog/src/unisims/RAMB36E5_INT.v
+	module BASIC_DMA64_V.RAMB36E5_INT:v
+		errors: 0, warnings: 0
+file: /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v
+module BRAM_512x32( CLK, A0, D0, Q0, WE0, WEM0, CE0, A1, D1, Q1, WE1, WEM1, CE1 );
+                 |
+xmvlog: *W,RECOME (/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v,3|17): recompiling design unit BASIC_DMA64_V.BRAM_512x32:v.
+	First compiled from line 3 of /scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v.
+xmvlog: *W,LIBNOU: Library "bdw_work/libs/memlib/v_rtl" given but not used.
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+$CDSROOT = /software/cadence-Mar2020/XCELIUM1909
+$TESTDIR = /scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7
+
+TOOL:	xmsc(64)	19.09-s009
+building library run.so
+
+*** Registering Hub PLI1.0 Interface***
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.22-s100
+	Elaborating the design hierarchy:
+		Caching library 'BASIC_DMA64_V' ....... Done
+	Top level design units:
+		sc_main
+		glbl
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		BASIC_DMA64_V.RB36_INTERNAL_VLOG:v <0x4f44b5e3>
+			streams: 100, words: 381708
+		BASIC_DMA64_V.RAMB36E1:v <0x60ca1ce7>
+			streams:  32, words:  5749
+		BASIC_DMA64_V.RAMB16_S36_S36:v <0x7118ffa1>
+			streams:   2, words:   296
+		BASIC_DMA64_V.BRAM_512x32:v <0x70a9e7b0>
+			streams:   2, words:  1349
+		BASIC_DMA64_V.mac_nc_cosim:v <0x4a2828e0>
+			streams:  64, words: 47341
+		BASIC_DMA64_V.mac:v <0x6bd3997b>
+			streams: 324, words: 135746
+		BASIC_DMA64_V.mac_plm_block_out_dma64:v <0x61bef644>
+			streams:  18, words: 19478
+		BASIC_DMA64_V.mac_plm_block_in_dma64:v <0x5f1d3bad>
+			streams:  20, words: 24075
+		BASIC_DMA64_V.glbl:v <0x6cd7d12a>
+			streams:  11, words:  4154
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                119       9
+		Timing outputs:        2604      70
+		Registers:             8036     554
+		Scalar wires:          3984       -
+		Expanded wires:        4508     224
+		Vectored wires:         946       -
+		Always blocks:          862     214
+		Initial blocks:        1495      64
+		Cont. assignments:      756     222
+		Pseudo assignments:     476      27
+		Simulation timescale:   1ps
+
+	SystemC Design Summary:
+		                   Instances
+		sc_modules:               18
+		sc_ports:                 96
+		sc_signals:               57
+		sc_methods:               16
+		sc_threads:                1
+		sc_cthreads:               2
+		sc_events:                 2
+	Writing initial simulation snapshot: BASIC_DMA64_V.sc_main:sc_module
+Loading snapshot BASIC_DMA64_V.sc_main:sc_module .................... Done
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.22-s100
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /software/cadence-Mar2020/XCELIUM1909/tools/xcelium/files/xmsimrc
+xcelium> run
+Info: dma-controller: reset done
+
+Info: testbench: reset done
+
+Info: testbench: load memory completed
+
+Info: testbench: config done
+
+Info: testbench: @310 ns BEGIN - mac
+
+Info: testbench: @160920 ns END - mac
+
+Info: testbench: dump memory completed
+
+Error: testbench: validation failed!
+
+SystemC: simulation stopped by user.
+
+
+SC simulation stopped by user.
+
+SystemC : SystemC stopped at time 160930
+xcelium> exit
+TOOL:	xrun(64)	19.09-s009: Exiting on Mar 28, 2021 at 16:41:15 CDT  (total: 00:00:03)
+BDW_SIM_CONFIG_DIR=bdw_work/sims/BASIC_DMA64_V make saySimPassed 2>&1 | tee -a bdw_work/sims/BASIC_DMA64_V/bdw_sim.log

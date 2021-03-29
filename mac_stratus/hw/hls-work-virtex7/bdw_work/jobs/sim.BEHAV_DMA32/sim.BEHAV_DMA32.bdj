@@ -1,0 +1,12 @@
+30494
+30497
+mojave.cs.illinois.edu
+bdw_work/trace/sim.BEHAV_DMA32.trace
+2
+0
+0
+0
+1616967547
+1616967591
+make --no-print-directory -f Makefile CWBExec=1 sim_BEHAV_DMA32
+

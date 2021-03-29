@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/modules/mac/BASIC_DMA32/incisive/mac.o
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/modules/tb/TESTBENCH_DMA32/incisive/system.o
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/modules/tb/TESTBENCH_DMA32/incisive/sc_main.o
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/libesc/incisive/libesc.a
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/libs/memlib/incisive/objs/libmemlib.a
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhubexec.so
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhub.so
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libbdw_st.so

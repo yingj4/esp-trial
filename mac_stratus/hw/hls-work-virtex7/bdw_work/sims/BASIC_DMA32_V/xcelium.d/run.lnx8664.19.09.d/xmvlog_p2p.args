@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-WORK
+BASIC_DMA32_V
+-NEVERWARN
+-CDSLIB
+bdw_work/sims/BASIC_DMA32_V/xcelium.d/run.lnx8664.19.09.d/cds.lib
+-HDLVAR
+bdw_work/sims/BASIC_DMA32_V/xcelium.d/run.lnx8664.19.09.d/hdl.var

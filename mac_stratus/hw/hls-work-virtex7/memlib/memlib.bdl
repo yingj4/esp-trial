@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<lib_catalogue>
+	<tool_log>
+		<tool_name>Memory Model Generator</tool_name>
+		<tool_kind>ModelGenerator</tool_kind>
+		<tool_tech>NONE</tool_tech>
+		<version>19.22-s100</version>
+		<user>yingj4</user>
+		<hostname>mojave.cs.illinois.edu</hostname>
+		<cwd></cwd>
+		<output_dir></output_dir>
+		<exit_status>-1</exit_status>
+	</tool_log>
+	<name>memlib</name>
+	<version>19.22-s100</version>
+	<lib_type>MEMORY</lib_type>
+	<param_table>
+	</param_table>
+	<source_file>
+		<path>c_parts/mac_plm_block_in_dma32.cc</path>
+		<file_kind>RTL_C</file_kind>
+		<module_name>mac_plm_block_in_dma32</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/mac_plm_block_in_dma32.h</path>
+		<file_kind>RTL_H</file_kind>
+		<module_name>mac_plm_block_in_dma32</module_name>
+	</source_file>
+	<source_file>
+		<path>mac_plm_block_in_dma32.bdm</path>
+		<file_kind>MEM_WRAP</file_kind>
+		<module_name>mac_plm_block_in_dma32</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/mac_plm_block_in_dma64.cc</path>
+		<file_kind>RTL_C</file_kind>
+		<module_name>mac_plm_block_in_dma64</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/mac_plm_block_in_dma64.h</path>
+		<file_kind>RTL_H</file_kind>
+		<module_name>mac_plm_block_in_dma64</module_name>
+	</source_file>
+	<source_file>
+		<path>mac_plm_block_in_dma64.bdm</path>
+		<file_kind>MEM_WRAP</file_kind>
+		<module_name>mac_plm_block_in_dma64</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/mac_plm_block_out_dma32.cc</path>
+		<file_kind>RTL_C</file_kind>
+		<module_name>mac_plm_block_out_dma32</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/mac_plm_block_out_dma32.h</path>
+		<file_kind>RTL_H</file_kind>
+		<module_name>mac_plm_block_out_dma32</module_name>
+	</source_file>
+	<source_file>
+		<path>mac_plm_block_out_dma32.bdm</path>
+		<file_kind>MEM_WRAP</file_kind>
+		<module_name>mac_plm_block_out_dma32</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/mac_plm_block_out_dma64.cc</path>
+		<file_kind>RTL_C</file_kind>
+		<module_name>mac_plm_block_out_dma64</module_name>
+	</source_file>
+	<source_file>
+		<path>c_parts/mac_plm_block_out_dma64.h</path>
+		<file_kind>RTL_H</file_kind>
+		<module_name>mac_plm_block_out_dma64</module_name>
+	</source_file>
+	<source_file>
+		<path>mac_plm_block_out_dma64.bdm</path>
+		<file_kind>MEM_WRAP</file_kind>
+		<module_name>mac_plm_block_out_dma64</module_name>
+	</source_file>
+	<module>
+		<name>mac_plm_block_in_dma32</name>
+		<source_path>c_parts/mac_plm_block_in_dma32.cc</source_path>
+		<crc>0</crc>
+		<vendor_model>/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v</vendor_model>
+		<vendor_wrapper>/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_in_dma32.v</vendor_wrapper>
+		<resource_kind>RAM</resource_kind>
+		<area>13</area>
+		<delay>0.2</delay>
+		<setup_time>0.06</setup_time>
+		<slack>0</slack>
+		<latency>1</latency>
+		<pipelined>0</pipelined>
+		<stallable>0</stallable>
+		<word_count>6400</word_count>
+		<port>
+			<name>CLK</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<clock>pos</clock>
+		</port>
+		<port>
+			<name>WE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>WEM0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>D0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>A0</name>
+			<datatype W="13">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE1</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>Q1</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>out</direction>
+		</port>
+		<port>
+			<name>A1</name>
+			<datatype W="13">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+	</module>
+	<module>
+		<name>mac_plm_block_in_dma64</name>
+		<source_path>c_parts/mac_plm_block_in_dma64.cc</source_path>
+		<crc>0</crc>
+		<vendor_model>/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v</vendor_model>
+		<vendor_wrapper>/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_in_dma64.v</vendor_wrapper>
+		<resource_kind>RAM</resource_kind>
+		<area>13</area>
+		<delay>0.2</delay>
+		<setup_time>0.06</setup_time>
+		<slack>0</slack>
+		<latency>1</latency>
+		<pipelined>0</pipelined>
+		<stallable>0</stallable>
+		<word_count>6400</word_count>
+		<port>
+			<name>CLK</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<clock>pos</clock>
+		</port>
+		<port>
+			<name>WE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>WEM0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>D0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>A0</name>
+			<datatype W="13">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>WE1</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE1</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>WEM1</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>D1</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>A1</name>
+			<datatype W="13">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE2</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>Q2</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>out</direction>
+		</port>
+		<port>
+			<name>A2</name>
+			<datatype W="13">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+	</module>
+	<module>
+		<name>mac_plm_block_out_dma32</name>
+		<source_path>c_parts/mac_plm_block_out_dma32.cc</source_path>
+		<crc>0</crc>
+		<vendor_model>/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v</vendor_model>
+		<vendor_wrapper>/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_out_dma32.v</vendor_wrapper>
+		<resource_kind>RAM</resource_kind>
+		<area>1</area>
+		<delay>0.2</delay>
+		<setup_time>0.06</setup_time>
+		<slack>0</slack>
+		<latency>1</latency>
+		<pipelined>0</pipelined>
+		<stallable>0</stallable>
+		<word_count>100</word_count>
+		<port>
+			<name>CLK</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<clock>pos</clock>
+		</port>
+		<port>
+			<name>WE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>WEM0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>D0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>A0</name>
+			<datatype W="7">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE1</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>Q1</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>out</direction>
+		</port>
+		<port>
+			<name>A1</name>
+			<datatype W="7">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+	</module>
+	<module>
+		<name>mac_plm_block_out_dma64</name>
+		<source_path>c_parts/mac_plm_block_out_dma64.cc</source_path>
+		<crc>0</crc>
+		<vendor_model>/scratch/projects/yingj4/esp/rtl/techmap/virtex7/mem/BRAM_512x32.v</vendor_model>
+		<vendor_wrapper>/scratch/projects/yingj4/esp/tech/virtex7/memgen/mac_stratus/mac_plm_block_out_dma64.v</vendor_wrapper>
+		<resource_kind>RAM</resource_kind>
+		<area>1</area>
+		<delay>0.2</delay>
+		<setup_time>0.06</setup_time>
+		<slack>0</slack>
+		<latency>1</latency>
+		<pipelined>0</pipelined>
+		<stallable>0</stallable>
+		<word_count>100</word_count>
+		<port>
+			<name>CLK</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+			<clock>pos</clock>
+		</port>
+		<port>
+			<name>WE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE0</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>WEM0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>D0</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>A0</name>
+			<datatype W="7">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE1</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>Q1</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>out</direction>
+		</port>
+		<port>
+			<name>A1</name>
+			<datatype W="7">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>CE2</name>
+			<datatype W="1">bool</datatype>
+			<direction>in</direction>
+		</port>
+		<port>
+			<name>Q2</name>
+			<datatype W="32">sc_uint</datatype>
+			<direction>out</direction>
+		</port>
+		<port>
+			<name>A2</name>
+			<datatype W="7">sc_uint</datatype>
+			<direction>in</direction>
+		</port>
+	</module>
+</lib_catalogue>

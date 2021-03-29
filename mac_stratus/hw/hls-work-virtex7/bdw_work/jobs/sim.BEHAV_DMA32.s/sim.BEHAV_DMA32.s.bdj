@@ -1,0 +1,12 @@
+12482
+12489
+mojave.cs.illinois.edu
+bdw_work/trace/sim.BEHAV_DMA32.s.trace
+2
+0
+0
+0
+1616967583
+1616967590
+hub_ncsim -work BEHAV_DMA32 -reflib worklib -reflib bdw_work/INCA_libs/bdw_worklib -messages -64bit -NOTIMINGCHECKS -UNBUFFERED -CFLAGS -Wl,-rpath,/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit bdw_work/modules/mac/IOCFG_DMA32/incisive/mac.o bdw_work/modules/tb/TESTBENCH_DMA32/incisive/system.o bdw_work/modules/tb/TESTBENCH_DMA32/incisive/sc_main.o bdw_work/libesc/incisive/libesc.a bdw_work/libs/memlib/incisive/objs/libmemlib.a -top sc_main
+

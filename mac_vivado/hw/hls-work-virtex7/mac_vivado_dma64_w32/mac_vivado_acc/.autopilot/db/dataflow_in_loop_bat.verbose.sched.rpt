@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vivado HLS Report for 'dataflow_in_loop_bat'
+================================================================
+* Date:           Sun Mar 28 21:18:48 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        mac_vivado_dma64_w32
+* Solution:       mac_vivado_acc
+* Product family: virtex7
+* Target device:  xc7v2000t-flg1925-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.508 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.48>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%conf_info_mac_n_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %conf_info_mac_n)" [../src/espacc.cc:142]   --->   Operation 7 'read' 'conf_info_mac_n_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%b_0_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %b_0)" [../src/espacc.cc:142]   --->   Operation 8 'read' 'b_0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%conf_info_mac_len_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %conf_info_mac_len)" [../src/espacc.cc:142]   --->   Operation 9 'read' 'conf_info_mac_len_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%conf_info_mac_vec_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %conf_info_mac_vec)" [../src/espacc.cc:142]   --->   Operation 10 'read' 'conf_info_mac_vec_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%conf_info_mac_len_c2_1 = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 11 'alloca' 'conf_info_mac_len_c2_1' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%conf_info_mac_vec_c1_1 = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 12 'alloca' 'conf_info_mac_vec_c1_1' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%conf_info_mac_n_c = alloca i32, align 4"   --->   Operation 13 'alloca' 'conf_info_mac_n_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%b_0_c = alloca i32, align 4"   --->   Operation 14 'alloca' 'b_0_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%conf_info_mac_len_c = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 15 'alloca' 'conf_info_mac_len_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%conf_info_mac_vec_c = alloca i32, align 4" [../src/espacc.cc:142]   --->   Operation 16 'alloca' 'conf_info_mac_vec_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_inbuff_0_V = alloca [3200 x i32], align 4" [../src/espacc.cc:133]   --->   Operation 17 'alloca' 'p_inbuff_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_inbuff_1_V = alloca [3200 x i32], align 4" [../src/espacc.cc:133]   --->   Operation 18 'alloca' 'p_inbuff_1_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_outbuff_0_V = alloca [50 x i32], align 4" [../src/espacc.cc:134]   --->   Operation 19 'alloca' 'p_outbuff_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_outbuff_1_V = alloca [50 x i32], align 4" [../src/espacc.cc:134]   --->   Operation 20 'alloca' 'p_outbuff_1_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [2/2] (5.48ns)   --->   "call fastcc void @load32([3200 x i32]* %p_inbuff_0_V, [3200 x i32]* %p_inbuff_1_V, i64* %in1_word_V, i32 %conf_info_mac_vec_re, i32 %conf_info_mac_len_re, i96* %load_ctrl, i32 %b_0_read, i32 %conf_info_mac_n_read, i32* %conf_info_mac_vec_c, i32* %conf_info_mac_len_c, i32* %b_0_c, i32* %conf_info_mac_n_c)" [../src/espacc.cc:142]   --->   Operation 21 'call' <Predicate = true> <Delay = 5.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @load32([3200 x i32]* %p_inbuff_0_V, [3200 x i32]* %p_inbuff_1_V, i64* %in1_word_V, i32 %conf_info_mac_vec_re, i32 %conf_info_mac_len_re, i96* %load_ctrl, i32 %b_0_read, i32 %conf_info_mac_n_read, i32* %conf_info_mac_vec_c, i32* %conf_info_mac_len_c, i32* %b_0_c, i32* %conf_info_mac_n_c)" [../src/espacc.cc:142]   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @compute([3200 x i32]* nocapture %p_inbuff_0_V, [3200 x i32]* nocapture %p_inbuff_1_V, i32* nocapture %conf_info_mac_vec_c, i32* nocapture %conf_info_mac_len_c, [50 x i32]* nocapture %p_outbuff_0_V, [50 x i32]* nocapture %p_outbuff_1_V, i32* %conf_info_mac_vec_c1_1, i32* %conf_info_mac_len_c2_1)" [../src/espacc.cc:142]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @compute([3200 x i32]* nocapture %p_inbuff_0_V, [3200 x i32]* nocapture %p_inbuff_1_V, i32* nocapture %conf_info_mac_vec_c, i32* nocapture %conf_info_mac_len_c, [50 x i32]* nocapture %p_outbuff_0_V, [50 x i32]* nocapture %p_outbuff_1_V, i32* %conf_info_mac_vec_c1_1, i32* %conf_info_mac_len_c2_1)" [../src/espacc.cc:142]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @store([50 x i32]* %p_outbuff_0_V, [50 x i32]* %p_outbuff_1_V, i64* %out_word_V, i32* nocapture %conf_info_mac_n_c, i32* nocapture %conf_info_mac_vec_c1_1, i32* nocapture %conf_info_mac_len_c2_1, i96* %store_ctrl, i32* nocapture %b_0_c)" [../src/espacc.cc:142]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %out_word_V, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 100000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %in1_word_V, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 100000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [../src/espacc.cc:133]   --->   Operation 28 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @conf_info_mac_vec_c_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_vec_c, i32* %conf_info_mac_vec_c)" [../src/espacc.cc:142]   --->   Operation 29 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_vec_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @conf_info_mac_len_c_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_len_c, i32* %conf_info_mac_len_c)" [../src/espacc.cc:142]   --->   Operation 31 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_len_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([6 x i8]* @b_OC_0_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %b_0_c, i32* %b_0_c)"   --->   Operation 33 'specchannel' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %b_0_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([18 x i8]* @conf_info_mac_n_c_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %conf_info_mac_n_c, i32* %conf_info_mac_n_c)"   --->   Operation 35 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_n_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecChannel([21 x i8]* @conf_info_mac_vec_c1, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_vec_c1_1, i32* %conf_info_mac_vec_c1_1)" [../src/espacc.cc:142]   --->   Operation 37 'specchannel' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_vec_c1_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecChannel([21 x i8]* @conf_info_mac_len_c2, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %conf_info_mac_len_c2_1, i32* %conf_info_mac_len_c2_1)" [../src/espacc.cc:142]   --->   Operation 39 'specchannel' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %conf_info_mac_len_c2_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [../src/espacc.cc:142]   --->   Operation 40 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/2] (0.00ns)   --->   "call fastcc void @store([50 x i32]* %p_outbuff_0_V, [50 x i32]* %p_outbuff_1_V, i64* %out_word_V, i32* nocapture %conf_info_mac_n_c, i32* nocapture %conf_info_mac_vec_c1_1, i32* nocapture %conf_info_mac_len_c2_1, i96* %store_ctrl, i32* nocapture %b_0_c)" [../src/espacc.cc:142]   --->   Operation 41 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 42 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 5.48ns
+The critical path consists of the following:
+	wire read on port 'conf_info_mac_n' (../src/espacc.cc:142) [11]  (0 ns)
+	'call' operation ('call_ln142', ../src/espacc.cc:142) to 'load32' [34]  (5.48 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

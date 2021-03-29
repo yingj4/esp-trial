@@ -1,0 +1,274 @@
+
+
+================================================================
+== Vivado HLS Report for 'compute'
+================================================================
+* Date:           Sun Mar 28 21:18:47 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        mac_vivado_dma64_w32
+* Solution:       mac_vivado_acc
+* Product family: virtex7
+* Target device:  xc7v2000t-flg1925-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.508 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |        ?|        ?|         2|          -|          -|     ?|    no    |
+        |- Loop 2     |        ?|        ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 2.1  |        ?|        ?|         3|          -|          -|     ?|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 5 
+4 --> 3 
+5 --> 6 
+6 --> 7 5 
+7 --> 8 
+8 --> 6 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.78>
+ST_1 : Operation 9 [1/1] (2.39ns)   --->   "%mac_vec_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %mac_vec)" [../src/espacc.cc:67]   --->   Operation 9 'read' 'mac_vec_read' <Predicate = true> <Delay = 2.39> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (2.39ns)   --->   "%mac_len_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %mac_len)" [../src/espacc.cc:68]   --->   Operation 10 'read' 'mac_len_read' <Predicate = true> <Delay = 2.39> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 11 [1/1] (2.39ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %mac_vec_out, i32 %mac_vec_read)" [../src/espacc.cc:67]   --->   Operation 11 'write' <Predicate = true> <Delay = 2.39> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (2.39ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %mac_len_out, i32 %mac_len_read)" [../src/espacc.cc:68]   --->   Operation 12 'write' <Predicate = true> <Delay = 2.39> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 8.50>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %mac_len, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %mac_vec, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %mac_vec_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %mac_len_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (5.48ns)   --->   "%in_rem_2 = mul i32 %mac_len_read, %mac_vec_read" [../src/espacc.cc:73]   --->   Operation 17 'mul' 'in_rem_2' <Predicate = true> <Delay = 5.48> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 5.48> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (1.51ns)   --->   "%add_ln73 = add i32 %in_rem_2, -1" [../src/espacc.cc:73]   --->   Operation 18 'add' 'add_ln73' <Predicate = true> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node length)   --->   "%or_ln73 = or i32 %add_ln73, 1" [../src/espacc.cc:73]   --->   Operation 19 'or' 'or_ln73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.51ns) (out node of the LUT)   --->   "%length = add i32 %or_ln73, 1" [../src/espacc.cc:73]   --->   Operation 20 'add' 'length' <Predicate = true> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.85ns)   --->   "br label %0" [../src/espacc.cc:75]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.85>
+
+State 3 <SV = 2> <Delay = 2.26>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%i_0_i = phi i32 [ 0, %entry ], [ %i, %1 ]"   --->   Operation 22 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (1.26ns)   --->   "%icmp_ln75 = icmp eq i32 %i_0_i, %length" [../src/espacc.cc:75]   --->   Operation 23 'icmp' 'icmp_ln75' <Predicate = true> <Delay = 1.26> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (1.51ns)   --->   "%i = add nsw i32 %i_0_i, 1" [../src/espacc.cc:75]   --->   Operation 24 'add' 'i' <Predicate = true> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "br i1 %icmp_ln75, label %.preheader.i.preheader, label %_ifconv" [../src/espacc.cc:75]   --->   Operation 25 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%trunc_ln180 = trunc i32 %i_0_i to i1" [../src/espacc.cc:76]   --->   Operation 26 'trunc' 'trunc_ln180' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%lshr_ln = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %i_0_i, i32 1, i32 31)" [../src/espacc.cc:76]   --->   Operation 27 'partselect' 'lshr_ln' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln180 = zext i31 %lshr_ln to i64" [../src/espacc.cc:76]   --->   Operation 28 'zext' 'zext_ln180' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%p_inbuff_0_V_addr = getelementptr [3200 x i32]* %p_inbuff_0_V, i64 0, i64 %zext_ln180" [../src/espacc.cc:76]   --->   Operation 29 'getelementptr' 'p_inbuff_0_V_addr' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%p_inbuff_1_V_addr = getelementptr [3200 x i32]* %p_inbuff_1_V, i64 0, i64 %zext_ln180" [../src/espacc.cc:76]   --->   Operation 30 'getelementptr' 'p_inbuff_1_V_addr' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 31 [2/2] (2.26ns)   --->   "%p_inbuff_1_V_load = load i32* %p_inbuff_1_V_addr, align 4" [../src/espacc.cc:76]   --->   Operation 31 'load' 'p_inbuff_1_V_load' <Predicate = (!icmp_ln75)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_3 : Operation 32 [2/2] (2.26ns)   --->   "%p_inbuff_0_V_load = load i32* %p_inbuff_0_V_addr, align 4" [../src/espacc.cc:76]   --->   Operation 32 'load' 'p_inbuff_0_V_load' <Predicate = (!icmp_ln75)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%p_outbuff_0_V_addr = getelementptr [50 x i32]* %p_outbuff_0_V, i64 0, i64 %zext_ln180" [../src/espacc.cc:76]   --->   Operation 33 'getelementptr' 'p_outbuff_0_V_addr' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%p_outbuff_1_V_addr = getelementptr [50 x i32]* %p_outbuff_1_V, i64 0, i64 %zext_ln180" [../src/espacc.cc:76]   --->   Operation 34 'getelementptr' 'p_outbuff_1_V_addr' <Predicate = (!icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%acc_0_i = alloca i32"   --->   Operation 35 'alloca' 'acc_0_i' <Predicate = (icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%vector_number_1 = alloca i32"   --->   Operation 36 'alloca' 'vector_number_1' <Predicate = (icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%vector_index_1 = alloca i32"   --->   Operation 37 'alloca' 'vector_index_1' <Predicate = (icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.85ns)   --->   "store i32 0, i32* %vector_index_1" [../src/espacc.cc:86]   --->   Operation 38 'store' <Predicate = (icmp_ln75)> <Delay = 0.85>
+ST_3 : Operation 39 [1/1] (0.85ns)   --->   "store i32 0, i32* %vector_number_1" [../src/espacc.cc:86]   --->   Operation 39 'store' <Predicate = (icmp_ln75)> <Delay = 0.85>
+ST_3 : Operation 40 [1/1] (0.85ns)   --->   "store i32 0, i32* %acc_0_i" [../src/espacc.cc:86]   --->   Operation 40 'store' <Predicate = (icmp_ln75)> <Delay = 0.85>
+ST_3 : Operation 41 [1/1] (0.85ns)   --->   "br label %.preheader.i" [../src/espacc.cc:86]   --->   Operation 41 'br' <Predicate = (icmp_ln75)> <Delay = 0.85>
+
+State 4 <SV = 3> <Delay = 5.40>
+ST_4 : Operation 42 [1/2] (2.26ns)   --->   "%p_inbuff_1_V_load = load i32* %p_inbuff_1_V_addr, align 4" [../src/espacc.cc:76]   --->   Operation 42 'load' 'p_inbuff_1_V_load' <Predicate = true> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_4 : Operation 43 [1/2] (2.26ns)   --->   "%p_inbuff_0_V_load = load i32* %p_inbuff_0_V_addr, align 4" [../src/espacc.cc:76]   --->   Operation 43 'load' 'p_inbuff_0_V_load' <Predicate = true> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_4 : Operation 44 [1/1] (0.87ns)   --->   "%select_ln180 = select i1 %trunc_ln180, i32 %p_inbuff_1_V_load, i32 %p_inbuff_0_V_load" [../src/espacc.cc:76]   --->   Operation 44 'select' 'select_ln180' <Predicate = true> <Delay = 0.87> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "br i1 %trunc_ln180, label %branch9.i, label %branch8.i" [../src/espacc.cc:76]   --->   Operation 45 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (2.26ns)   --->   "store i32 %select_ln180, i32* %p_outbuff_0_V_addr, align 4" [../src/espacc.cc:76]   --->   Operation 46 'store' <Predicate = (!trunc_ln180)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "br label %1" [../src/espacc.cc:76]   --->   Operation 47 'br' <Predicate = (!trunc_ln180)> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (2.26ns)   --->   "store i32 %select_ln180, i32* %p_outbuff_1_V_addr, align 4" [../src/espacc.cc:76]   --->   Operation 48 'store' <Predicate = (trunc_ln180)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "br label %1" [../src/espacc.cc:76]   --->   Operation 49 'br' <Predicate = (trunc_ln180)> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "br label %0" [../src/espacc.cc:75]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 3> <Delay = 1.88>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%in_rem_0_i = phi i32 [ %in_rem, %6 ], [ %in_rem_2, %.preheader.i.preheader ]"   --->   Operation 51 'phi' 'in_rem_0_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 52 [1/1] (1.26ns)   --->   "%icmp_ln86 = icmp sgt i32 %in_rem_0_i, 0" [../src/espacc.cc:86]   --->   Operation 52 'icmp' 'icmp_ln86' <Predicate = true> <Delay = 1.26> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "br i1 %icmp_ln86, label %2, label %.exit" [../src/espacc.cc:86]   --->   Operation 53 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (1.26ns)   --->   "%icmp_ln89 = icmp sgt i32 %in_rem_0_i, 6400" [../src/espacc.cc:89]   --->   Operation 54 'icmp' 'icmp_ln89' <Predicate = (icmp_ln86)> <Delay = 1.26> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%trunc_ln86 = trunc i32 %in_rem_0_i to i13" [../src/espacc.cc:86]   --->   Operation 55 'trunc' 'trunc_ln86' <Predicate = (icmp_ln86)> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.62ns)   --->   "%in_len = select i1 %icmp_ln89, i13 -1792, i13 %trunc_ln86" [../src/espacc.cc:89]   --->   Operation 56 'select' 'in_len' <Predicate = (icmp_ln86)> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 57 [1/1] (0.85ns)   --->   "br label %3" [../src/espacc.cc:92]   --->   Operation 57 'br' <Predicate = (icmp_ln86)> <Delay = 0.85>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 58 'ret' <Predicate = (!icmp_ln86)> <Delay = 0.00>
+
+State 6 <SV = 4> <Delay = 2.26>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%i1_0_i = phi i13 [ 0, %2 ], [ %i_1, %._crit_edge.i ]"   --->   Operation 59 'phi' 'i1_0_i' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 60 [1/1] (1.06ns)   --->   "%icmp_ln92 = icmp ult i13 %i1_0_i, %in_len" [../src/espacc.cc:92]   --->   Operation 60 'icmp' 'icmp_ln92' <Predicate = true> <Delay = 1.06> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 61 [1/1] (0.00ns)   --->   "br i1 %icmp_ln92, label %branch2.i, label %6" [../src/espacc.cc:92]   --->   Operation 61 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%lshr_ln1 = call i12 @_ssdm_op_PartSelect.i12.i13.i32.i32(i13 %i1_0_i, i32 1, i32 12)" [../src/espacc.cc:95]   --->   Operation 62 'partselect' 'lshr_ln1' <Predicate = (icmp_ln92)> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln215 = zext i12 %lshr_ln1 to i64" [../src/espacc.cc:95]   --->   Operation 63 'zext' 'zext_ln215' <Predicate = (icmp_ln92)> <Delay = 0.00>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%p_inbuff_0_V_addr_1 = getelementptr [3200 x i32]* %p_inbuff_0_V, i64 0, i64 %zext_ln215" [../src/espacc.cc:95]   --->   Operation 64 'getelementptr' 'p_inbuff_0_V_addr_1' <Predicate = (icmp_ln92)> <Delay = 0.00>
+ST_6 : Operation 65 [2/2] (2.26ns)   --->   "%p_inbuff_0_V_load_1 = load i32* %p_inbuff_0_V_addr_1, align 4" [../src/espacc.cc:95]   --->   Operation 65 'load' 'p_inbuff_0_V_load_1' <Predicate = (icmp_ln92)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%p_inbuff_1_V_addr_1 = getelementptr [3200 x i32]* %p_inbuff_1_V, i64 0, i64 %zext_ln215" [../src/espacc.cc:95]   --->   Operation 66 'getelementptr' 'p_inbuff_1_V_addr_1' <Predicate = (icmp_ln92)> <Delay = 0.00>
+ST_6 : Operation 67 [2/2] (2.26ns)   --->   "%p_inbuff_1_V_load_1 = load i32* %p_inbuff_1_V_addr_1, align 4" [../src/espacc.cc:95]   --->   Operation 67 'load' 'p_inbuff_1_V_load_1' <Predicate = (icmp_ln92)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_6 : Operation 68 [1/1] (1.51ns)   --->   "%in_rem = add nsw i32 %in_rem_0_i, -6400" [../src/espacc.cc:86]   --->   Operation 68 'add' 'in_rem' <Predicate = (!icmp_ln92)> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "br label %.preheader.i" [../src/espacc.cc:86]   --->   Operation 69 'br' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+
+State 7 <SV = 5> <Delay = 7.74>
+ST_7 : Operation 70 [1/2] (2.26ns)   --->   "%p_inbuff_0_V_load_1 = load i32* %p_inbuff_0_V_addr_1, align 4" [../src/espacc.cc:95]   --->   Operation 70 'load' 'p_inbuff_0_V_load_1' <Predicate = true> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_7 : Operation 71 [1/2] (2.26ns)   --->   "%p_inbuff_1_V_load_1 = load i32* %p_inbuff_1_V_addr_1, align 4" [../src/espacc.cc:95]   --->   Operation 71 'load' 'p_inbuff_1_V_load_1' <Predicate = true> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_7 : Operation 72 [1/1] (5.48ns)   --->   "%mul_ln95 = mul i32 %p_inbuff_1_V_load_1, %p_inbuff_0_V_load_1" [../src/espacc.cc:95]   --->   Operation 72 'mul' 'mul_ln95' <Predicate = true> <Delay = 5.48> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 5.48> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 6> <Delay = 3.78>
+ST_8 : Operation 73 [1/1] (0.00ns)   --->   "%acc_0_i_load = load i32* %acc_0_i" [../src/espacc.cc:95]   --->   Operation 73 'load' 'acc_0_i_load' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 74 [1/1] (0.00ns)   --->   "%vector_index_1_load = load i32* %vector_index_1" [../src/espacc.cc:97]   --->   Operation 74 'load' 'vector_index_1_load' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 75 [1/1] (1.51ns)   --->   "%acc = add i32 %mul_ln95, %acc_0_i_load" [../src/espacc.cc:95]   --->   Operation 75 'add' 'acc' <Predicate = true> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 76 [1/1] (1.51ns)   --->   "%vector_index = add i32 %vector_index_1_load, 2" [../src/espacc.cc:97]   --->   Operation 76 'add' 'vector_index' <Predicate = true> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 77 [1/1] (1.26ns)   --->   "%icmp_ln100 = icmp eq i32 %vector_index, %mac_len_read" [../src/espacc.cc:100]   --->   Operation 77 'icmp' 'icmp_ln100' <Predicate = true> <Delay = 1.26> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 78 [1/1] (0.00ns)   --->   "br i1 %icmp_ln100, label %4, label %branch2.i.._crit_edge.i_crit_edge" [../src/espacc.cc:100]   --->   Operation 78 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 79 [1/1] (0.85ns)   --->   "store i32 %vector_index, i32* %vector_index_1" [../src/espacc.cc:100]   --->   Operation 79 'store' <Predicate = (!icmp_ln100)> <Delay = 0.85>
+ST_8 : Operation 80 [1/1] (0.85ns)   --->   "store i32 %acc, i32* %acc_0_i" [../src/espacc.cc:100]   --->   Operation 80 'store' <Predicate = (!icmp_ln100)> <Delay = 0.85>
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "br label %._crit_edge.i" [../src/espacc.cc:100]   --->   Operation 81 'br' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%vector_number_1_load = load i32* %vector_number_1" [../src/espacc.cc:101]   --->   Operation 82 'load' 'vector_number_1_load' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%trunc_ln180_1 = trunc i32 %vector_number_1_load to i1" [../src/espacc.cc:101]   --->   Operation 83 'trunc' 'trunc_ln180_1' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%lshr_ln180_1 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %vector_number_1_load, i32 1, i32 31)" [../src/espacc.cc:101]   --->   Operation 84 'partselect' 'lshr_ln180_1' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln180_1 = zext i31 %lshr_ln180_1 to i64" [../src/espacc.cc:101]   --->   Operation 85 'zext' 'zext_ln180_1' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 86 [1/1] (0.00ns)   --->   "%p_outbuff_0_V_addr_1 = getelementptr [50 x i32]* %p_outbuff_0_V, i64 0, i64 %zext_ln180_1" [../src/espacc.cc:101]   --->   Operation 86 'getelementptr' 'p_outbuff_0_V_addr_1' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 87 [1/1] (0.00ns)   --->   "%p_outbuff_1_V_addr_1 = getelementptr [50 x i32]* %p_outbuff_1_V, i64 0, i64 %zext_ln180_1" [../src/espacc.cc:101]   --->   Operation 87 'getelementptr' 'p_outbuff_1_V_addr_1' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 88 [1/1] (0.00ns)   --->   "br i1 %trunc_ln180_1, label %branch7.i, label %branch6.i" [../src/espacc.cc:101]   --->   Operation 88 'br' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 89 [1/1] (2.26ns)   --->   "store i32 %acc, i32* %p_outbuff_0_V_addr_1, align 4" [../src/espacc.cc:101]   --->   Operation 89 'store' <Predicate = (icmp_ln100 & !trunc_ln180_1)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_8 : Operation 90 [1/1] (0.00ns)   --->   "br label %5" [../src/espacc.cc:101]   --->   Operation 90 'br' <Predicate = (icmp_ln100 & !trunc_ln180_1)> <Delay = 0.00>
+ST_8 : Operation 91 [1/1] (2.26ns)   --->   "store i32 %acc, i32* %p_outbuff_1_V_addr_1, align 4" [../src/espacc.cc:101]   --->   Operation 91 'store' <Predicate = (icmp_ln100 & trunc_ln180_1)> <Delay = 2.26> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_8 : Operation 92 [1/1] (0.00ns)   --->   "br label %5" [../src/espacc.cc:101]   --->   Operation 92 'br' <Predicate = (icmp_ln100 & trunc_ln180_1)> <Delay = 0.00>
+ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%vector_number_1_load_1 = load i32* %vector_number_1" [../src/espacc.cc:105]   --->   Operation 93 'load' 'vector_number_1_load_1' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 94 [1/1] (1.51ns)   --->   "%vector_number = add i32 %vector_number_1_load_1, 1" [../src/espacc.cc:105]   --->   Operation 94 'add' 'vector_number' <Predicate = (icmp_ln100)> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 95 [1/1] (0.85ns)   --->   "store i32 0, i32* %vector_index_1" [../src/espacc.cc:106]   --->   Operation 95 'store' <Predicate = (icmp_ln100)> <Delay = 0.85>
+ST_8 : Operation 96 [1/1] (0.85ns)   --->   "store i32 %vector_number, i32* %vector_number_1" [../src/espacc.cc:106]   --->   Operation 96 'store' <Predicate = (icmp_ln100)> <Delay = 0.85>
+ST_8 : Operation 97 [1/1] (0.85ns)   --->   "store i32 0, i32* %acc_0_i" [../src/espacc.cc:106]   --->   Operation 97 'store' <Predicate = (icmp_ln100)> <Delay = 0.85>
+ST_8 : Operation 98 [1/1] (0.00ns)   --->   "br label %._crit_edge.i" [../src/espacc.cc:106]   --->   Operation 98 'br' <Predicate = (icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 99 [1/1] (1.32ns)   --->   "%i_1 = add i13 %i1_0_i, 2" [../src/espacc.cc:92]   --->   Operation 99 'add' 'i_1' <Predicate = true> <Delay = 1.32> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 100 [1/1] (0.00ns)   --->   "br label %3" [../src/espacc.cc:92]   --->   Operation 100 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4.78ns
+The critical path consists of the following:
+	fifo read on port 'mac_vec' (../src/espacc.cc:67) [11]  (2.39 ns)
+	fifo write on port 'mac_vec_out' (../src/espacc.cc:67) [14]  (2.39 ns)
+
+ <State 2>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('in_rem', ../src/espacc.cc:73) [17]  (5.48 ns)
+	'add' operation ('add_ln73', ../src/espacc.cc:73) [18]  (1.51 ns)
+	'or' operation ('or_ln73', ../src/espacc.cc:73) [19]  (0 ns)
+	'add' operation ('length', ../src/espacc.cc:73) [20]  (1.51 ns)
+
+ <State 3>: 2.27ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ../src/espacc.cc:75) [23]  (0 ns)
+	'getelementptr' operation ('p_inbuff_1_V_addr', ../src/espacc.cc:76) [32]  (0 ns)
+	'load' operation ('p_inbuff_1_V_load', ../src/espacc.cc:76) on array 'p_inbuff_1_V' [33]  (2.27 ns)
+
+ <State 4>: 5.4ns
+The critical path consists of the following:
+	'load' operation ('p_inbuff_1_V_load', ../src/espacc.cc:76) on array 'p_inbuff_1_V' [33]  (2.27 ns)
+	'select' operation ('select_ln180', ../src/espacc.cc:76) [35]  (0.87 ns)
+	'store' operation ('store_ln76', ../src/espacc.cc:76) of variable 'select_ln180', ../src/espacc.cc:76 on array 'p_outbuff_0_V' [40]  (2.27 ns)
+
+ <State 5>: 1.89ns
+The critical path consists of the following:
+	'phi' operation ('in_rem') with incoming values : ('in_rem', ../src/espacc.cc:73) ('in_rem', ../src/espacc.cc:86) [56]  (0 ns)
+	'icmp' operation ('icmp_ln89', ../src/espacc.cc:89) [60]  (1.26 ns)
+	'select' operation ('in_len', ../src/espacc.cc:89) [62]  (0.629 ns)
+
+ <State 6>: 2.27ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ../src/espacc.cc:92) [65]  (0 ns)
+	'getelementptr' operation ('p_inbuff_0_V_addr_1', ../src/espacc.cc:95) [73]  (0 ns)
+	'load' operation ('p_inbuff_0_V_load_1', ../src/espacc.cc:95) on array 'p_inbuff_0_V' [74]  (2.27 ns)
+
+ <State 7>: 7.75ns
+The critical path consists of the following:
+	'load' operation ('p_inbuff_0_V_load_1', ../src/espacc.cc:95) on array 'p_inbuff_0_V' [74]  (2.27 ns)
+	'mul' operation ('mul_ln95', ../src/espacc.cc:95) [77]  (5.48 ns)
+
+ <State 8>: 3.78ns
+The critical path consists of the following:
+	'load' operation ('acc_0_i_load', ../src/espacc.cc:95) on local variable 'val' [69]  (0 ns)
+	'add' operation ('acc', ../src/espacc.cc:95) [78]  (1.51 ns)
+	'store' operation ('store_ln101', ../src/espacc.cc:101) of variable 'acc', ../src/espacc.cc:95 on array 'p_outbuff_0_V' [95]  (2.27 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,13 @@
+regslice_core
+regslice_core
+mac_vivado_dma64_w32_fifo_w32_d2_A
+mac_vivado_dma64_w32_fifo_w32_d2_A
+mac_vivado_dma64_w32_fifo_w32_d3_A
+mac_vivado_dma64_w32_fifo_w32_d3_A
+mac_vivado_dma64_w32_fifo_w32_d2_A
+mac_vivado_dma64_w32_fifo_w32_d2_A
+load32
+compute
+store
+dataflow_in_loop_bat
+top

@@ -1,0 +1,29 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++libext+.v
++access+r
++define+BDW_NCSC
+-amsdlibdir
+bdw_work/sims/BEHAV_DMA64/xcelium.d/AMSD
+-UNBUFFERED
+-MESSAGES
++EMGRLOG
+bdw_work/sims/BEHAV_DMA64/irun.log
+-XLSTIME
+1616967647
+-XLKEEP
+-XLMODE
+bdw_work/sims/BEHAV_DMA64/xcelium.d/run.lnx8664.19.09.d
+-RUNMODE
+-CDSLIB
+bdw_work/sims/BEHAV_DMA64/xcelium.d/run.lnx8664.19.09.d/cds.lib
+-HDLVAR
+bdw_work/sims/BEHAV_DMA64/xcelium.d/run.lnx8664.19.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	19.09-s009"
+-XLNAME
+./bdw_work/sims/BEHAV_DMA64/xcelium.d/run.lnx8664.19.09.d/mojave.cs.illinois.edu_30089

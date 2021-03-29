@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>back_method_1</module_name>
+	<signal>
+		<name>MUX_N135</name>
+		<source_loc>12530</source_loc>
+		<datatype W="1">bool</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N135</name>
+		<async/>
+		<lhs>
+			<name>MUX_N135</name>
+		</lhs>
+		<rhs>
+			<name>back_method_1_dma_write_chnl_sync_snd_reset_valid_curr_next</name>
+			<name>CynTemp_26</name>
+		</rhs>
+		<cond>
+			<name>amtmp010</name>
+		</cond>
+		<mux_area>1.0000</mux_area>
+		<mux_delay>1.1170</mux_delay>
+		<control_delay>1.1170</control_delay>
+	</thread>
+</netlist>

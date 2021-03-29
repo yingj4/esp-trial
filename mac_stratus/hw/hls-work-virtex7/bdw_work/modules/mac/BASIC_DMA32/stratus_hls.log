@@ -1,0 +1,2255 @@
+Start at Sun Mar 28 16:19:33 2021
+
+
+stratus_hls 19.22-s100  (92619.020518)
+Copyright (c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, BASIC_DMA32=1, BDW_RTL_mac_BASIC_DMA32=1,
+        00481.   ioConfig_IOCFG_DMA32, _p_ioConfig_IOCFG_DMA32,
+        00481.   ioConfig=IOCFG_DMA32, _wrap_ioConfig=IOCFG_DMA32,
+        00481.   DMA_WIDTH=32, _wrap_DMA_WIDTH=32, HLS_DIRECTIVES_BASIC".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /software/cadence-Mar2020/STRATUS192/share/stratus/include,
+        00481.   /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc,
+        00481.   ../src, ./memlib, ./memlib/c_parts,
+        00481.   /software/cadence-Mar2020/STRATUS192/share/stratus/include,
+        00481.   /software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "12.500".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is set to "0.100".
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "off".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "none".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is set to "xc7v2000tflg1925-2".
+        00481: --fpga_tool is set to "vivado".
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "BASIC_DMA32".
+        00481: --hls_module is set to "mac".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "on".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/mac/BASIC_DMA32/stratus_hls.log".
+        00481: --lsb_trimming is set to "on".
+        00481: --message_detail is set to "2".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "mac_rtl.cpp".
+        00481: --output_dir is set to "bdw_work/modules/mac/BASIC_DMA32".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "on".
+        00481: --output_style_reset_all_async is set to "on".
+        00481: --output_style_reset_all_sync is set to "on".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is set to "memlib".
+        00481: --parts_lib_file is set to "./memlib/memlib.bdl".
+        00481: --parts_lib_path is set to "./memlib/c_parts".
+        00481: --path_delay_limit is set to "off".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "off".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "on".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "low".
+        00481: --sharing_effort_regs is set to "low".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "../src/mac.cpp".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --synthesize_asserts is set to "off".
+        00481: --tech_lib is not set.
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --unsupported_lib_func is set to "error".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is not set.
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 2019.1.02.8066 (08201016).
+   NOTE 01727: Using Genus 19.11-s087_1.
+   NOTE 01763: Using VIVADO(XILINX) FPGA Tool version 2019.2.
+
+        01425: Loading design and library files:
+   NOTE 00251: Using FPGA tool vivado and part xc7v2000tflg1925-2.
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 12.500ns.
+
+WARNING 90549: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_get.h line 306 col 54
+WARNING 90549.   variable "v" is used before its value is set
+WARNING 90549.         if (base_type::is_hierarchically_bound()) return v;
+WARNING 90549.                                                          ^
+WARNING 90549.   detected during instantiation of
+WARNING 90549.   "T cynw::b_get_initiator_imp<T, TRAITS, true>::get(cynw_tlm::tlm_tag<T> *) [with T=bool, TRAITS=DEFAULT_TRAITS]" at line 154 of "/scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp"
+
+WARNING 90177: at ../src/mac.cpp line 303 col 22
+WARNING 90177.   variable "out_length" was declared but never referenced
+WARNING 90177.                 uint32_t out_length = mac_vec;
+WARNING 90177.                          ^
+
+        00967:   Processing library
+   NOTE 02776:     Obtaining register metrics for techlib...
+        01472:       Register Metrics:
+        01702:          Register Type   Area      Delay (ns)
+        01702.         --------------   ----   ---------------
+        01702.         EN SS SC AS AC   LUTs     Prop    Setup
+        01702.         -- -- -- -- --   ----   ------   ------
+        01703:          0  0  0  0  0     1     0.760    0.537
+        01703:          0  0  0  0  1     1     0.760    0.537
+        01703:          0  0  0  1  0     1     0.760    0.537
+        01703:          0  0  0  1  1     5     1.310    0.537
+        01703:          0  0  1  0  0     2     0.760    0.537
+        01703:          0  0  1  0  1     2     0.760    0.580
+        01703:          0  0  1  1  0     2     0.760    0.580
+        01703:          0  0  1  1  1     4     1.310    0.580
+        01703:          0  1  0  0  0     2     0.760    0.537
+        01703:          0  1  0  0  1     2     0.760    0.580
+        01703:          0  1  0  1  0     2     0.760    0.580
+        01703:          0  1  0  1  1     4     1.310    0.580
+        01703:          0  1  1  0  0     2     0.760    0.537
+        01703:          0  1  1  0  1     2     0.760    0.580
+        01703:          0  1  1  1  0     2     0.760    0.580
+        01703:          0  1  1  1  1     4     1.310    0.580
+        01703:          1  0  0  0  0     2     0.760    0.537
+        01703:          1  0  0  0  1     2     0.760    0.580
+        01703:          1  0  0  1  0     2     0.760    0.580
+        01703:          1  0  0  1  1     5     1.321    0.580
+        01703:          1  0  1  0  0     2     0.760    0.537
+        01703:          1  0  1  0  1     2     0.760    0.580
+        01703:          1  0  1  1  0     2     0.760    0.580
+        01703:          1  0  1  1  1     5     1.321    0.580
+        01703:          1  1  0  0  0     2     0.760    0.537
+        01703:          1  1  0  0  1     2     0.760    0.580
+        01703:          1  1  0  1  0     2     0.760    0.580
+        01703:          1  1  0  1  1     5     1.321    0.580
+        01703:          1  1  1  0  0     2     0.760    0.537
+        01703:          1  1  1  0  1     2     0.760    0.580
+        01703:          1  1  1  1  0     2     0.760    0.580
+        01703:          1  1  1  1  1     5     1.321    0.580
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+   NOTE 02776:     Obtaining mux metrics for techlib...
+        01429:       Binary Multiplexor Metrics:
+        02077:     Bitwidth    Num Inputs   LUTs    Delay (ns)
+        02078:         1            2        1      1.117
+        02078:         1            3        1      1.117
+        02078:         1            4        1      1.117
+        02078:         1            5        1      1.117
+        02078:         1            8        2      1.239
+        02078:         1            9        2      1.239
+        02078:         1           16        3      1.284
+        02078:         1           17        3      1.284
+        02078:         1           32        3      1.768
+        02078:         1           33        3      1.768
+        01429:       Onehot Multiplexor Metrics:
+        02077:     Bitwidth    Num Inputs   LUTs    Delay (ns)
+        02078:         1            2        1      1.117
+        02078:         1            3        1      1.117
+        02078:         1            4        1      1.117
+        02078:         1            5        1      1.117
+        02078:         1            8        2      1.239
+        02078:         1            9        2      1.239
+        02078:         1           16        3      1.284
+        02078:         1           17        3      1.284
+        02078:         1           32        3      1.768
+        02078:         1           33        3      1.768
+
+        00148: Normalization and optimization:
+   NOTE 00860:   Long int data types are being implemented with 64 bits.
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 380 function calls.
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 10 function calls.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_get.h
+   NOTE 00491.   line 315 (in reset_get())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 150 (in reset_req())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 11 (in reset_load_input())
+   NOTE 00491.     called from ../src/mac.cpp line 20 (in load_input())
+   NOTE 00491.     called from line 13
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 18.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 283 (in reset_put())
+   NOTE 00491.     called from line 296 (in load_input())
+   NOTE 00491.     called from ../src/mac.cpp line 13
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 18.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 259 (in put())
+   NOTE 00491.     called from ../src/mac.cpp line 78 (in load_input())
+   NOTE 00491.     called from line 13
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 49.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_get.h
+   NOTE 00491.   line 350 (in get())
+   NOTE 00491.     called from ../src/mac.cpp line 106 (in load_input())
+   NOTE 00491.     called from line 13
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 49.
+   NOTE 00491: at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 40 (in load_compute_handshake())
+   NOTE 00491.     called from ../src/mac.cpp line 120 (in load_input())
+   NOTE 00491.     called from line 13
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 49.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_get.h
+   NOTE 00491.   line 279 (in get())
+   NOTE 00491.     called from line 307 (in load_input())
+   NOTE 00491.     called from ../src/mac.cpp line 13
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 49.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 283 (in reset_put())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 184 (in reset_ack())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 20 (in reset_compute_kernel())
+   NOTE 00491.     called from ../src/mac.cpp line 268 (in compute_kernel())
+   NOTE 00491.     called from line 262
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 266.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_get.h
+   NOTE 00491.   line 315 (in reset_get())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 150 (in reset_req())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 21 (in reset_compute_kernel())
+   NOTE 00491.     called from ../src/mac.cpp line 268 (in compute_kernel())
+   NOTE 00491.     called from line 262
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 266.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 259 (in put())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 188 (in ack())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 54 (in compute_load_handshake())
+   NOTE 00491.     called from ../src/mac.cpp line 314 (in compute_kernel())
+   NOTE 00491.     called from line 262
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 52.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_get.h
+   NOTE 00491.   line 279 (in get())
+   NOTE 00491.     called from line 307 (in compute_kernel())
+   NOTE 00491.     called from ../src/mac.cpp line 262
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 64.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 283 (in reset_put())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 184 (in reset_ack())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 29 (in reset_store_output())
+   NOTE 00491.     called from ../src/mac.cpp line 140 (in store_output())
+   NOTE 00491.     called from line 134
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 138.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 283 (in reset_put())
+   NOTE 00491.     called from line 296 (in store_output())
+   NOTE 00491.     called from ../src/mac.cpp line 134
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 138.
+   NOTE 00491: at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 76 (in store_compute_handshake())
+   NOTE 00491.     called from ../src/mac.cpp line 194 (in store_output())
+   NOTE 00491.     called from line 134
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 169.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 259 (in put())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 188 (in ack())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 78 (in store_compute_handshake())
+   NOTE 00491.     called from ../src/mac.cpp line 194 (in store_output())
+   NOTE 00491.     called from line 134
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 169.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 259 (in put())
+   NOTE 00491.     called from ../src/mac.cpp line 206 (in store_output())
+   NOTE 00491.     called from line 134
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 169.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_put.h
+   NOTE 00491.   line 313 (in put())
+   NOTE 00491.     called from ../src/mac.cpp line 246 (in store_output())
+   NOTE 00491.     called from line 134
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   ../src/mac.cpp line 169.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 259 (in put())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 188 (in ack())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 78
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 76.
+   NOTE 00491: at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+   NOTE 00491.   line 259 (in put())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+   NOTE 00491.   line 188 (in ack())
+   NOTE 00491.     called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 54
+   NOTE 00491.   This HLS_DEFINE_PROTOCOL directive is ignored because it is
+   NOTE 00491.   within another HLS_DEFINE_PROTOCOL block, starting at
+   NOTE 00491.   /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+   NOTE 00491.   line 52.
+   NOTE 01446:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+   NOTE 01446.     line 137
+   NOTE 01446.     The edge-triggered SC_METHOD, back_method, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+   NOTE 01446.     line 123
+   NOTE 01446.     The edge-triggered SC_METHOD, back_method, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        02831.         line 152
+        02831.         Converting control branching to datapath elements. (3
+        02831.         bits multiplexed)
+        01351:   at ../src/mac.cpp line 13
+        01351.     Preprocessing thread mac::load_input
+        01351:   at ../src/mac.cpp line 262
+        01351.     Preprocessing thread mac::compute_kernel
+        01351:   at ../src/mac.cpp line 134
+        01351.     Preprocessing thread mac::store_output
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        00116.     line 137
+        00116.     Optimizing method mac::back_method
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        00116.     line 197
+        00116.     Optimizing method mac::ready_arb
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_get_mod.h
+        00116.     line 62
+        00116.     Optimizing method mac::process
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        00116.     line 123
+        00116.     Optimizing method mac::back_method
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        00116.     line 163
+        00116.     Optimizing method mac::valid_arb
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_put_mod.h
+        00116.     line 60
+        00116.     Optimizing method mac::process
+        01351:   at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        01351.     line 6
+        01351.     Preprocessing thread mac::config_accelerator
+        00116:   at ../src/mac.cpp line 13
+        00116.     Optimizing thread mac::load_input
+        00305:     847 nodes
+        00306:     Optimize: pass 1..
+        00305:     797 nodes
+        00306:     Optimize: pass 2.
+        00305:     765 nodes
+        00306:     Optimize: pass 3...
+        00305:     702 nodes
+        00306:     Optimize: pass 4.
+        00288:     at ../src/mac.cpp line 110
+        00288.       Unrolling loop 1 times because this loop executes only
+        00288.       once.
+        00305:     820 nodes
+        00306:     Optimize: pass 5..
+        00305:     617 nodes
+        00306:     Optimize: pass 6..
+        00305:     614 nodes
+        00306:     Optimize: pass 7.
+        00305:     614 nodes
+        00306:     Optimize: pass 8.
+        00305:     614 nodes
+        00306:     Optimize: pass 9.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_get.h
+        02831.         line 376
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        02831:       at ../src/mac.cpp line 113
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     544 nodes
+        00306:     Optimize: pass 10...
+        00305:     532 nodes
+        00306:     Optimize: pass 11.
+        00305:     531 nodes
+        00306:     Optimize: pass 12..
+        00305:     529 nodes
+        00306:     Optimize: pass 13.
+        00305:     536 nodes
+        00306:     Optimize: pass 14.
+        00305:     536 nodes
+        00306:     Optimize: pass 15.
+        02813:     at ../src/mac.hpp line 39
+        02813.       Array plm_in_ping, 6400 words x 32 bits (204800 total
+        02813.       bits), has been mapped to a mac_plm_block_in_dma32 memory 
+        02813.       because this array has a HLS_MAP_TO_MEMORY directive.
+   NOTE 00260:       at ../src/mac.cpp line 114 (in load_input())
+   NOTE 00260.           called from line 13 (in [0]())
+   NOTE 00260.           called from line 110
+   NOTE 00260.         This is the first of 1 variable writes to plm_in_ping.
+        02813:     at ../src/mac.hpp line 38
+        02813.       Array plm_in_pong, 6400 words x 32 bits (204800 total
+        02813.       bits), has been mapped to a mac_plm_block_in_dma32 memory 
+        02813.       because this array has a HLS_MAP_TO_MEMORY directive.
+   NOTE 00260:       at ../src/mac.cpp line 116 (in load_input())
+   NOTE 00260.           called from line 13 (in [0]())
+   NOTE 00260.           called from line 110
+   NOTE 00260.         This is the first of 1 variable writes to plm_in_pong.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        00289.         line 44 (in wait_for_config())
+        00289.           called from ../src/mac.cpp line 37 (in load_input())
+        00289.           called from line 13
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+        00289.         line 271 (in put())
+        00289.           called from ../src/mac.cpp line 78 (in load_input())
+        00289.           called from line 13
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_get.h
+        00289.         line 371 (in get())
+        00289.           called from ../src/mac.cpp line 106 (in load_input())
+        00289.           called from line 13
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 99 (in load_input())
+        00289.           called from line 13
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_get.h
+        00289.         line 288 (in get())
+        00289.           called from line 307 (in load_input())
+        00289.           called from ../src/mac.cpp line 13
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 65 (in load_input())
+        00289.           called from line 13
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 56 (in load_input())
+        00289.           called from line 13
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator.i.hpp
+        00289.         line 52 (in process_done())
+        00289.           called from ../src/mac.cpp line 128 (in load_input())
+        00289.           called from line 13
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        02835:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        02835.         line 44
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at ../src/mac.cpp line 56
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at ../src/mac.cpp line 65
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at ../src/mac.cpp line 99
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_get.h
+        02835.         line 371
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        00116:   at ../src/mac.cpp line 262
+        00116.     Optimizing thread mac::compute_kernel
+        00305:     496 nodes
+        00306:     Optimize: pass 1.
+        00305:     490 nodes
+        00306:     Optimize: pass 2.
+        00305:     474 nodes
+        00306:     Optimize: pass 3...
+        00305:     442 nodes
+        00306:     Optimize: pass 4.
+        00305:     442 nodes
+        00306:     Optimize: pass 5.
+        00305:     442 nodes
+        00306:     Optimize: pass 6.
+        02831:       at ../src/mac.cpp line 318
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        02831:       at ../src/mac.cpp line 327
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     455 nodes
+        00306:     Optimize: pass 7...
+        00305:     437 nodes
+        00306:     Optimize: pass 8.
+        02831:       at ../src/mac.cpp line 326
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     465 nodes
+        00306:     Optimize: pass 9..
+        00305:     457 nodes
+        00306:     Optimize: pass 10.
+        00305:     453 nodes
+        00306:     Optimize: pass 11..
+        00305:     445 nodes
+        00306:     Optimize: pass 12.
+        00305:     444 nodes
+        00306:     Optimize: pass 13..
+        00305:     442 nodes
+        00306:     Optimize: pass 14.
+        00305:     443 nodes
+        00306:     Optimize: pass 15.
+        00305:     445 nodes
+        00306:     Optimize: pass 16.
+        00305:     445 nodes
+        00306:     Optimize: pass 17.
+        00261:       at ../src/mac.cpp line 319 (in compute_kernel())
+        00261.           called from line 262
+        00261.         This is the first of 2 variable reads from plm_in_ping.
+        00261:       at ../src/mac.cpp line 321 (in compute_kernel())
+        00261.           called from line 262
+        00261.         This is the first of 2 variable reads from plm_in_pong.
+        02813:     at ../src/mac.hpp line 37
+        02813.       Array plm_out_ping, 100 words x 32 bits (3200 total bits),
+        02813.       has been mapped to a mac_plm_block_out_dma32 memory 
+        02813.       because this array has a HLS_MAP_TO_MEMORY directive.
+   NOTE 00260:       at ../src/mac.cpp line 328 (in compute_kernel())
+   NOTE 00260.           called from line 262
+   NOTE 00260.         This is the first of 1 variable writes to plm_out_ping.
+        02813:     at ../src/mac.hpp line 36
+        02813.       Array plm_out_pong, 100 words x 32 bits (3200 total bits),
+        02813.       has been mapped to a mac_plm_block_out_dma32 memory 
+        02813.       because this array has a HLS_MAP_TO_MEMORY directive.
+   NOTE 00260:       at ../src/mac.cpp line 330 (in compute_kernel())
+   NOTE 00260.           called from line 262
+   NOTE 00260.         This is the first of 1 variable writes to plm_out_pong.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        00289.         line 44 (in wait_for_config())
+        00289.           called from ../src/mac.cpp line 285 (in
+        00289.         compute_kernel())
+        00289.           called from line 262
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+        00289.         line 271 (in put())
+        00289.           called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+        00289.         line 188 (in ack())
+        00289.           called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+        00289.         line 54 (in compute_load_handshake())
+        00289.           called from ../src/mac.cpp line 314 (in
+        00289.         compute_kernel())
+        00289.           called from line 262
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 317 (in compute_kernel())
+        00289.           called from line 262
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 309 (in compute_kernel())
+        00289.           called from line 262
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_get.h
+        00289.         line 288 (in get())
+        00289.           called from line 307 (in compute_kernel())
+        00289.           called from ../src/mac.cpp line 262
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 300 (in compute_kernel())
+        00289.           called from line 262
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator.i.hpp
+        00289.         line 52 (in process_done())
+        00289.           called from ../src/mac.cpp line 347 (in
+        00289.         compute_kernel())
+        00289.           called from line 262
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        02835:       at ../src/mac.cpp line 300
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at ../src/mac.cpp line 309
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at ../src/mac.cpp line 317
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        00116:   at ../src/mac.cpp line 134
+        00116.     Optimizing thread mac::store_output
+        00305:     661 nodes
+        00306:     Optimize: pass 1..
+        00305:     621 nodes
+        00306:     Optimize: pass 2.
+        00305:     605 nodes
+        00306:     Optimize: pass 3...
+        00305:     574 nodes
+        00306:     Optimize: pass 4.
+        00288:     at ../src/mac.cpp line 238
+        00288.       Unrolling loop 1 times because this loop executes only
+        00288.       once.
+        00305:     650 nodes
+        00306:     Optimize: pass 5..
+        00305:     519 nodes
+        00306:     Optimize: pass 6..
+        00305:     513 nodes
+        00306:     Optimize: pass 7.
+        00305:     513 nodes
+        00306:     Optimize: pass 8.
+        00305:     513 nodes
+        00306:     Optimize: pass 9.
+        02831:       at ../src/mac.cpp line 241
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     503 nodes
+        00306:     Optimize: pass 10...
+        00305:     494 nodes
+        00306:     Optimize: pass 11.
+        00305:     493 nodes
+        00306:     Optimize: pass 12..
+        00305:     491 nodes
+        00306:     Optimize: pass 13.
+        00305:     496 nodes
+        00306:     Optimize: pass 14.
+        00305:     496 nodes
+        00306:     Optimize: pass 15.
+        00261:       at ../src/mac.cpp line 242 (in store_output())
+        00261.           called from line 134 (in [0]())
+        00261.           called from line 238
+        00261.         This is the first of 1 variable reads from plm_out_ping.
+        00261:       at ../src/mac.cpp line 244 (in store_output())
+        00261.           called from line 134 (in [0]())
+        00261.           called from line 238
+        00261.         This is the first of 1 variable reads from plm_out_pong.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        00289.         line 44 (in wait_for_config())
+        00289.           called from ../src/mac.cpp line 157 (in
+        00289.         store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+        00289.         line 271 (in put())
+        00289.           called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/esp_handshake.hpp
+        00289.         line 188 (in ack())
+        00289.           called from /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator_3P.i.hpp
+        00289.         line 78 (in store_compute_handshake())
+        00289.           called from ../src/mac.cpp line 194 (in
+        00289.         store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_blocking_put.h
+        00289.         line 271 (in put())
+        00289.           called from ../src/mac.cpp line 206 (in
+        00289.         store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_put.h
+        00289.         line 333 (in put())
+        00289.           called from ../src/mac.cpp line 246 (in
+        00289.         store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 232 (in store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 191 (in store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at ../src/mac.cpp line 182 (in store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/core/accelerators/esp_accelerator.i.hpp
+        00289.         line 52 (in process_done())
+        00289.           called from ../src/mac.cpp line 257 (in
+        00289.         store_output())
+        00289.           called from line 134
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        02835:       at ../src/mac.cpp line 182
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at ../src/mac.cpp line 191
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at ../src/mac.cpp line 232
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        02835:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_put.h
+        02835.         line 333
+        02835.         Not converting control branching to datapath elements
+        02835.         because the wait statements are not balanced.
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        00116.     line 137
+        00116.     Optimizing method mac::back_method_0
+        00305:     299 nodes
+        00306:     Optimize: pass 1..
+        00305:     156 nodes
+        00306:     Optimize: pass 2.
+        00305:     201 nodes
+        00306:     Optimize: pass 3..
+        00305:     176 nodes
+        00306:     Optimize: pass 4.
+        00305:     176 nodes
+        00306:     Optimize: pass 5.
+        00305:     176 nodes
+        00306:     Optimize: pass 6.
+        00305:     176 nodes
+        00306:     Optimize: pass 7.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        02831.         line 148
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     162 nodes
+        00306:     Optimize: pass 8..
+        00305:     159 nodes
+        00306:     Optimize: pass 9.
+        00305:     157 nodes
+        00306:     Optimize: pass 10..
+        00305:     153 nodes
+        00306:     Optimize: pass 11.
+        00305:     150 nodes
+        00306:     Optimize: pass 12..
+        00305:     147 nodes
+        00306:     Optimize: pass 13.
+        00305:     147 nodes
+        00306:     Optimize: pass 14.
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        00116.     line 197
+        00116.     Optimizing method mac::ready_arb
+        00305:     159 nodes
+        00306:     Optimize: pass 1.
+        00305:     135 nodes
+        00306:     Optimize: pass 2.
+        00305:     141 nodes
+        00306:     Optimize: pass 3..
+        00305:     135 nodes
+        00306:     Optimize: pass 4.
+        00305:     135 nodes
+        00306:     Optimize: pass 5.
+        00305:     135 nodes
+        00306:     Optimize: pass 6.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        02831.         line 202
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     115 nodes
+        00306:     Optimize: pass 7..
+        00305:     112 nodes
+        00306:     Optimize: pass 8.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        02831.         line 200
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     81 nodes
+        00306:     Optimize: pass 9..
+        00305:     78 nodes
+        00306:     Optimize: pass 10.
+        00305:     76 nodes
+        00306:     Optimize: pass 11..
+        00305:     72 nodes
+        00306:     Optimize: pass 12.
+        00305:     71 nodes
+        00306:     Optimize: pass 13.
+        00305:     77 nodes
+        00306:     Optimize: pass 14..
+        00305:     68 nodes
+        00306:     Optimize: pass 15.
+        00305:     68 nodes
+        00306:     Optimize: pass 16.
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_get_mod.h
+        00116.     line 62
+        00116.     Optimizing method mac::process_0
+        00305:     67 nodes
+        00306:     Optimize: pass 1.
+        00305:     43 nodes
+        00306:     Optimize: pass 2.
+        00305:     52 nodes
+        00306:     Optimize: pass 3..
+        00305:     49 nodes
+        00306:     Optimize: pass 4.
+        00305:     49 nodes
+        00306:     Optimize: pass 5.
+        00305:     49 nodes
+        00306:     Optimize: pass 6.
+        00305:     51 nodes
+        00306:     Optimize: pass 7..
+        00305:     48 nodes
+        00306:     Optimize: pass 8.
+        00305:     48 nodes
+        00306:     Optimize: pass 9.
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        00116.     line 123
+        00116.     Optimizing method mac::back_method_1
+        00305:     263 nodes
+        00306:     Optimize: pass 1..
+        00305:     138 nodes
+        00306:     Optimize: pass 2.
+        00305:     168 nodes
+        00306:     Optimize: pass 3..
+        00305:     153 nodes
+        00306:     Optimize: pass 4.
+        00305:     153 nodes
+        00306:     Optimize: pass 5.
+        00305:     153 nodes
+        00306:     Optimize: pass 6.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        02831.         line 130
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     133 nodes
+        00306:     Optimize: pass 7..
+        00305:     130 nodes
+        00306:     Optimize: pass 8.
+        00305:     129 nodes
+        00306:     Optimize: pass 9..
+        00305:     127 nodes
+        00306:     Optimize: pass 10.
+        00305:     115 nodes
+        00306:     Optimize: pass 11.
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        00116.     line 163
+        00116.     Optimizing method mac::valid_arb
+        00305:     159 nodes
+        00306:     Optimize: pass 1.
+        00305:     135 nodes
+        00306:     Optimize: pass 2.
+        00305:     141 nodes
+        00306:     Optimize: pass 3..
+        00305:     135 nodes
+        00306:     Optimize: pass 4.
+        00305:     135 nodes
+        00306:     Optimize: pass 5.
+        00305:     135 nodes
+        00306:     Optimize: pass 6.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        02831.         line 168
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     115 nodes
+        00306:     Optimize: pass 7..
+        00305:     112 nodes
+        00306:     Optimize: pass 8.
+        02831:       at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        02831.         line 166
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     81 nodes
+        00306:     Optimize: pass 9..
+        00305:     78 nodes
+        00306:     Optimize: pass 10.
+        00305:     76 nodes
+        00306:     Optimize: pass 11..
+        00305:     72 nodes
+        00306:     Optimize: pass 12.
+        00305:     71 nodes
+        00306:     Optimize: pass 13.
+        00305:     77 nodes
+        00306:     Optimize: pass 14..
+        00305:     68 nodes
+        00306:     Optimize: pass 15.
+        00305:     68 nodes
+        00306:     Optimize: pass 16.
+        00116:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_put_mod.h
+        00116.     line 60
+        00116.     Optimizing method mac::process_1
+        00305:     63 nodes
+        00306:     Optimize: pass 1.
+        00305:     39 nodes
+        00306:     Optimize: pass 2.
+        00305:     48 nodes
+        00306:     Optimize: pass 3..
+        00305:     45 nodes
+        00306:     Optimize: pass 4.
+        00305:     45 nodes
+        00306:     Optimize: pass 5.
+        00305:     45 nodes
+        00306:     Optimize: pass 6.
+        00305:     44 nodes
+        00306:     Optimize: pass 7..
+        00305:     41 nodes
+        00306:     Optimize: pass 8.
+        00305:     41 nodes
+        00306:     Optimize: pass 9.
+        00116:   at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        00116.     line 6
+        00116.     Optimizing thread mac::config_accelerator
+        00305:     228 nodes
+        00306:     Optimize: pass 1.
+        00305:     227 nodes
+        00306:     Optimize: pass 2.
+        00305:     195 nodes
+        00306:     Optimize: pass 3...
+        00305:     131 nodes
+        00306:     Optimize: pass 4.
+        00305:     131 nodes
+        00306:     Optimize: pass 5.
+        00305:     131 nodes
+        00306:     Optimize: pass 6.
+        00305:     127 nodes
+        00306:     Optimize: pass 7.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        00289.         line 18 (in config_accelerator())
+        00289.           called from line 6
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        00289:       at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        00289.         line 32 (in config_accelerator())
+        00289.           called from line 6
+        00289.         This loop is not being unrolled because the
+        00289.         HLS_UNROLL_LOOP(OFF,...) directive was used.
+        01352:   at ../src/mac.cpp line 13
+        01352.     Postprocessing thread mac::load_input
+        01352:   at ../src/mac.cpp line 262
+        01352.     Postprocessing thread mac::compute_kernel
+        01352:   at ../src/mac.cpp line 134
+        01352.     Postprocessing thread mac::store_output
+        01352:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        01352.     line 137
+        01352.     Postprocessing method mac::back_method_0
+        01352:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        01352.     line 197
+        01352.     Postprocessing method mac::ready_arb
+        01352:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_get_mod.h
+        01352.     line 62
+        01352.     Postprocessing method mac::process_0
+        01352:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        01352.     line 123
+        01352.     Postprocessing method mac::back_method_1
+        01352:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        01352.     line 163
+        01352.     Postprocessing method mac::valid_arb
+        01352:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_put_mod.h
+        01352.     line 60
+        01352.     Postprocessing method mac::process_1
+        01352:   at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+        01352.     line 6
+        01352.     Postprocessing thread mac::config_accelerator
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 32 bits by 64 inputs.
+   NOTE 02776:     Obtaining mux metrics for techlib...
+        01429:       Binary Multiplexor Metrics:
+        02077:     Bitwidth    Num Inputs   LUTs    Delay (ns)
+        02078:         1            2        1      1.117
+        02078:         1            3        1      1.117
+        02078:         1            4        1      1.117
+        02078:         1            5        1      1.117
+        02078:         1            8        2      1.239
+        02078:         1            9        2      1.239
+        02078:         1           16        3      1.284
+        02078:         1           17        3      1.284
+        02078:         1           32        3      1.768
+        02078:         1           33        3      1.768
+        02078:         1           64        4      1.794
+        02078:         2            2        2      1.117
+        02078:         2            3        2      1.117
+        02078:         2            4        2      1.117
+        02078:         2            5        2      1.117
+        02078:         2            8        4      1.239
+        02078:         2            9        4      1.239
+        02078:         2           16        6      1.284
+        02078:         2           17        6      1.284
+        02078:         2           32        6      1.768
+        02078:         2           33        6      1.768
+        02078:         2           64        8      1.794
+        02078:         4            2        4      1.117
+        02078:         4            3        4      1.117
+        02078:         4            4        4      1.117
+        02078:         4            5        4      1.117
+        02078:         4            8        8      1.239
+        02078:         4            9        8      1.239
+        02078:         4           16       12      1.284
+        02078:         4           17       12      1.284
+        02078:         4           32       12      1.768
+        02078:         4           33       12      1.768
+        02078:         4           64       16      1.794
+        02078:         8            2        8      1.117
+        02078:         8            3        8      1.117
+        02078:         8            4        8      1.117
+        02078:         8            5        8      1.117
+        02078:         8            8       16      1.239
+        02078:         8            9       16      1.239
+        02078:         8           16       24      1.284
+        02078:         8           17       24      1.284
+        02078:         8           32       24      1.768
+        02078:         8           33       24      1.768
+        02078:         8           64       32      1.794
+        02078:        16            2       16      1.117
+        02078:        16            3       16      1.117
+        02078:        16            4       16      1.117
+        02078:        16            5       16      1.117
+        02078:        16            8       32      1.239
+        02078:        16            9       32      1.239
+        02078:        16           16       48      1.284
+        02078:        16           17       48      1.284
+        02078:        16           32       48      1.768
+        02078:        16           33       48      1.768
+        02078:        16           64       64      1.794
+        02078:        32            2       32      1.117
+        02078:        32            3       32      1.117
+        02078:        32            4       32      1.117
+        02078:        32            5       32      1.117
+        02078:        32            8       64      1.239
+        02078:        32            9       64      1.239
+        02078:        32           16       96      1.284
+        02078:        32           17       96      1.284
+        02078:        32           32       96      1.768
+        02078:        32           33       96      1.768
+        02078:        32           64      128      1.794
+        01429:       Onehot Multiplexor Metrics:
+        02077:     Bitwidth    Num Inputs   LUTs    Delay (ns)
+        02078:         1            2        1      1.117
+        02078:         1            3        1      1.117
+        02078:         1            4        1      1.117
+        02078:         1            5        1      1.117
+        02078:         1            8        2      1.239
+        02078:         1            9        2      1.239
+        02078:         1           16        3      1.284
+        02078:         1           17        3      1.284
+        02078:         1           32        3      1.768
+        02078:         1           33        3      1.768
+        02078:         1           64        4      1.794
+        02078:         2            2        2      1.117
+        02078:         2            3        2      1.117
+        02078:         2            4        2      1.117
+        02078:         2            5        2      1.117
+        02078:         2            8        4      1.239
+        02078:         2            9        4      1.239
+        02078:         2           16        6      1.284
+        02078:         2           17        6      1.284
+        02078:         2           32        6      1.768
+        02078:         2           33        6      1.768
+        02078:         2           64        8      1.794
+        02078:         4            2        4      1.117
+        02078:         4            3        4      1.117
+        02078:         4            4        4      1.117
+        02078:         4            5        4      1.117
+        02078:         4            8        8      1.239
+        02078:         4            9        8      1.239
+        02078:         4           16       12      1.284
+        02078:         4           17       12      1.284
+        02078:         4           32       12      1.768
+        02078:         4           33       12      1.768
+        02078:         4           64       16      1.794
+        02078:         8            2        8      1.117
+        02078:         8            3        8      1.117
+        02078:         8            4        8      1.117
+        02078:         8            5        8      1.117
+        02078:         8            8       16      1.239
+        02078:         8            9       16      1.239
+        02078:         8           16       24      1.284
+        02078:         8           17       24      1.284
+        02078:         8           32       24      1.768
+        02078:         8           33       24      1.768
+        02078:         8           64       32      1.794
+        02078:        16            2       16      1.117
+        02078:        16            3       16      1.117
+        02078:        16            4       16      1.117
+        02078:        16            5       16      1.117
+        02078:        16            8       32      1.239
+        02078:        16            9       32      1.239
+        02078:        16           16       48      1.284
+        02078:        16           17       48      1.284
+        02078:        16           32       48      1.768
+        02078:        16           33       48      1.768
+        02078:        16           64       64      1.794
+        02078:        32            2       32      1.117
+        02078:        32            3       32      1.117
+        02078:        32            4       32      1.117
+        02078:        32            5       32      1.117
+        02078:        32            8       64      1.239
+        02078:        32            9       64      1.239
+        02078:        32           16       96      1.284
+        02078:        32           17       96      1.284
+        02078:        32           32       96      1.768
+        02078:        32           33       96      1.768
+        02078:        32           64      128      1.794
+        00968:   Matching resources
+        02723:       Synthesizing mac_Xor_1Ux1U_1U_4...
+        00304:         Comb. LUTs =   1  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.346ns
+        02723:       Synthesizing mac_N_Muxb_1_2_4_4...
+        00304:         Comb. LUTs =   1  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.346ns
+        02723:       Synthesizing mac_Or_1Ux1U_1U_4...
+        00304:         Comb. LUTs =   1  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.346ns
+        02723:       Synthesizing mac_Sub_32Sx7U_32S_4...
+        00304:         Comb. LUTs =  64  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.115ns
+        02723:       Synthesizing mac_Add_33Sx32U_33S_4...
+        00304:         Comb. LUTs =  68  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.115ns
+        02723:       Synthesizing mac_N_Mux_32_2_3_4...
+        00304:         Comb. LUTs =  16  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.355ns
+        02723:       Synthesizing mac_GreaterThan_32Sx8S_1U_4...
+        00304:         Comb. LUTs =  32  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.804ns
+        02723:       Synthesizing mac_LessThan_33Sx33S_1U_4...
+        00304:         Comb. LUTs =  37  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.956ns
+        02723:       Synthesizing mac_LessThan_32Ux32U_1U_4...
+        00304:         Comb. LUTs =  32  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.804ns
+        02723:       Synthesizing mac_Add_32Sx2U_32S_4...
+        00304:         Comb. LUTs =  34  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.025ns
+        02723:       Synthesizing mac_Add_7Ux1U_7U_4...
+        00304:         Comb. LUTs =   5  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.944ns
+        02723:       Synthesizing mac_N_Mux_32_2_2_4...
+        00304:         Comb. LUTs =  16  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.355ns
+        02723:       Synthesizing mac_And_1Ux1U_1U_4...
+        00304:         Comb. LUTs =   1  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.346ns
+        02723:       Synthesizing mac_Equal_32Ux32U_1U_4...
+        00304:         Comb. LUTs =  23  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.791ns
+        02723:       Synthesizing mac_Add_33Sx2U_33S_4...
+        00304:         Comb. LUTs =  38  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.025ns
+        02723:       Synthesizing mac_Add_32Ux2U_32U_4...
+        00304:         Comb. LUTs =  34  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.025ns
+        02723:       Synthesizing mac_Add_17Sx1U_17S_4...
+        00304:         Comb. LUTs =  21  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.813ns
+        02723:       Synthesizing mac_Add_13Sx1U_13S_4...
+        00304:         Comb. LUTs =  17  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.760ns
+        02723:       Synthesizing mac_LessThan_17Sx32S_1U_4...
+        00304:         Comb. LUTs =  32  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.804ns
+        02723:       Synthesizing mac_Sub_32Sx13U_32S_4...
+        00304:         Comb. LUTs =  64  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.115ns
+        02723:       Synthesizing mac_LessThan_17Sx33S_1U_4...
+        00304:         Comb. LUTs =  37  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.956ns
+        02723:       Synthesizing mac_LessThan_16Ux32U_1U_4...
+        00304:         Comb. LUTs =  32  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.804ns
+        02723:       Synthesizing mac_Add_16Ux1U_16U_4...
+        00304:         Comb. LUTs =  17  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.813ns
+        02723:       Synthesizing mac_N_MuxB_32_2_1_4...
+        00304:         Comb. LUTs =  16  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.346ns
+        02723:       Synthesizing mac_Not_1U_1U_4...
+        00304:         Comb. LUTs =   1  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.346ns
+        02723:       Synthesizing mac_Add_32Ux32U_32U_4...
+        00304:         Comb. LUTs =  64  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.115ns
+        02723:       Synthesizing mac_N_Mux_32_2_0_4...
+        00304:         Comb. LUTs =  16  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.355ns
+        02723:       Synthesizing mac_GreaterThan_32Sx14S_1U_4...
+        00304:         Comb. LUTs =  32  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.804ns
+        02723:       Synthesizing mac_GreaterThan_32Sx2S_1U_4...
+        00304:         Comb. LUTs =  32  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.804ns
+        02723:       Synthesizing mac_Mul_32Ux32U_32U_4...
+        00304:         Comb. LUTs =  31  Seq. LUTs =   0  Dedicated Mults = 3
+        00304.                                       Latency =  0  Delay =  5.856ns
+        02723:       Synthesizing mac_LessThan_2Sx32S_1U_4...
+        00304:         Comb. LUTs =  32  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.804ns
+        02941: .....................................................
+
+        02940: . Extraction Report
+        02941: .....................................................
+        02941: . Kind |   Type Spec |   Inst Spec | To |   Matches
+        02941: .....................................................
+        02941: 
+        02948: 4 items do not match any extraction spec:
+        02949:   #1: Array : plm_in_pong
+        02949:   #2: Array : plm_in_ping
+        02949:   #3: Array : plm_out_pong
+        02949:   #4: Array : plm_out_ping
+        02941: .....................................................
+        02941: 
+        00813:     Array bindings:
+        02935:       at ../src/mac.hpp line 38
+        02935.         Array plm_in_pong, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 39
+        02935.         Array plm_in_ping, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 39
+        02935.         Array plm_in_ping, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 38
+        02935.         Array plm_in_pong, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 36
+        02935.         Array plm_out_pong, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        02935:       at ../src/mac.hpp line 37
+        02935.         Array plm_out_ping, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        02935:       at ../src/mac.hpp line 37
+        02935.         Array plm_out_ping, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        02935:       at ../src/mac.hpp line 36
+        02935.         Array plm_out_pong, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+
+        00969: Scheduling:
+   NOTE 01437:   at ../src/mac.cpp line 13
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at ../src/mac.cpp line 262
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at ../src/mac.cpp line 134
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+   NOTE 01437.     line 137
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_get_mod.h
+   NOTE 01437.     line 62
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+   NOTE 01437.     line 123
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_can_put_mod.h
+   NOTE 01437.     line 60
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at /scratch/projects/yingj4/esp/accelerators/stratus_hls/common/inc/utils/configs/esp_config_proc.i.hpp
+   NOTE 01437.     line 6
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+               .
+        01171:   Scheduling thread mac::config_accelerator
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_config_proc.i.hpp:18,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_config_proc.i.hpp:32,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        02098:     Total op count: 4
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 4
+        00356:     Estimated intrinsic mux LUTs: 0
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01463:       No scheduled resources (functional units) are needed.
+               .
+        01171:   Scheduling method mac::ready_arb
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 11
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 11
+        00356:     Estimated intrinsic mux LUTs: 0
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                 Resource Quantity
+        01220:       mac_Xor_1Ux1U_1U_4        2
+        01220:       mac_And_1Ux1U_1U_4        1
+        01220:          mac_Not_1U_1U_4        1
+        01220:        mac_Or_1Ux1U_1U_4        1
+               .
+        01171:   Scheduling method mac::back_method_0
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 29
+        03257:     Sharable op count: 2
+        01170:     Unsharable op count: 27
+        00356:     Estimated intrinsic mux LUTs: 17
+        01167:     at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        01167.       line 134 estimated mux area: 16
+        01168:     Symbol:dma_read_chnl.data_buf Mux inputs: 2 Width: 32 Mux
+        01168.       area: 16
+        01167:     at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_rcv.h
+        01167.       line 129 estimated mux area: 1
+        01168:     Symbol:dma_read_chnl.sync_rcv.reset_ready_curr Mux inputs: 2
+        01168.       Width: 1 Mux area: 1
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                  Resource Quantity
+        01220:           mac_Not_1U_1U_4        2
+        01220:        mac_And_1Ux1U_1U_4        1
+        01220:       mac_N_MuxB_32_2_1_4        1
+        01220:        mac_N_Muxb_1_2_4_4        1
+        01220:         mac_Or_1Ux1U_1U_4        1
+               .
+        01171:   Scheduling method mac::process_0
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 8
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 8
+        00356:     Estimated intrinsic mux LUTs: 0
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                 Resource Quantity
+        01220:       mac_And_1Ux1U_1U_4        2
+        01220:          mac_Not_1U_1U_4        1
+        01220:        mac_Or_1Ux1U_1U_4        1
+               .
+        01171:   Scheduling thread mac::load_input
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+   NOTE 01992: at ../src/mac.cpp line 102
+   NOTE 01992. Breaking array dependency associated with 'plm_in_pong',
+   NOTE 01992. because a HLS_BREAK_ARRAY_DEPENDENCY directive was specified. 
+   NOTE 01992: at ../src/mac.cpp line 101
+   NOTE 01992. Breaking array dependency associated with 'plm_in_ping',
+   NOTE 01992. because a HLS_BREAK_ARRAY_DEPENDENCY directive was specified. 
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_config_proc.i.hpp:44,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        00907: ..................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:56,41   .
+        00907: .                                                                .
+        00907: . Loop carried variables                                         .
+        00907: . -------------------------                                      .
+        00907: . dma_read_chnl.set_ready_curr                                   .
+        00907: . load_input::ping                                               .
+        00907: . load_input::offset                                             .
+        00907: . load_input::b                                                  .
+        00907: .                                                                .
+        00907: . Total loop carried dependencies: 4                             .
+        00907: ..................................................................
+        00907: ..................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:65,45   .
+        00907: .                                                                .
+        00907: . Loop carried variables                                         .
+        00907: . -------------------------                                      .
+        00907: . dma_read_chnl.set_ready_curr                                   .
+        00907: . load_input::ping                                               .
+        00907: . load_input::offset                                             .
+        00907: . load_input::rem                                                .
+        00907: .                                                                .
+        00907: . Total loop carried dependencies: 4                             .
+        00907: ..................................................................
+        00907: ..............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_blocking_put.h:271,5   .
+        00907: .                                                                            .
+        00907: . <No loop carried dependencies found>                                       .
+        00907: ..............................................................................
+        00907: ...................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:114,40   .
+        00907: .                                                                 .
+        00907: . Loop carried variables                                          .
+        00907: . -------------------------                                       .
+        00907: . dma_read_chnl.set_ready_curr                                    .
+        00907: . load_input::i                                                   .
+        00907: .                                                                 .
+        00907: . Total loop carried dependencies: 2                              .
+        00907: ...................................................................
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_may_block_get.h:371,6   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        00907: ..............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_blocking_get.h:288,5   .
+        00907: .                                                                            .
+        00907: . <No loop carried dependencies found>                                       .
+        00907: ..............................................................................
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_accelerator.i.hpp:52,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        02098:     Total op count: 77
+        03257:     Sharable op count: 10
+        01170:     Unsharable op count: 67
+        00356:     Estimated intrinsic mux LUTs: 32
+        01167:     at ../src/mac.cpp line 69 estimated mux area: 16
+        01168:     Symbol:load_input::len Mux inputs: 2 Width: 32 Mux area: 16
+        01167:     at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_may_block_get.h
+        01167.       line 376 estimated mux area: 16
+        01168:     Symbol:u_l_947 Mux inputs: 2 Width: 32 Mux area: 16
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                           Resource Quantity
+        01220:                    mac_Not_1U_1U_4        2
+        01220:             mac_plm_block_in_dma32        2
+        01220:               mac_Add_16Ux1U_16U_4        1
+        01220:              mac_Add_32Ux32U_32U_4        1
+        01220:       mac_GreaterThan_32Sx14S_1U_4        1
+        01220:        mac_GreaterThan_32Sx2S_1U_4        1
+        01220:          mac_LessThan_16Ux32U_1U_4        1
+        01220:          mac_LessThan_17Sx32S_1U_4        1
+        01220:           mac_LessThan_2Sx32S_1U_4        1
+        01220:              mac_Mul_32Ux32U_32U_4        1
+        01220:                mac_N_MuxB_32_2_1_4        1
+        01220:              mac_Sub_32Sx13U_32S_4        1
+               .
+        01171:   Scheduling method mac::valid_arb
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 11
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 11
+        00356:     Estimated intrinsic mux LUTs: 0
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                 Resource Quantity
+        01220:       mac_Xor_1Ux1U_1U_4        2
+        01220:       mac_And_1Ux1U_1U_4        1
+        01220:          mac_Not_1U_1U_4        1
+        01220:        mac_Or_1Ux1U_1U_4        1
+               .
+        01171:   Scheduling method mac::back_method_1
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 16
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 16
+        00356:     Estimated intrinsic mux LUTs: 1
+        01167:     at /software/cadence-Mar2020/STRATUS192/share/stratus/include/cynw_put_get_channels/cynw_sync_snd.h
+        01167.       line 120 estimated mux area: 1
+        01168:     Symbol:dma_write_chnl.sync_snd.reset_valid_curr Mux inputs:
+        01168.       2 Width: 1 Mux area: 1
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                 Resource Quantity
+        01220:       mac_N_Muxb_1_2_4_4        1
+        01220:          mac_Not_1U_1U_4        1
+               .
+        01171:   Scheduling method mac::process_1
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 5
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 5
+        00356:     Estimated intrinsic mux LUTs: 0
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                Resource Quantity
+        01220:         mac_Not_1U_1U_4        1
+        01220:       mac_Or_1Ux1U_1U_4        1
+               .
+        01171:   Scheduling thread mac::store_output
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_config_proc.i.hpp:44,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        00907: ...................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:182,41   .
+        00907: .                                                                 .
+        00907: . Loop carried variables                                          .
+        00907: . -------------------------                                       .
+        00907: . dma_write_chnl.set_valid_curr                                   .
+        00907: . store_output::ping                                              .
+        00907: . store_output::offset                                            .
+        00907: . store_output::b                                                 .
+        00907: .                                                                 .
+        00907: . Total loop carried dependencies: 4                              .
+        00907: ...................................................................
+        00907: ...................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:191,45   .
+        00907: .                                                                 .
+        00907: . Loop carried variables                                          .
+        00907: . -------------------------                                       .
+        00907: . dma_write_chnl.set_valid_curr                                   .
+        00907: . store_output::ping                                              .
+        00907: . store_output::offset                                            .
+        00907: . store_output::rem                                               .
+        00907: .                                                                 .
+        00907: . Total loop carried dependencies: 4                              .
+        00907: ...................................................................
+        00907: ..............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_blocking_put.h:271,5   .
+        00907: .                                                                            .
+        00907: . <No loop carried dependencies found>                                       .
+        00907: ..............................................................................
+        00907: ..............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_blocking_put.h:271,5   .
+        00907: .                                                                            .
+        00907: . <No loop carried dependencies found>                                       .
+        00907: ..............................................................................
+        00907: ...................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:244,96   .
+        00907: .                                                                 .
+        00907: . Loop carried variables                                          .
+        00907: . -------------------------                                       .
+        00907: . dma_write_chnl.set_valid_curr                                   .
+        00907: . store_output::i                                                 .
+        00907: .                                                                 .
+        00907: . Total loop carried dependencies: 2                              .
+        00907: ...................................................................
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_may_block_put.h:333,6   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_accelerator.i.hpp:52,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        02098:     Total op count: 80
+        03257:     Sharable op count: 13
+        01170:     Unsharable op count: 67
+        00356:     Estimated intrinsic mux LUTs: 32
+        01167:     at ../src/mac.cpp line 197 estimated mux area: 16
+        01168:     Symbol:store_output::len Mux inputs: 2 Width: 32 Mux area:
+        01168.       16
+        01167:     at ../src/mac.cpp line 241 estimated mux area: 16
+        01168:     Symbol:store_output::dataBv Mux inputs: 2 Width: 32 Mux
+        01168.       area: 16
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                          Resource Quantity
+        01220:             mac_Mul_32Ux32U_32U_4        2
+        01220:                   mac_Not_1U_1U_4        2
+        01220:           mac_plm_block_out_dma32        2
+        01220:              mac_Add_16Ux1U_16U_4        1
+        01220:             mac_Add_32Ux32U_32U_4        1
+        01220:       mac_GreaterThan_32Sx2S_1U_4        1
+        01220:       mac_GreaterThan_32Sx8S_1U_4        1
+        01220:         mac_LessThan_16Ux32U_1U_4        1
+        01220:         mac_LessThan_17Sx32S_1U_4        1
+        01220:          mac_LessThan_2Sx32S_1U_4        1
+        01220:               mac_N_MuxB_32_2_1_4        1
+        01220:                mac_N_Mux_32_2_3_4        1
+        01220:              mac_Sub_32Sx7U_32S_4        1
+               .
+        01171:   Scheduling thread mac::compute_kernel
+        02080:       sched_asap            on      
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  low     
+        02080:       sharing_effort_regs   low     
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_config_proc.i.hpp:44,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        00907: ...................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:300,41   .
+        00907: .                                                                 .
+        00907: . Loop carried variables                                          .
+        00907: . -------------------------                                       .
+        00907: . compute_kernel::ping                                            .
+        00907: . compute_kernel::out_ping                                        .
+        00907: . compute_kernel::b                                               .
+        00907: .                                                                 .
+        00907: . Total loop carried dependencies: 3                              .
+        00907: ...................................................................
+        00907: ...................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:309,54   .
+        00907: .                                                                 .
+        00907: . Loop carried variables                                          .
+        00907: . -------------------------                                       .
+        00907: . compute_kernel::ping                                            .
+        00907: . compute_kernel::vector_index                                    .
+        00907: . compute_kernel::vector_number                                   .
+        00907: . compute_kernel::acc                                             .
+        00907: . compute_kernel::in_rem                                          .
+        00907: .                                                                 .
+        00907: . Total loop carried dependencies: 5                              .
+        00907: ...................................................................
+        00907: ..............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_blocking_put.h:271,5   .
+        00907: .                                                                            .
+        00907: . <No loop carried dependencies found>                                       .
+        00907: ..............................................................................
+        00907: ...................................................................
+        00907: . Loop carried dependencies report for loop:     mac.cpp:328,41   .
+        00907: .                                                                 .
+        00907: . Loop carried variables                                          .
+        00907: . -------------------------                                       .
+        00907: . compute_kernel::ping                                            .
+        00907: . compute_kernel::vector_index                                    .
+        00907: . compute_kernel::vector_number                                   .
+        00907: . compute_kernel::acc                                             .
+        00907: . compute_kernel::i                                               .
+        00907: .                                                                 .
+        00907: . Total loop carried dependencies: 5                              .
+        00907: ...................................................................
+        00907: ..............................................................................
+        00907: . Loop carried dependencies report for loop:     cynw_blocking_get.h:288,5   .
+        00907: .                                                                            .
+        00907: . <No loop carried dependencies found>                                       .
+        00907: ..............................................................................
+        00907: ...............................................................................
+        00907: . Loop carried dependencies report for loop:     esp_accelerator.i.hpp:52,5   .
+        00907: .                                                                             .
+        00907: . <No loop carried dependencies found>                                        .
+        00907: ...............................................................................
+        02098:     Total op count: 95
+        03257:     Sharable op count: 21
+        01170:     Unsharable op count: 74
+        00356:     Estimated intrinsic mux LUTs: 80
+        01167:     at ../src/mac.cpp line 312 estimated mux area: 16
+        01168:     Symbol:compute_kernel::in_len Mux inputs: 2 Width: 32 Mux
+        01168.       area: 16
+        01167:     at ../src/mac.cpp line 318 estimated mux area: 16
+        01168:     Symbol:CynTemp_12 Mux inputs: 2 Width: 32 Mux area: 16
+        01167:     at ../src/mac.cpp line 318 estimated mux area: 16
+        01168:     Symbol:CynTemp_13 Mux inputs: 2 Width: 32 Mux area: 16
+        01167:     at ../src/mac.cpp line 326 estimated mux area: 16
+        01168:     Symbol:compute_kernel::acc Mux inputs: 2 Width: 32 Mux area:
+        01168.       16
+        01167:     at ../src/mac.cpp line 326 estimated mux area: 16
+        01168:     Symbol:compute_kernel::vector_index Mux inputs: 2 Width: 32
+        01168.       Mux area: 16
+        01158:     Checking feasibility of constraints
+        01159:     Constraint Check Complete
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                           Resource Quantity
+        01220:               mac_Add_13Sx1U_13S_4        2
+        01220:                 mac_N_Mux_32_2_2_4        2
+        01220:             mac_plm_block_in_dma32        2
+        01220:            mac_plm_block_out_dma32        2
+        01220:               mac_Add_16Ux1U_16U_4        1
+        01220:               mac_Add_32Sx2U_32S_4        1
+        01220:               mac_Add_32Ux2U_32U_4        1
+        01220:              mac_Add_32Ux32U_32U_4        1
+        01220:                 mac_And_1Ux1U_1U_4        1
+        01220:             mac_Equal_32Ux32U_1U_4        1
+        01220:       mac_GreaterThan_32Sx14S_1U_4        1
+        01220:        mac_GreaterThan_32Sx2S_1U_4        1
+        01220:          mac_LessThan_17Sx32S_1U_4        1
+        01220:           mac_LessThan_2Sx32S_1U_4        1
+        01220:          mac_LessThan_32Ux32U_1U_4        1
+        01220:              mac_Mul_32Ux32U_32U_4        1
+        01220:                mac_N_MuxB_32_2_1_4        1
+        01220:                    mac_Not_1U_1U_4        1
+        01220:              mac_Sub_32Sx13U_32S_4        1
+
+        02918: RTL Generation & Optimization:
+        02917:   Preparing thread mac::config_accelerator for final RTL output
+        01006:     States: 4
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .......................................................
+               .                                                     .
+        00802: . Allocation Report for method "config_accelerator":  .
+        00805: .                           per Instance     Total    .
+        00805: .                           ------------  ----------- .
+        00805: .          Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . -----------------  -----  -----  -----  ----  ----- .
+        00808: .         registers      1                            .
+        00404: .     register bits      1      1            1        .
+        00405: . implicit mux LUTs                          1        .
+        00811: . --------------------------------------------------- .
+        00403: .  Total LUTs/Mults                          2      0 .
+               .                                                     .
+               .......................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method mac::ready_arb for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................
+               .                                                      .
+        00802: . Allocation Report for method "ready_arb":            .
+        00805: .                            per Instance     Total    .
+        00805: .                            ------------  ----------- .
+        00805: .           Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . ------------------  -----  -----  -----  ----  ----- .
+        00402: . mac_Xor_1Ux1U_1U_4      2      1      0     2      0 .
+        00402: . mac_And_1Ux1U_1U_4      1      1      0     1      0 .
+        00402: .    mac_Not_1U_1U_4      1      1      0     1      0 .
+        00402: .  mac_Or_1Ux1U_1U_4      1      1      0     1      0 .
+        00808: .          registers      0                            .
+        00404: .      register bits      0      1            0        .
+        00405: .  implicit mux LUTs                          0        .
+        00811: . ---------------------------------------------------- .
+        00403: .   Total LUTs/Mults                          5      0 .
+               .                                                      .
+               ........................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method mac::back_method_0 for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .........................................................
+               .                                                       .
+        00802: . Allocation Report for method "back_method_0":         .
+        00805: .                             per Instance     Total    .
+        00805: .                             ------------  ----------- .
+        00805: .            Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . -------------------  -----  -----  -----  ----  ----- .
+        00402: . mac_N_MuxB_32_2_1_4      1     16      0    16      0 .
+        00402: .     mac_Not_1U_1U_4      2      1      0     2      0 .
+        00402: .  mac_And_1Ux1U_1U_4      1      1      0     1      0 .
+        00402: .  mac_N_Muxb_1_2_4_4      1      1      0     1      0 .
+        00402: .   mac_Or_1Ux1U_1U_4      1      1      0     1      0 .
+        00808: .           registers      6                            .
+        00404: .       register bits     37      1           37        .
+        00405: .   implicit mux LUTs                          5        .
+        00811: . ----------------------------------------------------- .
+        00403: .    Total LUTs/Mults                         63      0 .
+               .                                                       .
+               .........................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method mac::process_0 for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................
+               .                                                      .
+        00802: . Allocation Report for method "process_0":            .
+        00805: .                            per Instance     Total    .
+        00805: .                            ------------  ----------- .
+        00805: .           Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . ------------------  -----  -----  -----  ----  ----- .
+        00402: . mac_And_1Ux1U_1U_4      2      1      0     2      0 .
+        00402: .    mac_Not_1U_1U_4      1      1      0     1      0 .
+        00402: .  mac_Or_1Ux1U_1U_4      1      1      0     1      0 .
+        00808: .          registers      0                            .
+        00404: .      register bits      0      1            0        .
+        00405: .  implicit mux LUTs                          0        .
+        00811: . ---------------------------------------------------- .
+        00403: .   Total LUTs/Mults                          4      0 .
+               .                                                      .
+               ........................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing thread mac::load_input for final RTL output
+        01006:     States: 11
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ..................................................................
+               .                                                                .
+        00802: . Allocation Report for method "load_input":                     .
+        00805: .                                      per Instance     Total    .
+        00805: .                                      ------------  ----------- .
+        00805: .                     Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . ----------------------------  -----  -----  -----  ----  ----- .
+        00402: .        mac_Add_32Ux32U_32U_4      1     64      0    64      0 .
+        00402: .  mac_GreaterThan_32Sx2S_1U_4      2     32      0    64      0 .
+        00402: .        mac_Sub_32Sx13U_32S_4      1     64      0    64      0 .
+        00402: .         mac_Add_16Ux1U_16U_4      2     17      0    34      0 .
+        00402: . mac_GreaterThan_32Sx14S_1U_4      1     32      0    32      0 .
+        00402: .    mac_LessThan_16Ux32U_1U_4      1     32      0    32      0 .
+        00402: .    mac_LessThan_17Sx32S_1U_4      1     32      0    32      0 .
+        00402: .     mac_LessThan_2Sx32S_1U_4      1     32      0    32      0 .
+        00402: .          mac_N_MuxB_32_2_1_4      2     16      0    32      0 .
+        00402: .        mac_Mul_32Ux32U_32U_4      1     31      3    31      3 .
+        00402: .              mac_Not_1U_1U_4      3      1      0     3      0 .
+        00808: .                    registers     22                            .
+        00404: .                register bits    410      1          410        .
+        00405: .            implicit mux LUTs                        192        .
+        00811: . -------------------------------------------------------------- .
+        00403: .             Total LUTs/Mults                       1022      3 .
+               .                                                                .
+               ..................................................................
+
+
+        00813:     Array bindings:
+        02935:       at ../src/mac.hpp line 39
+        02935.         Array plm_in_ping, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 38
+        02935.         Array plm_in_pong, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method mac::valid_arb for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................
+               .                                                      .
+        00802: . Allocation Report for method "valid_arb":            .
+        00805: .                            per Instance     Total    .
+        00805: .                            ------------  ----------- .
+        00805: .           Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . ------------------  -----  -----  -----  ----  ----- .
+        00402: . mac_Xor_1Ux1U_1U_4      2      1      0     2      0 .
+        00402: . mac_And_1Ux1U_1U_4      1      1      0     1      0 .
+        00402: .    mac_Not_1U_1U_4      1      1      0     1      0 .
+        00402: .  mac_Or_1Ux1U_1U_4      1      1      0     1      0 .
+        00808: .          registers      0                            .
+        00404: .      register bits      0      1            0        .
+        00405: .  implicit mux LUTs                          0        .
+        00811: . ---------------------------------------------------- .
+        00403: .   Total LUTs/Mults                          5      0 .
+               .                                                      .
+               ........................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method mac::back_method_1 for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................
+               .                                                      .
+        00802: . Allocation Report for method "back_method_1":        .
+        00805: .                            per Instance     Total    .
+        00805: .                            ------------  ----------- .
+        00805: .           Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . ------------------  -----  -----  -----  ----  ----- .
+        00402: . mac_N_Muxb_1_2_4_4      1      1      0     1      0 .
+        00402: .    mac_Not_1U_1U_4      1      1      0     1      0 .
+        00808: .          registers      4                            .
+        00404: .      register bits      4      1            4        .
+        00405: .  implicit mux LUTs                          4        .
+        00811: . ---------------------------------------------------- .
+        00403: .   Total LUTs/Mults                         10      0 .
+               .                                                      .
+               ........................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method mac::process_1 for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .......................................................
+               .                                                     .
+        00802: . Allocation Report for method "process_1":           .
+        00805: .                           per Instance     Total    .
+        00805: .                           ------------  ----------- .
+        00805: .          Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . -----------------  -----  -----  -----  ----  ----- .
+        00402: .   mac_Not_1U_1U_4      1      1      0     1      0 .
+        00402: . mac_Or_1Ux1U_1U_4      1      1      0     1      0 .
+        00808: .         registers      0                            .
+        00404: .     register bits      0      1            0        .
+        00405: . implicit mux LUTs                          0        .
+        00811: . --------------------------------------------------- .
+        00403: .  Total LUTs/Mults                          2      0 .
+               .                                                     .
+               .......................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing thread mac::store_output for final RTL output
+        01006:     States: 12
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .................................................................
+               .                                                               .
+        00802: . Allocation Report for method "store_output":                  .
+        00805: .                                     per Instance     Total    .
+        00805: .                                     ------------  ----------- .
+        00805: .                    Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . ---------------------------  -----  -----  -----  ----  ----- .
+        00402: .       mac_Add_32Ux32U_32U_4      1     64      0    64      0 .
+        00402: . mac_GreaterThan_32Sx2S_1U_4      2     32      0    64      0 .
+        00402: .        mac_Sub_32Sx7U_32S_4      1     64      0    64      0 .
+        00402: .       mac_Mul_32Ux32U_32U_4      2     31      3    62      6 .
+        00402: .        mac_Add_16Ux1U_16U_4      2     17      0    34      0 .
+        00402: . mac_GreaterThan_32Sx8S_1U_4      1     32      0    32      0 .
+        00402: .   mac_LessThan_16Ux32U_1U_4      1     32      0    32      0 .
+        00402: .   mac_LessThan_17Sx32S_1U_4      1     32      0    32      0 .
+        00402: .    mac_LessThan_2Sx32S_1U_4      1     32      0    32      0 .
+        00402: .         mac_N_MuxB_32_2_1_4      1     16      0    16      0 .
+        00402: .          mac_N_Mux_32_2_3_4      1     16      0    16      0 .
+        00402: .             mac_Not_1U_1U_4      3      1      0     3      0 .
+        00808: .                   registers     23                            .
+        00404: .               register bits    396      1          396        .
+        00405: .           implicit mux LUTs                        293        .
+        00811: . ------------------------------------------------------------- .
+        00403: .            Total LUTs/Mults                       1140      6 .
+               .                                                               .
+               .................................................................
+
+
+        00813:     Array bindings:
+        02935:       at ../src/mac.hpp line 37
+        02935.         Array plm_out_ping, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        02935:       at ../src/mac.hpp line 36
+        02935.         Array plm_out_pong, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing thread mac::compute_kernel for final RTL output
+        01006:     States: 10
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ..................................................................
+               .                                                                .
+        00802: . Allocation Report for method "compute_kernel":                 .
+        00805: .                                      per Instance     Total    .
+        00805: .                                      ------------  ----------- .
+        00805: .                     Resource  Count   LUTs  Mults  LUTs  Mults .
+        00805: . ----------------------------  -----  -----  -----  ----  ----- .
+        00402: .        mac_Add_32Ux32U_32U_4      1     64      0    64      0 .
+        00402: .  mac_GreaterThan_32Sx2S_1U_4      2     32      0    64      0 .
+        00402: .        mac_Sub_32Sx13U_32S_4      1     64      0    64      0 .
+        00402: .        mac_Mul_32Ux32U_32U_4      2     31      3    62      6 .
+        00402: .         mac_Add_13Sx1U_13S_4      3     17      0    51      0 .
+        00402: .          mac_N_MuxB_32_2_1_4      3     16      0    48      0 .
+        00402: .         mac_Add_32Sx2U_32S_4      1     34      0    34      0 .
+        00402: .         mac_Add_32Ux2U_32U_4      1     34      0    34      0 .
+        00402: . mac_GreaterThan_32Sx14S_1U_4      1     32      0    32      0 .
+        00402: .    mac_LessThan_17Sx32S_1U_4      1     32      0    32      0 .
+        00402: .     mac_LessThan_2Sx32S_1U_4      1     32      0    32      0 .
+        00402: .    mac_LessThan_32Ux32U_1U_4      1     32      0    32      0 .
+        00402: .           mac_N_Mux_32_2_2_4      2     16      0    32      0 .
+        00402: .       mac_Equal_32Ux32U_1U_4      1     23      0    23      0 .
+        00402: .         mac_Add_16Ux1U_16U_4      1     17      0    17      0 .
+        00402: .              mac_Not_1U_1U_4      4      1      0     4      0 .
+        00402: .           mac_And_1Ux1U_1U_4      2      1      0     2      0 .
+        00808: .                    registers     29                            .
+        00404: .                register bits    428      1          428        .
+        00405: .            implicit mux LUTs                        369        .
+        00811: . -------------------------------------------------------------- .
+        00403: .             Total LUTs/Mults                       1424      6 .
+               .                                                                .
+               ..................................................................
+
+
+        00813:     Array bindings:
+        02935:       at ../src/mac.hpp line 39
+        02935.         Array plm_in_ping, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 38
+        02935.         Array plm_in_pong, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 37
+        02935.         Array plm_out_ping, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        02935:       at ../src/mac.hpp line 36
+        02935.         Array plm_out_pong, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        01677:     Building RTL structures, pass 3
+        00971:   Cleaning up
+        02723:       Synthesizing mac_Add_4U_12_4...
+        00304:         Comb. LUTs =   0  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.223ns
+        02723:       Synthesizing mac_Add_2U_9_4...
+        00304:         Comb. LUTs =   0  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.223ns
+        02723:       Synthesizing mac_DECODE_4096U_8_4...
+        00304:         Comb. LUTs = 2176  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  1.098ns
+        02723:       Synthesizing mac_DECODE_16U_6_4...
+        00304:         Comb. LUTs =   8  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.408ns
+        02723:       Synthesizing mac_DECODE_4U_5_4...
+        00304:         Comb. LUTs =   2  Seq. LUTs =   0  Dedicated Mults = 0
+        00304.                                       Latency =  0  Delay =  0.379ns
+
+               +----------------------------------------------------------------+
+               |                                                                |
+        00803: | Allocation Report for all threads:                             |
+        00805: |                                      per Instance     Total    |
+        00805: |                                      ------------  ----------- |
+        00805: |                     Resource  Count   LUTs  Mults  LUTs  Mults |
+        00805: | ----------------------------  -----  -----  -----  ----  ----- |
+        00402: |  mac_GreaterThan_32Sx2S_1U_4      6     32      0   192      0 |
+        00402: |        mac_Add_32Ux32U_32U_4      3     64      0   192      0 |
+        00402: |        mac_Mul_32Ux32U_32U_4      5     31      3   155     15 |
+        00402: |        mac_Sub_32Sx13U_32S_4      2     64      0   128      0 |
+        00402: |          mac_N_MuxB_32_2_1_4      7     16      0   112      0 |
+        00402: |     mac_LessThan_2Sx32S_1U_4      3     32      0    96      0 |
+        00402: |    mac_LessThan_17Sx32S_1U_4      3     32      0    96      0 |
+        00402: |         mac_Add_16Ux1U_16U_4      5     17      0    85      0 |
+        00402: | mac_GreaterThan_32Sx14S_1U_4      2     32      0    64      0 |
+        00402: |    mac_LessThan_16Ux32U_1U_4      2     32      0    64      0 |
+        00402: |         mac_Sub_32Sx7U_32S_4      1     64      0    64      0 |
+        00402: |         mac_Add_13Sx1U_13S_4      3     17      0    51      0 |
+        00402: |         mac_Add_32Ux2U_32U_4      1     34      0    34      0 |
+        00402: |         mac_Add_32Sx2U_32S_4      1     34      0    34      0 |
+        00402: |    mac_LessThan_32Ux32U_1U_4      1     32      0    32      0 |
+        00402: |           mac_N_Mux_32_2_2_4      2     16      0    32      0 |
+        00402: |  mac_GreaterThan_32Sx8S_1U_4      1     32      0    32      0 |
+        00402: |       mac_plm_block_in_dma32      2     13      0    26      0 |
+        00402: |       mac_Equal_32Ux32U_1U_4      1     23      0    23      0 |
+        00402: |              mac_Not_1U_1U_4     17      1      0    17      0 |
+        00402: |           mac_N_Mux_32_2_3_4      1     16      0    16      0 |
+        00402: |           mac_And_1Ux1U_1U_4      7      1      0     7      0 |
+        00402: |            mac_Or_1Ux1U_1U_4      5      1      0     5      0 |
+        00402: |           mac_Xor_1Ux1U_1U_4      4      1      0     4      0 |
+        00402: |           mac_N_Muxb_1_2_4_4      2      1      0     2      0 |
+        00402: |      mac_plm_block_out_dma32      2      1      0     2      0 |
+        00808: |                    registers    110                            |
+        01442: |            Reg bits by type:                                   |
+        01442. |               EN SS SC AS AC                                   |
+        00809: |                0  0  0  0  1    155      1          155        |
+        00809: |                1  0  0  0  1   1153      2         2306        |
+        00809: |                1  0  0  1  0      3      2            6        |
+        00404: |            all register bits   1311      1         2467        |
+        01434: |          Impl muxes by type:                                   |
+        01434. |                     WID  INP                                   |
+        00810: |                       1    2      2      1            2        |
+        00810: |                       1    2      7      1            7        |
+        00810: |                       1    2     37      1           37        |
+        00810: |                       1    3      2      1            2        |
+        00810: |                       2    3      2      2            4        |
+        00810: |                       2    3      1      2            2        |
+        00810: |                       2    4      2      2            4        |
+        00810: |                       4    6      1      5            5        |
+        00810: |                       4   10      2      7           14        |
+        00810: |                       7    2      3      7           21        |
+        00810: |                      13    2      2     13           26        |
+        00810: |                      13    2      2     12           24        |
+        00810: |                      16    2      3     14           42        |
+        00810: |                      32    2     10     32          320        |
+        00810: |                      32    2      3     28           84        |
+        00810: |                      32    2      4     24           96        |
+        00405: |            implicit mux LUTs                        690        |
+        02604: |              estimated cntrl                        237        |
+        00811: | -------------------------------------------------------------- |
+        00403: |             Total LUTs/Mults                       4959     15 |
+               |                                                                |
+               +----------------------------------------------------------------+
+
+
+        00813:     Array bindings:
+        02935:       at ../src/mac.hpp line 39
+        02935.         Array plm_in_ping, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 38
+        02935.         Array plm_in_pong, 6400 words x 32 bits (204800 total
+        02935.         bits), has been mapped to a mac_plm_block_in_dma32
+        02935.         memory having 6400 words x 32 bits (204800 total bits). 
+        02935.         Shared amongst threads load_input and compute_kernel.
+        02935:       at ../src/mac.hpp line 37
+        02935.         Array plm_out_ping, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+        02935:       at ../src/mac.hpp line 36
+        02935.         Array plm_out_pong, 100 words x 32 bits (3200 total
+        02935.         bits), has been mapped to a mac_plm_block_out_dma32
+        02935.         memory having 100 words x 32 bits (3200 total bits). 
+        02935.         Shared amongst threads compute_kernel and store_output.
+
+        00195: Writing RTL files:
+        01766:   bdw_work/modules/mac/BASIC_DMA32/mac_rtl.h
+        01767:   bdw_work/modules/mac/BASIC_DMA32/mac_rtl.cpp
+        01768:   bdw_work/modules/mac/BASIC_DMA32/mac_rtl.v
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:    WARNING 90177   1
+        01198:    WARNING 90549   1
+
+stratus_hls succeeded with 0 errors and 2 warnings.
+
+End at Sun Mar 28 16:23:11 2021
+

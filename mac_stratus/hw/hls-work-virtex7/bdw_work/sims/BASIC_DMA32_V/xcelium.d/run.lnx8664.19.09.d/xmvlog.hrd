@@ -1,0 +1,22 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-YDIR
+bdw_work/libs/memlib/v_rtl
+-INCDIR
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib
+-INCDIR
+bdw_work/wrappers
+-LIBEXT
+.v
+-DEFINE
+BDW_NCSC
+-WORK
+BASIC_DMA32_V
+-DEFINE
+ioConfig_IOCFG_DMA32
+-DEFINE
+BDW_RTL_mac_BASIC_DMA32
+-DEFINE
+NCSC

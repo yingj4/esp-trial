@@ -1,0 +1,10 @@
+-L${NCSC_CDS_ROOT}/tools/cdsgcc/gcc/6.3/install/lib64 -lstdc++ -lgcc_s -L${NCSC_CDS_ROOT}/tools/lib -L${NCSC_CDS_ROOT}/tools/tbsc/lib/64bit/gnu/6.3 -L${NCSC_CDS_ROOT}/tools/lib/64bit/SuSE -Wl,-rpath,${NCSC_CDS_ROOT}/tools/lib/64bit:${NCSC_CDS_ROOT}/tools/tbsc/lib/64bit/gnu/6.3:${NCSC_CDS_ROOT}/tools/lib/64bit/SuSE:${NCSC_CDS_ROOT}/tools/cdsgcc/gcc/6.3/install/lib64 -ltbsc -lscv -lbfd
+-L/software/cadence-Mar2020/XCELIUM1909/tools/systemc/lib/64bit/gnu/6.3 -lsystemc_sh -lscBootstrap_sh -lxmscCoroutines_sh -lovm -lxmsccci_sh -lxmscfactory_sh -lxml_parser -lxmsctlm2_sh -L/software/cadence-Mar2020/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/sc/lib/64bit -luvm
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/modules/mac/BASIC_DMA32/incisive/mac.o
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/modules/tb/TESTBENCH_DMA32/incisive/system.o
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/modules/tb/TESTBENCH_DMA32/incisive/sc_main.o
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/libesc/incisive/libesc.a
+/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7/bdw_work/libs/memlib/incisive/objs/libmemlib.a
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhubexec.so
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libhub.so
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit/libbdw_st.so

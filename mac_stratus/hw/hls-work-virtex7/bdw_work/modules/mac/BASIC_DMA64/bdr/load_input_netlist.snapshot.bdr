@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>load_input</module_name>
+	<signal>
+		<name>MUX_N1536</name>
+		<source_loc>12590</source_loc>
+		<datatype W="32">sc_uint</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N1536</name>
+		<async/>
+		<lhs>
+			<name>MUX_N1536</name>
+		</lhs>
+		<rhs>
+			<name>6400ULL</name>
+			<name>CAST_N1541</name>
+		</rhs>
+		<cond>
+			<name>dmux_ctrl_001</name>
+		</cond>
+		<mux_area>32.0000</mux_area>
+		<mux_delay>1.1170</mux_delay>
+		<control_delay>1.1170</control_delay>
+	</thread>
+	<signal>
+		<name>MUX_N1544</name>
+		<source_loc>12593</source_loc>
+		<datatype W="64">sc_uint</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N1544</name>
+		<async/>
+		<lhs>
+			<name>MUX_N1544</name>
+		</lhs>
+		<rhs>
+			<name>ioread006</name>
+			<name>ioread007</name>
+		</rhs>
+		<cond>
+			<name>amtmp001</name>
+		</cond>
+		<mux_area>64.0000</mux_area>
+		<mux_delay>1.1170</mux_delay>
+		<control_delay>1.1170</control_delay>
+	</thread>
+</netlist>

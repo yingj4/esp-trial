@@ -1,0 +1,12 @@
+32270
+32477
+mojave.cs.illinois.edu
+bdw_work/trace/sim.BASIC_DMA64_V.trace
+2
+0
+0
+0
+1616967650
+1616967676
+make --no-print-directory -f Makefile CWBExec=1 sim_BASIC_DMA64_V
+

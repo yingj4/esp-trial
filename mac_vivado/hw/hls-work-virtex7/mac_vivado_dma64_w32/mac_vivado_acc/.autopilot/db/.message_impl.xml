@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP."/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO mac_vivado_dma64_w32_dataflow_in_loop_bkb_memcore using a single memory for all blocks"/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO mac_vivado_dma64_w32_dataflow_in_loop_dEe_memcore using a single memory for all blocks"/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO mac_vivado_dma64_w32_dataflow_in_loop_bkb_memcore using a single memory for all blocks"/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO mac_vivado_dma64_w32_dataflow_in_loop_dEe_memcore using a single memory for all blocks"/>
+</Messages>

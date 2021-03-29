@@ -1,0 +1,13 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-sysc
+-WORK
+BASIC_DMA32_V
+-ccargs
+-Wl
+-ccargs
+-rpath
+-ccargs
+/software/cadence-Mar2020/STRATUS192/tools.lnx86/stratus/lib/64bit

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<tool_log>
+	<tool_kind>LogicSimulator</tool_kind>
+	<tool_name>OSCI</tool_name>
+	<hostname>mojave.cs.illinois.edu</hostname>
+	<uname>Linux 3.10.0-1160.21.1.el7.x86_64 x86_64</uname>
+	<cwd>/scratch/projects/yingj4/esp/accelerators/stratus_hls/mac_stratus/hw/hls-work-virtex7</cwd>
+	<user>yingj4</user>
+	<gen_time>Sun Mar 28 16:40:49 2021</gen_time>
+	<module_inst>
+		<module_name>mac</module_name>
+		<inst_path>testbench.mac_wrapper</inst_path>
+		<representation>BEH</representation>
+	</module_inst>
+	<latency>
+		<value>3261</value>
+		<module_name>testbench</module_name>
+	</latency>
+	<passed>1</passed>
+	<end_time>Sun Mar 28 16:40:49 2021</end_time>
+</tool_log>

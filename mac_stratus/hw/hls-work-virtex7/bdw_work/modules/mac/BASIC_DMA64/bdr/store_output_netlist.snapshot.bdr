@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>store_output</module_name>
+	<signal>
+		<name>MUX_N1769</name>
+		<source_loc>12680</source_loc>
+		<datatype W="32">sc_uint</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N1769</name>
+		<async/>
+		<lhs>
+			<name>MUX_N1769</name>
+		</lhs>
+		<rhs>
+			<name>100ULL</name>
+			<name>CAST_N1774</name>
+		</rhs>
+		<cond>
+			<name>dmux_ctrl_003</name>
+		</cond>
+		<mux_area>32.0000</mux_area>
+		<mux_delay>1.1170</mux_delay>
+		<control_delay>1.1170</control_delay>
+	</thread>
+	<signal>
+		<name>MUX_N1777</name>
+		<source_loc>12689</source_loc>
+		<datatype W="64">sc_uint</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N1777</name>
+		<async/>
+		<lhs>
+			<name>MUX_N1777</name>
+		</lhs>
+		<rhs>
+			<name>CONCAT_N1780</name>
+			<name>CONCAT_N1785</name>
+		</rhs>
+		<cond>
+			<name>sping_u0</name>
+		</cond>
+		<mux_area>64.0000</mux_area>
+		<mux_delay>1.1170</mux_delay>
+		<control_delay>1.1170</control_delay>
+	</thread>
+</netlist>

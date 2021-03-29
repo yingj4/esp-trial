@@ -1,0 +1,9 @@
+define XMSIMRC	( /software/cadence-Mar2020/XCELIUM1909/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT BASIC_DMA32_V.top:v
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => worklib )
+DEFINE LIB_MAP ($LIB_MAP,  => bdw_worklib )
+DEFINE LIB_MAP ($LIB_MAP, + => BASIC_DMA32_V )
+define ELAB_SNAPSHOT
+define SNAPSHOT BASIC_DMA32_V.sc_main:sc_module
